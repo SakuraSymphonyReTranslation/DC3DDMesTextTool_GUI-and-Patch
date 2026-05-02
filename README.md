@@ -82,7 +82,7 @@ Steps:
 1. In **Input MES/JSON**, select `.json`.
 2. Make sure original `.mes` with the same base filename is in the same folder.
 3. Set output `.mes` path (optional).
-4. Set **Word Wrap Width** (default: `67`).
+4. Set **Word Wrap Width** (default: `60`) if 60 isn't enough you can change its value to fit textbox.
 5. Click **Import (JSON -> MES)**.
 
 ## CLI Tutorial
@@ -125,7 +125,7 @@ If output folder is omitted, defaults to `mes_folder\json_output`.
 ### 4) Batch Import (Folder) (JSON -> MES)
 
 ```powershell
-./DC3DDMesTextTool_GUI.exe batch-import "H:\path\json_folder" "H:\path\mes_folder" "H:\path\mes_output" -w 67
+./DC3DDMesTextTool_GUI.exe batch-import "H:\path\json_folder" "H:\path\mes_folder" "H:\path\mes_output" -w 60
 ```
 
 Arguments:
@@ -133,7 +133,7 @@ Arguments:
 - `json_folder`: translated `.json` files
 - `mes_folder`: original `.mes` files used as base
 - `mes_output`: output folder for rebuilt `.mes`
-- `-w`: wrap width (optional, default `67`)
+- `-w`: wrap width (optional, default `60`) if 60 isn't enough you can change its value to fit textbox.
 
 Matching is done by filename:
 
