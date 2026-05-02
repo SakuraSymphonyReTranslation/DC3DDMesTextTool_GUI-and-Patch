@@ -31,6 +31,9 @@ Ready-to-use release output:
 
 To use this patch correctly, you must launch the game using the custom launcher:
 
+For example - `H:\Games\DC3DD` is your game directory
+put - `DC3DDMesTextTool_GUI and Patch` or somewhere else
+
 - `H:\Games\DC3DD\DC3DDMesTextTool_GUI and Patch\DC3DDPatch a\build\Released\DC3DDLauncher.exe`
 
 This patch is built to work with that launcher.
@@ -153,8 +156,6 @@ If original MES file is missing, that JSON file is skipped.
 
 - Active build folder: `DC3DDPatch a\build`
 - Final ready release folder: `DC3DDPatch a\build\Released`
-
-## Released (v1.0.0)
 
 Initial public release.
 Includes:
