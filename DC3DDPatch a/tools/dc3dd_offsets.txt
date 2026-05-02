@@ -1,0 +1,19 @@
+DC3DD runtime offsets (default)
+
+CheckIcon:
+  VA  : 0x00432010
+  OFF : 0x00031410
+
+CheckIconConfig:
+  VA  : 0x004256A0
+  OFF : 0x00024AA0
+
+BacklogIconHandler:
+  VA  : 0x004325D0
+  OFF : 0x000319D0
+
+Related references:
+  CallSite VA : 0x00405013 (OFF 0x00004413)
+  HookSite VA : 0x00405276 (OFF 0x00004676)
+
+These values are also exposed in `DC3DDPatch.ini` under section `[Offsets]`.

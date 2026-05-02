@@ -1,0 +1,2346 @@
+DC4 Japanese Text Translation Reference
+============================================================
+
+Instructions:
+- Fill in the 'Translation:' field for each entry
+- Your translation must be MAX the number of characters shown
+- Use only ASCII characters (a-z, A-Z, 0-9, spaces, punctuation)
+- Do NOT use special characters like e with accent
+- Leave blank to keep Japanese original
+
+============================================================
+
+=== SYSTEM/UI STRINGS ===
+
+Japanese: 錬・
+Max chars: 4
+Translation: 
+
+Japanese: ｛・
+Max chars: 4
+Translation:  
+
+Japanese: ◆タイトル名◆
+Max chars: 14
+Translation: ◆Nama Judul◆
+
+Japanese: 実行エラー
+Max chars: 10
+Translation: Error Jalankan
+
+Japanese: 」を実行できません！
+Max chars: 20
+Translation: " tdk dpt jalan!
+
+Japanese: タイトル名なし
+Max chars: 14
+Translation: Tanpa Judul
+
+Japanese: 接続に失敗しました。
+Max chars: 20
+Translation: Koneksi Gagal.
+
+Japanese: ネットに接続しますよろしいですか？
+Max chars: 34
+Translation: Hubungkan ke internet, ok?
+
+Japanese: D.C.4 〜ダ・カーポ4〜
+Max chars: 21
+Translation: D.C.4 ~Da Capo 4~
+
+Japanese: 空良
+Max chars: 4
+Translation: Sora
+
+Japanese: 櫻井
+Max chars: 4
+Translation: Saku
+
+Japanese: @names.datが読めないか項目数が違います。
+Max chars: 40
+Translation: @names.dat error atau jumlah beda.
+
+Japanese: 正しくインストールしてください
+Max chars: 30
+Translation: Mohon instal dgn benar.
+
+Japanese: 正常に遊ぶためには、正しくインストールしてください
+Max chars: 50
+Translation: Agar lancar, mohon instal dgn benar.
+
+Japanese: 正しくインストールしてください
+Max chars: 30
+Translation: Mohon instal dgn benar.
+
+Japanese: "%s"を作成してよろしいですか？
+Max chars: 30
+Translation: Buat "%s"? Apakah ok?
+
+Japanese: 　データVer.%s
+Max chars: 15
+Translation:  Data Ver.%s
+
+Japanese: ログイン情報に空欄があります。
+Max chars: 30
+Translation: Info login ada yg kosong.
+
+Japanese: 最大でインストールを行ってください。
+Max chars: 36
+Translation: Mohon lakukan instalasi penuh.
+
+Japanese: 0(ゼロ)とO(オー)、1(イチ)とI(アイ)等もご確認ください。
+Max chars: 54
+Translation: Cek 0/O, 1/I, dan karakter mirip lainnya.
+
+Japanese: 解除キーURLをクリップボードにコピーしますか？
+Max chars: 45
+Translation: Salin URL kunci buka ke clipboard?
+
+Japanese: ウェブブラウザを起動できませんでした。
+Max chars: 38
+Translation: Gagal membuka peramban web.
+
+Japanese: に接続します。
+Max chars: 14
+Translation: Menyambung ke.
+
+Japanese: 解除しないとディスクレスでプレイできません。
+Max chars: 44
+Translation: Harus aktivasi utk main tanpa disk.
+
+Japanese: 解除キーはインターネット経由で入手したものを入れてください。
+Max chars: 60
+Translation: Masukkan kunci buka yg didapat via internet.
+
+Japanese: 正しく解除しました。
+Max chars: 20
+Translation: Berhasil dibuka.
+
+Japanese: DC4のDVDをセットしてください
+Max chars: 28
+Translation: Masukkan DVD DC4.
+
+Japanese: K.$バージョン情報
+Max chars: 17
+Translation: K.$ Info Versi
+
+Japanese: ウインドウサイズを元に戻す
+Max chars: 26
+Translation: Reset ukuran jendela
+
+Japanese: を選択してください
+Max chars: 18
+Translation: Mohon pilih
+
+Japanese: ディスクレス化を行いますか？
+Max chars: 28
+Translation: Aktifkan mode tanpa disk?
+
+Japanese: 画面解像度/画面色数:%d x 
+Max chars: 25
+Translation: Resolusi/Warna:%d x 
+
+Japanese: を作成しました。
+Max chars: 16
+Translation:  telah dibuat.
+
+Japanese: フォルダが選択できませんでした。
+Max chars: 32
+Translation: Folder tidak dapat dipilih.
+
+Japanese: フォルダを選択してください
+Max chars: 26
+Translation: Mohon pilih folder
+
+Japanese: ウインドウサイズを固定する
+Max chars: 26
+Translation: Kunci ukuran jendela
+
+Japanese: ウインドウサイズの固定を解除する
+Max chars: 32
+Translation: Buka kunci ukuran jendela
+
+Japanese: ログアウトしました
+Max chars: 18
+Translation: Telah keluar
+
+Japanese: 終了しますか？
+Max chars: 14
+Translation: Keluar?
+
+Japanese: ログインに失敗しました。
+Max chars: 24
+Translation: Login gagal.
+
+Japanese: 通信ができませんでした。
+Max chars: 24
+Translation: Gagal komunikasi.
+
+Japanese: ログインに失敗しました。
+Max chars: 24
+Translation: Login gagal.
+
+Japanese: に書き込めません。
+Max chars: 18
+Translation: Tdk dpt menulis.
+
+Japanese: DC4　インストール
+Max chars: 17
+Translation: Instal DC4
+
+Japanese: DirectXはインストールされてます。
+Max chars: 33
+Translation: DirectX sudah terinstal.
+
+Japanese: すでにメディアレス化されています。
+Max chars: 34
+Translation: Sudah mode tanpa media.
+
+Japanese: すでにディスクレス化されています。
+Max chars: 34
+Translation: Sudah mode tanpa disk.
+
+Japanese: 実行されてますので、ディスクレス認証が起動できません。
+Max chars: 54
+Translation: Sedang jalan; aktivasi tdk dpt dibuka.
+
+Japanese:  }@ＭＳ ゴシック
+Max chars: 16
+Translation: MS Gothic
+
+Japanese: 入力がされてない箇所がありますがよろしいですか？
+Max chars: 48
+Translation: Ada bagian kosong. Apakah ok?
+
+Japanese: @か.が入力されてないメールアドレスです。
+Max chars: 40
+Translation: Email kurang @ atau titik.
+
+Japanese: セーブデータの更新に失敗しました。
+Max chars: 34
+Translation: Gagal update data save.
+
+Japanese: セーブデータの取得に失敗しました。
+Max chars: 34
+Translation: Gagal ambil data save.
+
+Japanese: コマンドセーブの::の数が多い
+Max chars: 28
+Translation: Terlalu banyak :: di cmd
+
+=== CHAPTER TITLES ===
+
+  1. Japanese: 学生特権
+     Max chars: 8
+     Translation: Hak Siswa
+
+  2. Japanese: 秘されしモノ
+     Max chars: 12
+     Translation: Hal Rahasia
+
+  3. Japanese: 願いの軌跡
+     Max chars: 10
+     Translation: Jalur Doa
+
+  4. Japanese: 奇跡を願っても
+     Max chars: 14
+     Translation: Berdoa Ajaib
+
+  5. Japanese: 今この手の中の幸福
+     Max chars: 18
+     Translation: Bahagia di Tangan
+
+  6. Japanese: 愛という幸福
+     Max chars: 12
+     Translation: Bahagia Cinta
+
+  7. Japanese: もしこの心届くなら
+     Max chars: 18
+     Translation: Jika Hati Sampai
+
+  8. Japanese: 震える心抱いて
+     Max chars: 14
+     Translation: Dekap Hati Iba
+
+  9. Japanese: 心奏でて
+     Max chars: 8
+     Translation: Alunan
+
+ 10. Japanese: 奮い立つ心
+     Max chars: 10
+     Translation: Semangat
+
+ 11. Japanese: 重ね想う
+     Max chars: 8
+     Translation: Perasaan
+
+ 12. Japanese: 並んで歩くだけでも
+     Max chars: 18
+     Translation: Jalan Berdua Saja
+
+ 13. Japanese: 抜き足差し足猫の足
+     Max chars: 18
+     Translation: Langkah Kaki Kucing
+
+ 14. Japanese: こんな上々の休日
+     Max chars: 16
+     Translation: Liburan Hebat
+
+ 15. Japanese: 心躍り胸弾む
+     Max chars: 12
+     Translation: Hati Girang
+
+ 16. Japanese: 足取り軽く心軽く
+     Max chars: 16
+     Translation: Langkah Ringan
+
+ 17. Japanese: 静かに冴える夜
+     Max chars: 14
+     Translation: Malam Yg Tenang
+
+ 18. Japanese: まだまだ今日は終わらない
+     Max chars: 24
+     Translation: Hari Belum Berakhir
+
+ 19. Japanese: 実家のような心地よさ
+     Max chars: 20
+     Translation: Nyaman Bak di Rumah
+
+ 20. Japanese: 解き放て青春
+     Max chars: 12
+     Translation: Lepas Remaja
+
+ 21. Japanese: 学食か購買か弁当か
+     Max chars: 18
+     Translation: Kantin atau Bekal
+
+ 22. Japanese: 未来への資産
+     Max chars: 12
+     Translation: Aset Depan
+
+ 23. Japanese: かったるくない通学路
+     Max chars: 20
+     Translation: Jalan Tak Bosan
+
+ 24. Japanese: 心躍る幕開け
+     Max chars: 12
+     Translation: Awal Senang
+
+ 25. Japanese: のんびり長閑に
+     Max chars: 14
+     Translation: Waktu Santai
+
+ 26. Japanese: 親友≒悪友
+     Max chars: 10
+     Translation: Teman Akrab
+
+ 27. Japanese: ちょこっと自分らしく
+     Max chars: 20
+     Translation: Sedikit Jadi Diri
+
+ 28. Japanese: これでも風紀委員ですから
+     Max chars: 24
+     Translation: Tetap Komite Disiplin
+
+ 29. Japanese: 少しだけ譲れないもの
+     Max chars: 20
+     Translation: Hal Tak Terganti
+
+ 30. Japanese: 恋愛請負、執行致します
+     Max chars: 22
+     Translation: Biro Cinta, Siap!
+
+ 31. Japanese: 甘くて美味しいのはいかが？
+     Max chars: 26
+     Translation: Mau Sesuatu Yg Manis?
+
+ 32. Japanese: 小悪魔？裏モード？
+     Max chars: 18
+     Translation: Iblis? Mode Lain?
+
+ 33. Japanese: 穏やかに舞うサクラのように
+     Max chars: 26
+     Translation: Bak Sakura Menari Tenang
+
+ 34. Japanese: 穏やかなお日様のように
+     Max chars: 22
+     Translation: Bak Mentari Tenang
+
+ 35. Japanese: 風に舞う花のように
+     Max chars: 18
+     Translation: Bak Bunga Angin
+
+ 36. Japanese: いつか見た、懐かしい夢
+     Max chars: 22
+     Translation: Mimpi Lama Bersemi
+
+ 37. Japanese: いつか見た夢
+     Max chars: 12
+     Translation: Mimpi Dulu
+
+ 38. Japanese: Ｄ．Ｃ．
+     Max chars: 8
+     Translation: D.C.
+
+ 39. Japanese: 明日への期待
+     Max chars: 12
+     Translation: Harapan Esok
+
+ 40. Japanese: バレンタインな打ち上げ
+     Max chars: 22
+     Translation: Pesta Valentine
+
+ 41. Japanese: 恋のレジェンドバトル
+     Max chars: 20
+     Translation: Duel Legenda Cinta
+
+ 42. Japanese: 恋パの朝
+     Max chars: 8
+     Translation: Pagi Cin
+
+ 43. Japanese: 明日は恋パ
+     Max chars: 10
+     Translation: Esok Pesta
+
+ 44. Japanese: ８つ目の大罪
+     Max chars: 12
+     Translation: Dosa Ke-8
+
+ 45. Japanese: サプライズは秘密
+     Max chars: 16
+     Translation: Rahasia Kejutan
+
+ 46. Japanese: 寝顔はかわいい二乃
+     Max chars: 18
+     Translation: Wajah Tidur Nino
+
+ 47. Japanese: 準備はあと１日
+     Max chars: 14
+     Translation: Sisa Satu Hari
+
+ 48. Japanese: 演技でも俺らしく
+     Max chars: 16
+     Translation: Jadi Diri Akting
+
+ 49. Japanese: 詩名いじり
+     Max chars: 10
+     Translation: Goda Shi
+
+ 50. Japanese: 至福と無駄遣い
+     Max chars: 14
+     Translation: Bahagia Boros
+
+ 51. Japanese: ネゴシエイター二乃
+     Max chars: 18
+     Translation: Negosiator Nino
+
+ 52. Japanese: 大詰めの作業割
+     Max chars: 14
+     Translation: Tugas Akhir
+
+ 53. Japanese: 泉先生の商い講義
+     Max chars: 16
+     Translation: Kuliah Izumi
+
+ 54. Japanese: 特命大使ちょこ
+     Max chars: 14
+     Translation: Utusan Choko
+
+ 55. Japanese: 明日からまた忙しく
+     Max chars: 18
+     Translation: Besok Sibuk Lagi
+
+ 56. Japanese: 止まった時計
+     Max chars: 12
+     Translation: Jam Mati
+
+ 57. Japanese: 台本読み練習
+     Max chars: 12
+     Translation: Latih Naskah
+
+ 58. Japanese: 杉並と詩名
+     Max chars: 10
+     Translation: Sugi & Shi
+
+ 59. Japanese: うろぼろす
+     Max chars: 10
+     Translation: Ouroboros
+
+ 60. Japanese: ファンタジーな回想
+     Max chars: 18
+     Translation: Kenangan Khayal
+
+ 61. Japanese: さてもうひと頑張り
+     Max chars: 18
+     Translation: Satu Usaha Lagi
+
+ 62. Japanese: いつもよりは寝過ごして
+     Max chars: 22
+     Translation: Kesiangan Dr Biasa
+
+ 63. Japanese: もう一度見たい
+     Max chars: 14
+     Translation: Ingin Lihat
+
+ 64. Japanese: 果たしてバグか？
+     Max chars: 16
+     Translation: Apakah Bug?
+
+ 65. Japanese: 稀有な体験
+     Max chars: 10
+     Translation: Pengalaman
+
+ 66. Japanese: 楽しみですね
+     Max chars: 12
+     Translation: Gak Sabar Ya
+
+ 67. Japanese: 新アトラクションのお誘い
+     Max chars: 24
+     Translation: Ajak Main Wahana Baru
+
+ 68. Japanese: ちぇしの雨宿り
+     Max chars: 14
+     Translation: Cheshi Teduh
+
+ 69. Japanese: 台本のための質問
+     Max chars: 16
+     Translation: Tanya Soal Naskah
+
+ 70. Japanese: 偶然の同行
+     Max chars: 10
+     Translation: Ikut Tiba2
+
+ 71. Japanese: 風紀委員とのネゴ
+     Max chars: 16
+     Translation: Nego Komite Dis
+
+ 72. Japanese: 地味な作業のご褒美
+     Max chars: 18
+     Translation: Hadiah Tugas Kecil
+
+ 73. Japanese: 手が足りなそうなのは
+     Max chars: 20
+     Translation: Butuh Bantuan
+
+ 74. Japanese: ご飯を食べて頑張ろう
+     Max chars: 20
+     Translation: Makan dan Berjuang
+
+ 75. Japanese: 心地よい疲労
+     Max chars: 12
+     Translation: Lelah Nikmat
+
+ 76. Japanese: 有能有里栖のお手伝い
+     Max chars: 20
+     Translation: Bantu Alice Hebat
+
+ 77. Japanese: 詩名とちよ子の関係
+     Max chars: 18
+     Translation: Relasi Shi & Chiyo
+
+ 78. Japanese: 恋愛請負も忘れずに
+     Max chars: 18
+     Translation: Ingat Tugas Cinta
+
+ 79. Japanese: チラシの手伝い
+     Max chars: 14
+     Translation: Bantu Brosur
+
+ 80. Japanese: 遊撃一登の選択
+     Max chars: 14
+     Translation: Pilihan Itto
+
+ 81. Japanese: SSR史上最大作戦
+     Max chars: 15
+     Translation: Ops SSR Besar
+
+ 82. Japanese: 微笑みの爆弾
+     Max chars: 12
+     Translation: Bom Senyum
+
+ 83. Japanese: どうなることやら
+     Max chars: 16
+     Translation: Jadi Apa Nanti
+
+ 84. Japanese: 言い出しっぺの法則
+     Max chars: 18
+     Translation: Hukum Inisiator
+
+ 85. Japanese: ちょこっとの期待
+     Max chars: 16
+     Translation: Sedikit Harap
+
+ 86. Japanese: ふとよぎる閃き
+     Max chars: 14
+     Translation: Ide Mendadak
+
+ 87. Japanese: 明日も一歩
+     Max chars: 10
+     Translation: Satu Step
+
+ 88. Japanese: 有里栖の相談
+     Max chars: 12
+     Translation: Curhat Alice
+
+ 89. Japanese: 泉先生の宇宙人講義
+     Max chars: 18
+     Translation: Kuliah Alien
+
+ 90. Japanese: 乙女ゲームな乙女たち
+     Max chars: 20
+     Translation: Gadis Game Otome
+
+ 91. Japanese: 変わった猫と
+     Max chars: 12
+     Translation: Kucing Aneh
+
+ 92. Japanese: 彼女の遠慮
+     Max chars: 10
+     Translation: Sikap Segan
+
+ 93. Japanese: アイドルの苦悩
+     Max chars: 14
+     Translation: Derita Idol
+
+ 94. Japanese: 人気者アリス
+     Max chars: 12
+     Translation: Alice Tenar
+
+ 95. Japanese: 楽しくなる予感
+     Max chars: 14
+     Translation: Firasat Seru
+
+ 96. Japanese: SSRバレンタイン対策
+     Max chars: 19
+     Translation: Rencana Valentine
+
+ 97. Japanese: 転校生
+     Max chars: 6
+     Translation: Murid
+
+ 98. Japanese: お馴染みの面々
+     Max chars: 14
+     Translation: Wajah Kenal
+
+ 99. Japanese: お決まりの朝
+     Max chars: 12
+     Translation: Pagi Rutin
+
+100. Japanese: これはただの夢？
+     Max chars: 16
+     Translation: Cuma Mimpi?
+
+101. Japanese: 無限へと漸近する過ち
+     Max chars: 20
+     Translation: Salah Tak Terbatas
+
+102. Japanese: SSR始動
+     Max chars: 7
+     Translation: SSR On
+
+103. Japanese: それぞれの感想
+     Max chars: 14
+     Translation: Kesan Tiap Org
+
+104. Japanese: 杉並と迷宮
+     Max chars: 10
+     Translation: Sugi & Lab
+
+105. Japanese: 有里栖と自由落下
+     Max chars: 16
+     Translation: Terjun Alice
+
+106. Japanese: ひよりと耐久勝負
+     Max chars: 16
+     Translation: Duel Hiyori
+
+107. Japanese: 諳子とお城
+     Max chars: 10
+     Translation: Akiko Kastil
+
+108. Japanese: 二乃とショッピング
+     Max chars: 18
+     Translation: Belanja w/ Nino
+
+109. Japanese: どうしようかな
+     Max chars: 14
+     Translation: Mau Ngapain
+
+110. Japanese: いざワンダーランド
+     Max chars: 18
+     Translation: Ke Wonderland
+
+111. Japanese: 突然の雷鳴！？
+     Max chars: 14
+     Translation: Petir Tiba2
+
+112. Japanese: 有里栖からのお誘い
+     Max chars: 18
+     Translation: Ajak Alice
+
+113. Japanese: ジジイと満月
+     Max chars: 12
+     Translation: Kekek & Bulan
+
+114. Japanese: 反省会という名の
+     Max chars: 16
+     Translation: Rapat Evaluasi
+
+115. Japanese: 泉先生の雑学講義
+     Max chars: 16
+     Translation: Kuliah Trivia
+
+116. Japanese: らしくないやる気
+     Max chars: 16
+     Translation: Semangat Beda
+
+117. Japanese: 充実した夕食
+     Max chars: 12
+     Translation: Makan Malam
+
+118. Japanese: 役割分担という式
+     Max chars: 16
+     Translation: Bagi Tugas
+
+119. Japanese: 青春の１ページ
+     Max chars: 14
+     Translation: Lembar Remaja
+
+120. Japanese: 活動開始！
+     Max chars: 10
+     Translation: Mulai Ops!
+
+121. Japanese: 屋上集合
+     Max chars: 8
+     Translation: Atap
+
+122. Japanese: 集まった仲間たち
+     Max chars: 16
+     Translation: Kawan Kumpul
+
+123. Japanese: 二乃の条件
+     Max chars: 10
+     Translation: Syarat Nino
+
+124. Japanese: 助けてあげたい
+     Max chars: 14
+     Translation: Ingin Bantu
+
+125. Japanese: 楽しいランチタイム
+     Max chars: 18
+     Translation: Waktu Makan Siang
+
+126. Japanese: 月曜の朝も清々しく
+     Max chars: 18
+     Translation: Senin Pagi Segar
+
+127. Japanese: 白河と美嶋
+     Max chars: 10
+     Translation: Shi & Mish
+
+128. Japanese: 杉並から入電！
+     Max chars: 14
+     Translation: Call dr Sugi!
+
+129. Japanese: 休日のルーチン
+     Max chars: 14
+     Translation: Rutinitas
+
+130. Japanese: WLがオープンしたら？
+     Max chars: 20
+     Translation: Jika WL Buka?
+
+131. Japanese: 日常的学園生活
+     Max chars: 14
+     Translation: Hidup Sekolah
+
+132. Japanese: いつもの朝
+     Max chars: 10
+     Translation: Pagi Biasa
+
+133. Japanese: あの人の夢
+     Max chars: 10
+     Translation: Mimpinya
+
+134. Japanese: 我が家の日常
+     Max chars: 12
+     Translation: Harian Rumah
+
+135. Japanese: 黄昏のうたたね
+     Max chars: 14
+     Translation: Tidur Senja
+
+136. Japanese: いつかの夢
+     Max chars: 10
+     Translation: Mimpi Dulu
+
+137. Japanese: 楽しさの拡散
+     Max chars: 12
+     Translation: Sebar Seru
+
+138. Japanese: 恋に恋する女の子
+     Max chars: 16
+     Translation: Gadis Mabuk Cinta
+
+139. Japanese: 作為的な運命？
+     Max chars: 14
+     Translation: Takdir Buatan?
+
+140. Japanese: お部屋デートで
+     Max chars: 14
+     Translation: Kencan Kamar
+
+141. Japanese: 一番近くにいたい
+     Max chars: 16
+     Translation: Mau Terdekat
+
+142. Japanese: 自分らしくいられるよう
+     Max chars: 22
+     Translation: Agar Jadi Diri
+
+143. Japanese: デートみたいなもの
+     Max chars: 18
+     Translation: Seperti Kencan
+
+144. Japanese: 模索するＣＨＯＣＯ
+     Max chars: 18
+     Translation: Choco Cari Jalan
+
+145. Japanese: 詩名は敏腕マネ？
+     Max chars: 16
+     Translation: Shi Manajer?
+
+146. Japanese: 壁スカート防衛作戦
+     Max chars: 18
+     Translation: Ops Jaga Rok
+
+147. Japanese: とっきー先生の授業
+     Max chars: 18
+     Translation: Kelas Tokki
+
+148. Japanese: 結果ちよ子とふたりで
+     Max chars: 20
+     Translation: Akhirnya w/ Chiyoko
+
+149. Japanese: 凹んでいるちよ子
+     Max chars: 16
+     Translation: Chiyoko Sedih
+
+150. Japanese: ＣＨＯＣＯの変化
+     Max chars: 16
+     Translation: Ubahan CHOCO
+
+151. Japanese: ＫｏｔｏＲｉさんのお言葉
+     Max chars: 24
+     Translation: Kata-kata Kotori-san
+
+152. Japanese: ＫｏｔｏＲＩさんトーク
+     Max chars: 22
+     Translation: Obrolan Kotori-san
+
+153. Japanese: ＣＨＯＣＯとしての矜持
+     Max chars: 22
+     Translation: Kebanggaan CHOCO
+
+154. Japanese: ちょこの呼び出し
+     Max chars: 16
+     Translation: Panggilan Choco
+
+155. Japanese: ふたりの距離
+     Max chars: 12
+     Translation: Jarak Berdua
+
+156. Japanese: やり直しと返答と
+     Max chars: 16
+     Translation: Ulang & Jawaban
+
+157. Japanese: もう心配いらない
+     Max chars: 16
+     Translation: Tak Perlu Cemas
+
+158. Japanese: 新たな形
+     Max chars: 8
+     Translation: Hal Baru
+
+159. Japanese: 少し考えさせて
+     Max chars: 14
+     Translation: Beri Waktu
+
+160. Japanese: つながっている？
+     Max chars: 16
+     Translation: Terhubung?
+
+161. Japanese: 高いところを覗く方法
+     Max chars: 20
+     Translation: Cara Intip Ketinggian
+
+162. Japanese: 先行するひより
+     Max chars: 14
+     Translation: Hiyori Duluan
+
+163. Japanese: 打ち上げと臨時手伝い
+     Max chars: 20
+     Translation: Pesta & Bantu-bantu
+
+164. Japanese: やりがいのある仕事
+     Max chars: 18
+     Translation: Kerja Berharga
+
+165. Japanese: バイトヘルプの依頼
+     Max chars: 18
+     Translation: Bantu Kerja Part
+
+166. Japanese: 依頼募集スレッド
+     Max chars: 16
+     Translation: Utas Permintaan
+
+167. Japanese: ＳＳＲ臨時招集
+     Max chars: 14
+     Translation: Panggilan SSR
+
+168. Japanese: 未羽と白河の秘密
+     Max chars: 16
+     Translation: Rahasia Miu Shi
+
+169. Japanese: 哀しい夢
+     Max chars: 8
+     Translation: Mimpi Ibu
+
+170. Japanese: 白河の不調
+     Max chars: 10
+     Translation: Kondisi Shi
+
+171. Japanese: 保留にさせてください
+     Max chars: 20
+     Translation: Mohon Tunda Dulu
+
+172. Japanese: 伝わる気持ち
+     Max chars: 12
+     Translation: Rasa Sampai
+
+173. Japanese: 朔の夜の別れ
+     Max chars: 12
+     Translation: Pisah Malam
+
+174. Japanese: 知らないけど知ってる
+     Max chars: 20
+     Translation: Tak Tahu Tapi Tahu
+
+175. Japanese: 手から伝わる温もり
+     Max chars: 18
+     Translation: Hangat Tanganmu
+
+176. Japanese: 何度目かの団欒
+     Max chars: 14
+     Translation: Kumpul Lagi
+
+177. Japanese: 乗り越えなくていい
+     Max chars: 18
+     Translation: Tak Perlu Lewati
+
+178. Japanese: 為になるダラダラ
+     Max chars: 16
+     Translation: Santai Berguna
+
+179. Japanese: 未来の奥さん
+     Max chars: 12
+     Translation: Calon Istri
+
+180. Japanese: 別れのリサイタル
+     Max chars: 16
+     Translation: Resital Pisah
+
+181. Japanese: 青春っぽい時間
+     Max chars: 14
+     Translation: Waktu Remaja
+
+182. Japanese: あと2週間の
+     Max chars: 11
+     Translation: Sisa 2 Mgg
+
+183. Japanese: 満月の夜の邂逅
+     Max chars: 14
+     Translation: Temu Purnama
+
+184. Japanese: カガミの魔法
+     Max chars: 12
+     Translation: Sihir Kagami
+
+185. Japanese: ちょこからのヒント
+     Max chars: 18
+     Translation: Petunjuk Choco
+
+186. Japanese: 異世界からの迷い人
+     Max chars: 18
+     Translation: Tersesat Dunia
+
+187. Japanese: 零と無限の交わる世界
+     Max chars: 20
+     Translation: Nol & Tak Terbatas
+
+188. Japanese: 月間ヌー春の特別号
+     Max chars: 18
+     Translation: Edisi Khusus Nuu
+
+189. Japanese: 夢の中の景色と
+     Max chars: 14
+     Translation: Pemandangan Mi
+
+190. Japanese: 詩名のために
+     Max chars: 12
+     Translation: Demi Shiina
+
+191. Japanese: 半分は優しさで
+     Max chars: 14
+     Translation: Separuh Kasih
+
+192. Japanese: これ以上付き合えない
+     Max chars: 20
+     Translation: Tak Bisa Lanjut
+
+193. Japanese: 雷を待ちながら
+     Max chars: 14
+     Translation: Menunggu Petir
+
+194. Japanese: 隠していたこと
+     Max chars: 14
+     Translation: Hal Tersembunyi
+
+195. Japanese: おうちにかえりたい
+     Max chars: 18
+     Translation: Ingin Pulang
+
+196. Japanese: 特別な気持ち
+     Max chars: 12
+     Translation: Rasa Khusus
+
+197. Japanese: ラブの匂い？
+     Max chars: 12
+     Translation: Bau Cinta?
+
+198. Japanese: まだまだ知らないこと
+     Max chars: 20
+     Translation: Belum Mengetahui
+
+199. Japanese: そんなことでありがとう
+     Max chars: 22
+     Translation: Makasih Untuk Itu
+
+200. Japanese: とても面倒くさい
+     Max chars: 16
+     Translation: Sangat Merepotkan
+
+201. Japanese: 団欒大好き人間
+     Max chars: 14
+     Translation: Suka Berkumpul
+
+202. Japanese: 家族でおもてなし
+     Max chars: 16
+     Translation: Jamuan Keluarga
+
+203. Japanese: 杉並の好敵手
+     Max chars: 12
+     Translation: Rival Sugi
+
+204. Japanese: スパでのお仕事
+     Max chars: 14
+     Translation: Kerja di Spa
+
+205. Japanese: 偶然のゲット
+     Max chars: 12
+     Translation: Dapat Kebetulan
+
+206. Japanese: 苦学生？な詩名
+     Max chars: 14
+     Translation: Shiina Miskin?
+
+207. Japanese: 見た目で判断しないで
+     Max chars: 20
+     Translation: Jangan Nilai Fisik
+
+208. Japanese: 詩名の大好きな人
+     Max chars: 16
+     Translation: Favorit Shiina
+
+209. Japanese: 詩名とちょこの出会い
+     Max chars: 20
+     Translation: Pertemuan Shi Choco
+
+210. Japanese: 懐かしい曲
+     Max chars: 10
+     Translation: Lagu Lama
+
+211. Japanese: この先の未来へ
+     Max chars: 14
+     Translation: Ke Masa Depan
+
+212. Japanese: 特別な瞬間を
+     Max chars: 12
+     Translation: Momen Spesial
+
+213. Japanese: 付属卒業式
+     Max chars: 10
+     Translation: Wisuda SMP
+
+214. Japanese: 明日はいよいよ
+     Max chars: 14
+     Translation: Besok Waktunya
+
+215. Japanese: スペシャル放送に向け
+     Max chars: 20
+     Translation: Menuju Siaran Spesial
+
+216. Japanese: ゲーム実況者ちよ子
+     Max chars: 18
+     Translation: Gamer Chiyoko
+
+217. Japanese: 曲目決定
+     Max chars: 8
+     Translation: Pilih Lagu
+
+218. Japanese: 卒業にはあの曲を
+     Max chars: 16
+     Translation: Lagu Kelulusan
+
+219. Japanese: 打ち合わせという名の
+     Max chars: 20
+     Translation: Namanya Juga Rapat
+
+220. Japanese: あの日の思い出
+     Max chars: 14
+     Translation: Kenangan Itu
+
+221. Japanese: 乱れのない心
+     Max chars: 12
+     Translation: Hati Tenang
+
+222. Japanese: 踏み出す一歩
+     Max chars: 12
+     Translation: Langkah Maju
+
+223. Japanese: 不思議な眼差し
+     Max chars: 14
+     Translation: Tatapan Aneh
+
+224. Japanese: 追求されたとしても
+     Max chars: 18
+     Translation: Meski Dikejar
+
+225. Japanese: 視線の主は
+     Max chars: 10
+     Translation: Si Penatap
+
+226. Japanese: 美しき旋律
+     Max chars: 10
+     Translation: Melodi Indah
+
+227. Japanese: 詩名からの提案
+     Max chars: 14
+     Translation: Saran Shiina
+
+228. Japanese: 止まる指先
+     Max chars: 10
+     Translation: Jari Berhenti
+
+229. Japanese: 意外な邂逅
+     Max chars: 10
+     Translation: Temu Tak Duga
+
+230. Japanese: 今回の依頼は……
+     Max chars: 16
+     Translation: Tugas Kali Ini..
+
+231. Japanese: 春は節目の季節
+     Max chars: 14
+     Translation: Musim Berubah
+
+232. Japanese: 実家へＧＯ！
+     Max chars: 12
+     Translation: Ke Rumah!
+
+233. Japanese: つけるべきケジメ
+     Max chars: 16
+     Translation: Akhiri Segalanya
+
+234. Japanese: フラグより見るべきもの
+     Max chars: 22
+     Translation: Lihat Hal Penting
+
+235. Japanese: 琴里の後押し
+     Max chars: 12
+     Translation: Dukung Kotori
+
+236. Japanese: 俺にできることを
+     Max chars: 16
+     Translation: Yang Bisa Kulaku
+
+237. Japanese: 神様からの贈り物
+     Max chars: 16
+     Translation: Hadiah Tuhan
+
+238. Japanese: ひよりちゃんを助けて
+     Max chars: 20
+     Translation: Bantu Hiyori-chan
+
+239. Japanese: 恋愛請負は廃業
+     Max chars: 14
+     Translation: Biro Cinta Tutup
+
+240. Japanese: ひよりを蝕むもの
+     Max chars: 16
+     Translation: Yang Menggerogoti
+
+241. Japanese: ＳＳＲみんなでフォロー
+     Max chars: 22
+     Translation: SSR Ikut Dukung
+
+242. Japanese: 先日のことは忘れて
+     Max chars: 18
+     Translation: Lupakan Hari Lalu
+
+243. Japanese: 妖精舞う月夜に
+     Max chars: 14
+     Translation: Peri Malam Bulan
+
+244. Japanese: 破られた１００％記録
+     Max chars: 20
+     Translation: Rekor 100 Persen
+
+245. Japanese: ひよりの初恋
+     Max chars: 12
+     Translation: Cinta Pertama
+
+246. Japanese: 私が止めなくちゃ
+     Max chars: 16
+     Translation: Aku Harus Stop
+
+247. Japanese: 私には止められない
+     Max chars: 18
+     Translation: Tak Bisa Kuhentikan
+
+248. Japanese: ひよりのため
+     Max chars: 12
+     Translation: Demi Hiyori
+
+249. Japanese: まだ、でも、もう少し
+     Max chars: 20
+     Translation: Masih, Tapi, Sebentar
+
+250. Japanese: キャッチ・ザ・ひより
+     Max chars: 20
+     Translation: Tangkap Hiyori
+
+251. Japanese: ひより、手こずる
+     Max chars: 16
+     Translation: Hiyori Kesulitan
+
+252. Japanese: 相手に寄り添ったこと
+     Max chars: 20
+     Translation: Mendekat Ke Lawan
+
+253. Japanese: 本校でもムササビ女子
+     Max chars: 20
+     Translation: Gadis Musasabi
+
+254. Japanese: 翻弄するひより
+     Max chars: 14
+     Translation: Hiyori Perdaya
+
+255. Japanese: 未羽のアピール・デイ
+     Max chars: 20
+     Translation: Hari Pesona Miu
+
+256. Japanese: キミがわからない
+     Max chars: 16
+     Translation: Tak Memahamimu
+
+257. Japanese: 他言無用な出会い
+     Max chars: 16
+     Translation: Temu Rahasia
+
+258. Japanese: いざ小旅行へ出発
+     Max chars: 16
+     Translation: Ayo Berangkat
+
+259. Japanese: 友情と恋愛の線引き
+     Max chars: 18
+     Translation: Batas Teman Cinta
+
+260. Japanese: いよいよ明日
+     Max chars: 12
+     Translation: Akhirnya Besok
+
+261. Japanese: ちょっとした優越感
+     Max chars: 18
+     Translation: Rasa Unggul
+
+262. Japanese: ついてくるつもり？
+     Max chars: 18
+     Translation: Mau Ikut Juga?
+
+263. Japanese: 決着はプールで！
+     Max chars: 16
+     Translation: Akhiri Di Kolam
+
+264. Japanese: サプライズな計画
+     Max chars: 16
+     Translation: Rencana Kejutan
+
+265. Japanese: ひより天啓を得る
+     Max chars: 16
+     Translation: Hiyori Dapat Ide
+
+266. Japanese: ひよりのいじりポイント
+     Max chars: 22
+     Translation: Poin Goda Hiyori
+
+267. Japanese: 一登の心が動く時は？
+     Max chars: 20
+     Translation: Kapan Hati Itto?
+
+268. Japanese: オールインワンで勝負
+     Max chars: 20
+     Translation: Duel All In One
+
+269. Japanese: ひよりからの事情聴取
+     Max chars: 20
+     Translation: Introgasi Hiyori
+
+270. Japanese: 後悔と迷いと
+     Max chars: 12
+     Translation: Sesal & Ragu
+
+271. Japanese: 突然の延長戦宣言！
+     Max chars: 18
+     Translation: Deklarasi Ekstra
+
+272. Japanese: 俺の答えは……
+     Max chars: 14
+     Translation: Jawabanku...
+
+273. Japanese: 俺はどちらと……
+     Max chars: 16
+     Translation: Aku Pilih Siapa..
+
+274. Japanese: 卒業式のその後に
+     Max chars: 16
+     Translation: Setelah Wisuda
+
+275. Japanese: 第二ボタンと気持ち
+     Max chars: 18
+     Translation: Kancing & Perasaan
+
+276. Japanese: トキメキデート計画
+     Max chars: 18
+     Translation: Rencana Kencan
+
+277. Japanese: 改めて勝負を
+     Max chars: 12
+     Translation: Duel Lagi
+
+278. Japanese: 探偵と風紀委員
+     Max chars: 14
+     Translation: Detektif & Disiplin
+
+279. Japanese: 未羽の相談ごと
+     Max chars: 14
+     Translation: Masalah Miu
+
+280. Japanese: ひよりとお出かけ
+     Max chars: 16
+     Translation: Pergi w/ Hiyori
+
+281. Japanese: ひよりの待ち伏せ
+     Max chars: 16
+     Translation: Hadangan Hiyori
+
+282. Japanese: 急ぎ咲かせし恋の花
+     Max chars: 18
+     Translation: Mekar Bunga Cinta
+
+283. Japanese: ３人寄っての
+     Max chars: 12
+     Translation: Bertiga Saja
+
+284. Japanese: 信頼と真摯
+     Max chars: 10
+     Translation: Jujur Kepercaya
+
+285. Japanese: 昼食を相席して
+     Max chars: 14
+     Translation: Makan Siang
+
+286. Japanese: ひよりからの依頼
+     Max chars: 16
+     Translation: Tugas Dr Hiyori
+
+287. Japanese: 我悟りたる
+     Max chars: 10
+     Translation: Aku Paham
+
+288. Japanese: 出合い頭アクシデント
+     Max chars: 20
+     Translation: Insiden Mendadak
+
+289. Japanese: 将来に思いを馳せて
+     Max chars: 18
+     Translation: Memikirkan Depan
+
+290. Japanese: 別の因果の先の世界
+     Max chars: 18
+     Translation: Dunia Sebab Lain
+
+291. Japanese: 逢見諳子という存在
+     Max chars: 18
+     Translation: Sosok Akiko Oumi
+
+292. Japanese: ごめんね
+     Max chars: 8
+     Translation: Maaf Ya
+
+293. Japanese: もう一度キスを
+     Max chars: 14
+     Translation: Cium Sekali Lagi
+
+294. Japanese: しあわせな涙
+     Max chars: 12
+     Translation: Air Mata Bahagia
+
+295. Japanese: 嫌な予感と看病と
+     Max chars: 16
+     Translation: Firasat & Rawat
+
+296. Japanese: かくれんぼの才能
+     Max chars: 16
+     Translation: Bakat Sembunyi
+
+297. Japanese: みんなからの祝福
+     Max chars: 16
+     Translation: Berkat Semuanya
+
+298. Japanese: いつか見せてもらえたら
+     Max chars: 22
+     Translation: Semoga Bisa Ditunjuk
+
+299. Japanese: ふたりの愛のメモリー
+     Max chars: 20
+     Translation: Kenangan Cinta
+
+300. Japanese: 二乃の疑問
+     Max chars: 10
+     Translation: Tanya Nino
+
+301. Japanese: 弟ではなくて
+     Max chars: 12
+     Translation: Bukan Adik
+
+302. Japanese: そら姉の笑顔を
+     Max chars: 14
+     Translation: Senyum Kakak
+
+303. Japanese: 一登の不調？
+     Max chars: 12
+     Translation: Itto Sakit?
+
+304. Japanese: ベルガマスクの三番目
+     Max chars: 20
+     Translation: Bergamask Ketiga
+
+305. Japanese: 諳子と迷子
+     Max chars: 10
+     Translation: Akiko Tersesat
+
+306. Japanese: バイトのお願い
+     Max chars: 14
+     Translation: Minta Kerja
+
+307. Japanese: 馴染んだウサ耳
+     Max chars: 14
+     Translation: Telinga Kelinc
+
+308. Japanese: ウサミミファンクラブ
+     Max chars: 20
+     Translation: Klub Fans Kelinci
+
+309. Japanese: 諳子の家族の写真
+     Max chars: 16
+     Translation: Foto Fam Akiko
+
+310. Japanese: 良い旦那さんになれる
+     Max chars: 20
+     Translation: Jadi Suami Hebat
+
+311. Japanese: 心強い味方たち
+     Max chars: 14
+     Translation: Kawan Setia
+
+312. Japanese: 一登好みの味に
+     Max chars: 14
+     Translation: Rasa Suka Itto
+
+313. Japanese: 原因究明の時間に
+     Max chars: 16
+     Translation: Waktu Cari Sebab
+
+314. Japanese: 流石のSSR
+     Max chars: 9
+     Translation: Hebat SSR
+
+315. Japanese: 難なく突破で、いいの？
+     Max chars: 22
+     Translation: Tembus Mudah, Ok?
+
+316. Japanese: 自由な校風だから
+     Max chars: 16
+     Translation: Sekolah Bebas
+
+317. Japanese: ジジイに負けたくない
+     Max chars: 20
+     Translation: Ogah Kalah dr Kakek
+
+318. Japanese: わには苦手
+     Max chars: 10
+     Translation: Takut Buaya
+
+319. Japanese: 最後は神頼み
+     Max chars: 12
+     Translation: Doa Terakhir
+
+320. Japanese: 久しぶりの買い物で
+     Max chars: 18
+     Translation: Belanja Lagi
+
+321. Japanese: カチューシャ擬態
+     Max chars: 16
+     Translation: Kamuflase Bando
+
+322. Japanese: ウサ耳対策会議
+     Max chars: 14
+     Translation: Rapat Kelinci
+
+323. Japanese: 諳子の決意
+     Max chars: 10
+     Translation: Tekad Akiko
+
+324. Japanese: 誰かの夢とジジイと
+     Max chars: 18
+     Translation: Mimpi & Kakek
+
+325. Japanese: 落ち着いた両親
+     Max chars: 14
+     Translation: Orang Tua Tenang
+
+326. Japanese: 思いがけない異変
+     Max chars: 16
+     Translation: Hal Tak Terduga
+
+327. Japanese: 二乃が居たらまずい？
+     Max chars: 20
+     Translation: Gawat Ada Nino?
+
+328. Japanese: ウサ耳流出阻止
+     Max chars: 14
+     Translation: Cegah Kelinci
+
+329. Japanese: 初恋のお姉さん？
+     Max chars: 16
+     Translation: Kakak Cinta 1?
+
+330. Japanese: ウサ耳諳子
+     Max chars: 10
+     Translation: Akiko Kelinci
+
+331. Japanese: ヒントは少女漫画に
+     Max chars: 18
+     Translation: Tips Komik Cewek
+
+332. Japanese: 千里の道も一歩から
+     Max chars: 18
+     Translation: Mulai Satu Step
+
+333. Japanese: 現状を打破するには
+     Max chars: 18
+     Translation: Pecahkan Situasi
+
+334. Japanese: まずは認めてみる
+     Max chars: 16
+     Translation: Coba Akui Dulu
+
+335. Japanese: 諳子のキスで……
+     Max chars: 16
+     Translation: Ciuman Akiko..
+
+336. Japanese: 未来への誓い
+     Max chars: 12
+     Translation: Janji Depan
+
+337. Japanese: みらいの妹へ
+     Max chars: 12
+     Translation: Ke Adik Esok
+
+338. Japanese: 二乃の中の真実
+     Max chars: 14
+     Translation: Fakta Nino
+
+339. Japanese: 全て私のせい
+     Max chars: 12
+     Translation: Salahku Semua
+
+340. Japanese: 三美のお願い
+     Max chars: 12
+     Translation: Minta Mibi
+
+341. Japanese: ごめんなさい兄さん
+     Max chars: 18
+     Translation: Maafkan Aku Kakak
+
+342. Japanese: 明日の予定は？
+     Max chars: 14
+     Translation: Jadwal Esok?
+
+343. Japanese: 変えたきっかけ
+     Max chars: 14
+     Translation: Pemicu Ubah
+
+344. Japanese: たとえ恋人じゃなくても
+     Max chars: 22
+     Translation: Meski Bukan Pacar
+
+345. Japanese: 妹の好物
+     Max chars: 8
+     Translation: Suka Adi
+
+346. Japanese: 懐かしい呼び声
+     Max chars: 14
+     Translation: Suara Akrab
+
+347. Japanese: いつもの二乃
+     Max chars: 12
+     Translation: Nino Biasa
+
+348. Japanese: 三美のような妹に
+     Max chars: 16
+     Translation: Jadi Adik Mibi
+
+349. Japanese: 妹を演じる二乃
+     Max chars: 14
+     Translation: Nino Jadi Adik
+
+350. Japanese: 普通の妹に
+     Max chars: 10
+     Translation: Adik Biasa
+
+351. Japanese: 三美から二乃へ
+     Max chars: 14
+     Translation: Mibi ke Nino
+
+352. Japanese: 近付くあの日
+     Max chars: 12
+     Translation: Hari Dekat
+
+353. Japanese: 調子の悪そうな二乃
+     Max chars: 18
+     Translation: Nino Tak Sehat
+
+354. Japanese: 救い上げる声
+     Max chars: 12
+     Translation: Suara Tolong
+
+355. Japanese: 二乃のおかげで
+     Max chars: 14
+     Translation: Berkat Nino
+
+356. Japanese: 水着ハプニング！
+     Max chars: 16
+     Translation: Insiden Baju Ren
+
+357. Japanese: ピアノ部屋と二乃
+     Max chars: 16
+     Translation: Ruang Piano Nino
+
+358. Japanese: 愛ある仕返し
+     Max chars: 12
+     Translation: Balas Kasih
+
+359. Japanese: 夢にまで見た姿で
+     Max chars: 16
+     Translation: Sosok Di Mimpi
+
+360. Japanese: 夢で見た姿を
+     Max chars: 12
+     Translation: Wujud Mimpi
+
+361. Japanese: メンバーも待っていた
+     Max chars: 20
+     Translation: Member Menunggu
+
+362. Japanese: これが惚れた弱み
+     Max chars: 16
+     Translation: Lemah Krn Cinta
+
+363. Japanese: 待っていたそら姉
+     Max chars: 16
+     Translation: Kak Sora Tunggu
+
+364. Japanese: 家族と娘の恋人として
+     Max chars: 20
+     Translation: Keluarga & Pacar
+
+365. Japanese: 伝えないといけないこと
+     Max chars: 22
+     Translation: Harus Disampaikan
+
+366. Japanese: １００点の答え
+     Max chars: 14
+     Translation: Jawab Sempurna
+
+367. Japanese: 妹としての距離感
+     Max chars: 16
+     Translation: Jarak Adik
+
+368. Japanese: 衆人環視であーん
+     Max chars: 16
+     Translation: Suapi Di Umum
+
+369. Japanese: 悲しい夢と、重なる今と
+     Max chars: 22
+     Translation: Mimpi Sedih & Kini
+
+370. Japanese: 気持ちは本物
+     Max chars: 12
+     Translation: Rasa Asli
+
+371. Japanese: 苦手なものコンボ
+     Max chars: 16
+     Translation: Kombo Tak Suka
+
+372. Japanese: 期待と不安せめぎ合う
+     Max chars: 20
+     Translation: Harap & Cemas
+
+373. Japanese: 妹ですから普通です
+     Max chars: 18
+     Translation: Adik, Jadi Biasa
+
+374. Japanese: 二乃心は難しい
+     Max chars: 14
+     Translation: Hati Nino Sulit
+
+375. Japanese: 機嫌を損ねた二乃？
+     Max chars: 18
+     Translation: Nino Ngambek?
+
+376. Japanese: 表面上はいつもの朝
+     Max chars: 18
+     Translation: Pagi Yg Biasa
+
+377. Japanese: そら姉はお見通し
+     Max chars: 16
+     Translation: Kakak Paham
+
+378. Japanese: 有里栖のおせっかい
+     Max chars: 18
+     Translation: Campur Tangan Alice
+
+379. Japanese: 友人と気分転換
+     Max chars: 14
+     Translation: Main w/ Kawan
+
+380. Japanese: 二乃を見習って
+     Max chars: 14
+     Translation: Contoh Nino
+
+381. Japanese: 幼き日の二乃と
+     Max chars: 14
+     Translation: Masa Kecil Nino
+
+382. Japanese: 妹だから
+     Max chars: 8
+     Translation: Krn Adik
+
+383. Japanese: バイトを楽しんで
+     Max chars: 16
+     Translation: Nikmati Kerja
+
+384. Japanese: 二乃とふたりで調査
+     Max chars: 18
+     Translation: Selidiki w/ Nino
+
+385. Japanese: ３人でバイトのお誘い
+     Max chars: 20
+     Translation: Ajak Kerja Bertiga
+
+386. Japanese: 零次さんの気遣い
+     Max chars: 16
+     Translation: Peduli Reiji
+
+387. Japanese: 二乃の料理チャレンジ
+     Max chars: 20
+     Translation: Nino Masak
+
+388. Japanese: 傍にいれくれる二乃
+     Max chars: 18
+     Translation: Nino Di Sisi
+
+389. Japanese: 期待してもいい？
+     Max chars: 16
+     Translation: Boleh Berharap?
+
+390. Japanese: 二乃ちゃんに決めた？
+     Max chars: 20
+     Translation: Pilih Nino-chan?
+
+391. Japanese: そら姉の意見
+     Max chars: 12
+     Translation: Opini Kakak
+
+392. Japanese: ぎこちないふたり
+     Max chars: 16
+     Translation: Berdua Kaku
+
+393. Japanese: 二乃のキスで……
+     Max chars: 16
+     Translation: Ciuman Nino...
+
+394. Japanese: 恋人か、家族か
+     Max chars: 14
+     Translation: Pacar/Fam?
+
+395. Japanese: これからもよろしく
+     Max chars: 18
+     Translation: Mohon Bantuannya
+
+396. Japanese: 杉並らしい卒業式
+     Max chars: 16
+     Translation: Wisuda Ala Sugi
+
+397. Japanese: サプライズも忘れずに
+     Max chars: 20
+     Translation: Ingat Kejutannya
+
+398. Japanese: プレゼントはフリーパス
+     Max chars: 22
+     Translation: Hadiah Tiket Bebas
+
+399. Japanese: 何気なく笑える放課後
+     Max chars: 20
+     Translation: Tawa Sepulang Seko
+
+400. Japanese: 自然な３人
+     Max chars: 10
+     Translation: Alami 3 Org
+
+401. Japanese: 今日は美味しいお弁当
+     Max chars: 20
+     Translation: Bekal Enak Hari Ini
+
+402. Japanese: しっくりくる３人
+     Max chars: 16
+     Translation: Tiga Org Cocok
+
+403. Japanese: そら姉のドッキリ
+     Max chars: 16
+     Translation: Prank Kak Sora
+
+404. Japanese: 二乃の特製お弁当
+     Max chars: 16
+     Translation: Bekal Spe Nino
+
+405. Japanese: ご機嫌なそら姉
+     Max chars: 14
+     Translation: Kak Sora Senang
+
+406. Japanese: バイト代の使い道
+     Max chars: 16
+     Translation: Gaji Part Time
+
+407. Japanese: そら姉のコスプレ？
+     Max chars: 18
+     Translation: Kak Sora Cosplay?
+
+408. Japanese: 両親と帰宅して
+     Max chars: 14
+     Translation: Pulang w/ Ortu
+
+409. Japanese: ふたりとの約束
+     Max chars: 14
+     Translation: Janji Berdua
+
+410. Japanese: ふたりにも話をして
+     Max chars: 18
+     Translation: Bicara Berdua
+
+411. Japanese: バイト代とプレゼント
+     Max chars: 20
+     Translation: Gaji & Hadiah
+
+412. Japanese: そら姉も反対らしい
+     Max chars: 18
+     Translation: Kakak Menolak
+
+413. Japanese: 二乃は反対らしい
+     Max chars: 16
+     Translation: Nino Menolak
+
+414. Japanese: もう一度バイトしない？
+     Max chars: 22
+     Translation: Kerja Lagi Gak?
+
+415. Japanese: 雨の朝は憂鬱？
+     Max chars: 14
+     Translation: Pagi Hujan?
+
+416. Japanese: 買い物と有里栖と
+     Max chars: 16
+     Translation: Belanja w/ Alice
+
+417. Japanese: 久々の親子の団らん
+     Max chars: 18
+     Translation: Kumpul Keluarga
+
+418. Japanese: 楽しくも忙しい準備
+     Max chars: 18
+     Translation: Persiapan Seru
+
+419. Japanese: 帰ってくる両親
+     Max chars: 14
+     Translation: Ortu Pulang
+
+420. Japanese: 本校に進学したら
+     Max chars: 16
+     Translation: Jika Masuk Sma
+
+421. Japanese: 友達の進路は？
+     Max chars: 14
+     Translation: Jalur Teman?
+
+422. Japanese: 朝のお約束？
+     Max chars: 12
+     Translation: Janji Pagi?
+
+423. Japanese: さようなら、ありがとう
+     Max chars: 22
+     Translation: Selamat Tinggal
+
+424. Japanese: 世界を変える恋
+     Max chars: 14
+     Translation: Cinta Ubah Dunia
+
+425. Japanese: 頼もしい仲間たち
+     Max chars: 16
+     Translation: Teman Handal
+
+426. Japanese: 広がる恋心
+     Max chars: 10
+     Translation: Cinta Mekar
+
+427. Japanese: ふくらむ希望
+     Max chars: 12
+     Translation: Harap Tumbuh
+
+428. Japanese: 恋愛強化期間
+     Max chars: 12
+     Translation: Masa Cinta
+
+429. Japanese: 恋のモニタリング
+     Max chars: 16
+     Translation: Pantau Cinta
+
+430. Japanese: 天枷・鷺澤共同作戦
+     Max chars: 18
+     Translation: Operasi Gabungan
+
+431. Japanese: 恋の拡散大作戦
+     Max chars: 14
+     Translation: Operasi Sebar
+
+432. Japanese: 一筋の希望
+     Max chars: 10
+     Translation: Sinar Harap
+
+433. Japanese: ただいま、おかえり
+     Max chars: 18
+     Translation: Pulang & Sambut
+
+434. Japanese: ありがとう
+     Max chars: 10
+     Translation: Makasih Ya
+
+435. Japanese: 優しい嘘
+     Max chars: 8
+     Translation: Bohong
+
+436. Japanese: マジカルプールデート
+     Max chars: 20
+     Translation: Kencan Kolam Ajaib
+
+437. Japanese: やり直したらしたいこと
+     Max chars: 22
+     Translation: Ingin Ulang Lagi
+
+438. Japanese: 常坂元という男
+     Max chars: 14
+     Translation: Sosok Itto Tok
+
+439. Japanese: 世界とふたりと
+     Max chars: 14
+     Translation: Dunia & Berdua
+
+440. Japanese: 使命よりも大切な
+     Max chars: 16
+     Translation: Penting Dr Misi
+
+441. Japanese: Ｄ．Ｃ．の魔法
+     Max chars: 14
+     Translation: Sihir D.C.
+
+442. Japanese: 有里咲のプラン
+     Max chars: 14
+     Translation: Rencana Arisa
+
+443. Japanese: 俺と有里咲と有里栖と
+     Max chars: 20
+     Translation: Aku Arisa Alice
+
+444. Japanese: 無理してそうな有里咲
+     Max chars: 20
+     Translation: Arisa Berusaha
+
+445. Japanese: サクラの国の有里咲
+     Max chars: 18
+     Translation: Arisa Negr Sakura
+
+446. Japanese: 満月と魔法とＶＲと彼女と
+     Max chars: 24
+     Translation: Bulan Sihir VR Dia
+
+447. Japanese: オカルトな話
+     Max chars: 12
+     Translation: Kisah Gaib
+
+448. Japanese: 久しぶりのＳＳＲ
+     Max chars: 16
+     Translation: SSR Lagi
+
+449. Japanese: 確認した日付
+     Max chars: 12
+     Translation: Cek Tanggal
+
+450. Japanese: 思いだしてはダメ
+     Max chars: 16
+     Translation: Jangan Ingat
+
+451. Japanese: ＶＲ使用許可
+     Max chars: 12
+     Translation: Izin Pakai VR
+
+452. Japanese: ＡＬＩＣＥに会えれば
+     Max chars: 20
+     Translation: Jika Temu ALICE
+
+453. Japanese: アリスとＡＬＩＣＥ
+     Max chars: 18
+     Translation: Alice & ALICE
+
+454. Japanese: 遊園地デート再び
+     Max chars: 16
+     Translation: Kencan Taman
+
+455. Japanese: 彼女と過ごした日々
+     Max chars: 18
+     Translation: Hari Bersamanya
+
+456. Japanese: 有里栖とメーパン
+     Max chars: 16
+     Translation: Alice & Mepan
+
+457. Japanese: もう一人の有里栖？
+     Max chars: 18
+     Translation: Alice Satunya?
+
+458. Japanese: SSRのやさしさ
+     Max chars: 13
+     Translation: Kebaikan SSR
+
+459. Japanese: ホクロの位置！？
+     Max chars: 16
+     Translation: Posisi Tahi L!
+
+460. Japanese: 個別活動と称して
+     Max chars: 16
+     Translation: Aksi Sendiri
+
+461. Japanese: いつかの誰かの記憶
+     Max chars: 18
+     Translation: Memori Seseorang
+
+462. Japanese: 神社で不安を和らげて
+     Max chars: 20
+     Translation: Tenang Di Kuil
+
+463. Japanese: 明日の約束
+     Max chars: 10
+     Translation: Janji Esok
+
+464. Japanese: 雪とピアノと
+     Max chars: 12
+     Translation: Salju Piano
+
+465. Japanese: 自分じゃないみたい
+     Max chars: 18
+     Translation: Bukan Diriku
+
+466. Japanese: 家族も大事に
+     Max chars: 12
+     Translation: Jaga Famili
+
+467. Japanese: ジジイに聞いた雪の話
+     Max chars: 20
+     Translation: Kisah Salju Kakek
+
+468. Japanese: アリスの視線
+     Max chars: 12
+     Translation: Tatap Alice
+
+469. Japanese: 他人の夢を見ている感じ
+     Max chars: 22
+     Translation: Rasa Mimpi Orang
+
+470. Japanese: 有里栖と同じ夢を再び
+     Max chars: 20
+     Translation: Mimpi Sama Alice
+
+471. Japanese: ここ一年の話
+     Max chars: 12
+     Translation: Kisah Setahun
+
+472. Japanese: 有里栖の食レポブログ
+     Max chars: 20
+     Translation: Blog Makan Alice
+
+473. Japanese: 二重人格なのかな？
+     Max chars: 18
+     Translation: Kepribadian Ganda?
+
+474. Japanese: 曖昧な記憶
+     Max chars: 10
+     Translation: Memori Kabur
+
+475. Japanese: 夢の中の少年と少女
+     Max chars: 18
+     Translation: Bocah Di Mimpi
+
+476. Japanese: ひとり水鏡湖へ
+     Max chars: 14
+     Translation: Ke Danau Suikyo
+
+477. Japanese: 似ている景色
+     Max chars: 12
+     Translation: Mirip View
+
+478. Japanese: 有里栖と巡る島
+     Max chars: 14
+     Translation: Keliling Pulau
+
+479. Japanese: 初めて会った場所は？
+     Max chars: 20
+     Translation: Tempat Temu Awal?
+
+480. Japanese: 思い出探しをしよう
+     Max chars: 18
+     Translation: Cari Kenangan
+
+481. Japanese: 病み上がりの有里栖
+     Max chars: 18
+     Translation: Alice Baru Sembuh
+
+482. Japanese: メイドさんの対応
+     Max chars: 16
+     Translation: Respon Pelayan
+
+483. Japanese: 欠席の彼女
+     Max chars: 10
+     Translation: Dia Absen
+
+484. Japanese: 気になった別れ際
+     Max chars: 16
+     Translation: Saat Berpisah
+
+485. Japanese: 季節外れの雪
+     Max chars: 12
+     Translation: Salju Aneh
+
+486. Japanese: 鏡の中の涙？
+     Max chars: 12
+     Translation: Air Mata?
+
+487. Japanese: 懐かしい記憶
+     Max chars: 12
+     Translation: Memori Lama
+
+488. Japanese: 巨神を駆逐する
+     Max chars: 14
+     Translation: Basmi Raksasa
+
+489. Japanese: 差し入れは二乃の弁当
+     Max chars: 20
+     Translation: Bekal Dari Nino
+
+490. Japanese: エンタメのお仕事
+     Max chars: 16
+     Translation: Kerja Hiburan
+
+491. Japanese: 数学はマストです
+     Max chars: 16
+     Translation: Matematika Wajib
+
+492. Japanese: 親子三人で
+     Max chars: 10
+     Translation: Bertiga Fam
+
+493. Japanese: 鷺澤会長と娘
+     Max chars: 12
+     Translation: Ketua & Anak
+
+494. Japanese: いざ初バイトへ
+     Max chars: 14
+     Translation: Kerja Pertama
+
+495. Japanese: 揺れる裾に釘付け
+     Max chars: 16
+     Translation: Terpaku Rok
+
+496. Japanese: バイトどうしよ
+     Max chars: 14
+     Translation: Kerja Apa Ya
+
+497. Japanese: 一登さんご指名です
+     Max chars: 18
+     Translation: Itto Dipanggil
+
+498. Japanese: 雨は嫌いじゃないけど
+     Max chars: 20
+     Translation: Tak Benci Hujan
+
+499. Japanese: 名探偵の名推理
+     Max chars: 14
+     Translation: Deduksi Hebat
+
+ 500. Japanese: いろいろな親子関係
+      Max chars: 18
+      Translation: Relasi Ortu-Anak
+
+ 501. Japanese: 両親の帰宅予告
+      Max chars: 14
+      Translation: Ortu Mau Plg
+
+ 502. Japanese: 将来は財閥を？
+      Max chars: 14
+      Translation: Jadi Konglo?
+
+ 503. Japanese: 泉先生へのオススメ
+      Max chars: 18
+      Translation: Saran Bu Izumi
+
+ 504. Japanese: なんだか普段と違う朝
+      Max chars: 20
+      Translation: Pagi Yg Berbeda
+
+ 505. Japanese: 知らない呼び方
+      Max chars: 14
+      Translation: Panggilan Aneh
+
+ 506. Japanese: データが違います。正しくインストールしてください。
+      Max chars: 50
+      Translation: Data beda. Mohon instal ulang dgn benar.
+
+ 507. Japanese: MESファイルを更新してください
+      Max chars: 29
+      Translation: Mohon perbarui file MES
+
+ 508. Japanese: MESファイルバッファがとれません
+      Max chars: 31
+      Translation: Gagal ambil buffer file MES
+
+ 509. Japanese: ラベルが見つかりません
+      Max chars: 22
+      Translation: Label tdk ditemukan
+
+ 510. Japanese: インデックス数 flaied
+      Max chars: 21
+      Translation: Indeks gagal
+
+ 511. Japanese: Direct3Dの初期化に失敗しました
+      Max chars: 30
+      Translation: Gagal inisialisasi D3D
+
+ 512. Japanese: セカンダリバッファの作成に失敗しました
+      Max chars: 38
+      Translation: Gagal buat buffer sekunder
+
+ 513. Japanese: dataチャンクが存在しません
+      Max chars: 26
+      Translation: Chunk data tdk ada
+
+ 514. Japanese: WAVEFORMATEXE情報の取得に失敗しました
+      Max chars: 37
+      Translation: Gagal ambil info WAVEFORMAT
+
+ 515. Japanese: fmtチャンクが存在しません
+      Max chars: 25
+      Translation: Chunk fmt tdk ada
+
+ 516. Japanese: ではありません
+      Max chars: 14
+      Translation: Bukanlah
+
+ 517. Japanese: FONT:テキストテクスチャロック失敗
+      Max chars: 33
+      Translation: FONT: Gagal kunci tekstur
+
+ 518. Japanese: HTTPまたはHTTPSでもないです
+      Max chars: 27
+      Translation: Bukan HTTP atau HTTPS
+
+ 519. Japanese: HTTPファイル読み込みに失敗しました
+      Max chars: 34
+      Translation: Gagal baca file HTTP
+
+ 520. Japanese: ステータスコードが成功でないです
+      Max chars: 32
+      Translation: Kode status gagal
+
+ 521. Japanese: ステータスコードの取得に失敗しました
+      Max chars: 36
+      Translation: Gagal ambil kode status
+
+ 522. Japanese: HTTP要求送信に失敗しました
+      Max chars: 26
+      Translation: Gagal kirim HTTP
+
+ 523. Japanese: HTTPリクエストに失敗しました
+      Max chars: 28
+      Translation: Permintaan HTTP gagal
+
+ 524. Japanese: HTTP接続に失敗しました
+      Max chars: 22
+      Translation: Koneksi HTTP gagal
+
+ 525. Japanese: WinInetの初期化に失敗しました
+      Max chars: 29
+      Translation: Gagal inisial WinInet
+
+ 526. Japanese: URL解析に失敗しました
+      Max chars: 21
+      Translation: Gagal analisa URL
+
+ 527. Japanese: URLが不正です
+      Max chars: 13
+      Translation: URL salah
+
+ 528. Japanese: コメントの文字数が多い
+      Max chars: 22
+      Translation: Komentar kpnjangan
+
+
+Total chapter titles: 528

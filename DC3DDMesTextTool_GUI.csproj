@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>DC3DDMesTextTool_GUI</AssemblyName>
+    <RootNamespace>DC3DDMesTextTool_GUI</RootNamespace>
+    <StartupObject>DC3DDMesTextTool_GUI.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DC3DDPatch a\\**" />
+    <EmbeddedResource Remove="DC3DDPatch a\\**" />
+    <None Remove="DC3DDPatch a\\**" />
+  </ItemGroup>
+
+</Project>
+

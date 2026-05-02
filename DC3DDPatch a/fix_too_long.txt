@@ -1,0 +1,235 @@
+Too Long Translations - Fix These
+==================================
+Shorten each translation to fit within "Max chars"
+Your current translation is "Over" characters too long.
+
+Format: 
+  #N. Japanese text
+  Max chars: X | Your translation (Y chars, over by Z)
+  Translation: [fix here]
+
+==================================
+
+ SYS. 実行エラー
+      Max chars: 10 |
+      Translation: Error Run
+
+  1. 学生特権
+      Max chars: 8 |
+      Translation: Hak Maba
+
+  6. 愛という幸福
+      Max chars: 12 |
+      Translation: Cinta Bahagia
+
+ 13. 抜き足差し足猫の足
+      Max chars: 18 |
+      Translation: Langkah Kaki Kucng
+
+ 17. 静かに冴える夜
+      Max chars: 14 |
+      Translation: Malam Tenang
+
+ 26. 親友≒悪友
+      Max chars: 10 |
+      Translation: Teman Akrab
+
+ 69. 台本のための質問
+      Max chars: 16 |
+      Translation: Tanya Soal Teks
+
+ 92. 彼女の遠慮
+      Max chars: 10 |
+      Translation: Rasa Segan
+
+107. 諳子とお城
+      Max chars: 10 |
+      Translation: Akiko Puri
+
+113. ジジイと満月
+      Max chars: 12 |
+      Translation: Kakek Purnama
+
+123. 二乃の条件
+      Max chars: 10 |
+      Translation: Syarat Nino
+
+138. 恋に恋する女の子
+      Max chars: 16 |
+      Translation: Gadis Mabuk Cnt
+
+161. 高いところを覗く方法
+      Max chars: 20 |
+      Translation: Cara Intip Tinggi
+
+169. 哀しい夢
+      Max chars: 8 |
+      Translation: Mimpi Ibu
+
+170. 白河の不調
+      Max chars: 10 |
+      Translation: Kondisi Shi
+
+194. 隠していたこと
+      Max chars: 14 |
+      Translation: Hal Rahasia
+
+200. とても面倒くさい
+      Max chars: 16 |
+      Translation: Sangat Repot
+
+205. 偶然のゲット
+      Max chars: 12 |
+      Translation: Dapat Hoki
+
+212. 特別な瞬間を
+      Max chars: 12 |
+      Translation: Momen Unik
+
+215. スペシャル放送に向け
+      Max chars: 20 |
+      Translation: Menuju Siar Khusus
+
+217. 曲目決定
+      Max chars: 8 |
+      Translation: Cek Lagu
+
+226. 美しき旋律
+      Max chars: 10 |
+      Translation: Nada Indah
+
+228. 止まる指先
+      Max chars: 10 |
+      Translation: Jari Diam
+
+229. 意外な邂逅
+      Max chars: 10 |
+      Translation: Temu Ajaib
+
+235. 琴里の後押し
+      Max chars: 12 |
+      Translation: Bantu Kotori
+
+239. 恋愛請負は廃業
+      Max chars: 14 |
+      Translation: Biro Cnt Tutup
+
+240. ひよりを蝕むもの
+      Max chars: 16 |
+      Translation: Yang Menyakiti
+
+243. 妖精舞う月夜に
+      Max chars: 14 |
+      Translation: Peri Rembulan
+
+245. ひよりの初恋
+      Max chars: 12 |
+      Translation: Cinta Hiyori
+
+247. 私には止められない
+      Max chars: 18 |
+      Translation: Tak Bisa Kuhentian
+
+249. まだ、でも、もう少し
+      Max chars: 20 |
+      Translation: Masih, Tp, Sebentar
+
+260. いよいよ明日
+      Max chars: 12 |
+      Translation: Besok Saatnya
+
+273. 俺はどちらと……
+      Max chars: 16 |
+      Translation: Aku Pilih Siapa
+
+278. 探偵と風紀委員
+      Max chars: 14 |
+      Translation: Detektif & Kom
+
+284. 信頼と真摯
+      Max chars: 10 |
+      Translation: Kepercayaan
+
+293. もう一度キスを
+      Max chars: 14 |
+      Translation: Cium Sekali Lg
+
+294. しあわせな涙
+      Max chars: 12 |
+      Translation: Tangis Riang
+
+305. 諳子と迷子
+      Max chars: 10 |
+      Translation: Akiko Sesat
+
+318. わには苦手
+      Max chars: 10 |
+      Translation: Takut Buaya
+
+323. 諳子の決意
+      Max chars: 10 |
+      Translation: Tekad Akiko
+
+325. 落ち着いた両親
+      Max chars: 14 |
+      Translation: Ortu Tenang
+
+330. ウサ耳諳子
+      Max chars: 10 |
+      Translation: Akiko Kelinc
+
+339. 全て私のせい
+      Max chars: 12 |
+      Translation: Salahku Semua
+
+374. 二乃心は難しい
+      Max chars: 14 |
+      Translation: Hati Nino Sulit
+
+378. 有里栖のおせっかい
+      Max chars: 18 |
+      Translation: Alice Ikut Campur
+
+381. 幼き日の二乃と
+      Max chars: 14 |
+      Translation: Nino Masa Kecil
+
+400. 自然な３人
+      Max chars: 10 |
+      Translation: Alami 3 Org
+
+405. ご機嫌なそら姉
+      Max chars: 14 |
+      Translation: Kak Sora Happy
+
+424. 世界を変える恋
+      Max chars: 14 |
+      Translation: Cinta Ubah Dnia
+
+426. 広がる恋心
+      Max chars: 10 |
+      Translation: Cinta Mekar
+
+432. 一筋の希望
+      Max chars: 10 |
+      Translation: Sinar Harap
+
+451. ＶＲ使用許可
+      Max chars: 12 |
+      Translation: Izin Pakai VR
+
+471. ここ一年の話
+      Max chars: 12 |
+      Translation: Cerita Setahun
+
+474. 曖昧な記憶
+      Max chars: 10 |
+      Translation: Memori Kabur
+
+476. ひとり水鏡湖へ
+      Max chars: 14 |
+      Translation: Ke Danau Suikyo
+
+492. 親子三人で
+      Max chars: 10 |
+      Translation: Bertiga Fam

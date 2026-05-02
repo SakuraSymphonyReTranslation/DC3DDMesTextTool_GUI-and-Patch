@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "DC3DDMesTextTool_GUI/1.0.0": {
+        "runtime": {
+          "DC3DDMesTextTool_GUI.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DC3DDMesTextTool_GUI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

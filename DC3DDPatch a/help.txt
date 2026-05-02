@@ -1,0 +1,9 @@
+MES JSON Importer - D.C.4 Script Tool
+
+Usage:
+  G:\Games\DC4\DC4_Translation_Kit\DC4_Translation_Kit\mes_json_importer.exe import <json_file> <original_mes> <output_mes> [-w <width>]
+  G:\Games\DC4\DC4_Translation_Kit\DC4_Translation_Kit\mes_json_importer.exe export <mes_file> <output_json>
+  G:\Games\DC4\DC4_Translation_Kit\DC4_Translation_Kit\mes_json_importer.exe batch-import <json_dir> <mes_dir> <output_dir> [-w <width>]
+
+Options:
+  -w, --wrap <width>  Word wrap width (default: 50, 0 to disable)

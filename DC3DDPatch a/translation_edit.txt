@@ -1,0 +1,2397 @@
+============================================================
+TRANSLATION REFERENCE
+Fill in the 'Translation:' field for each entry.
+No character limit.
+Use ASCII only (no Japanese/special characters).
+============================================================
+
+#1.
+Japanese: ◆タイトル名◆
+Translation: ◆Nama Judul◆
+
+#2.
+Japanese: 実行エラー
+Translation: Terjadi kesalahan eksekusi
+
+#3.
+Japanese: 」を実行できません！
+Translation: 」tidak dapat dijalankan!
+
+#4.
+Japanese: タイトル名なし
+Translation: Tanpa nama judul
+
+#5.
+Japanese: 接続に失敗しました。
+Translation: Koneksi gagal.
+
+#6.
+Japanese: ネットに接続しますよろしいですか？
+Translation: Ingin menyambung ke internet?
+
+#7.
+Japanese: D.C.4 〜ダ・カーポ4〜
+Translation: D.C.4 ~Da Capo 4~
+
+#8.
+Japanese: 空良
+Translation: Sora
+
+#9.
+Japanese: 櫻井
+Translation: Sakurai
+
+#10.
+Japanese: @names.datが読めないか項目数が違います。
+Translation: @names.dat tidak dapat dibaca atau jumlah item tidak sesuai.
+
+#11.
+Japanese: 正しくインストールしてください
+Translation: Silakan instal dengan benar
+
+#12.
+Japanese: 正常に遊ぶためには、正しくインストールしてください
+Translation: Silakan instal dengan benar agar dapat bermain dengan normal
+
+#13.
+Japanese: "%s"を作成してよろしいですか？
+Translation: Apakah Anda yakin ingin membuat "%s"?
+
+#14.
+Japanese: データVer.%s
+Translation: Versi Data %s
+
+#15.
+Japanese: ログイン情報に空欄があります。
+Translation: Ada kolom informasi login yang kosong.
+
+#16.
+Japanese: 最大でインストールを行ってください。
+Translation: Silakan lakukan instalasi maksimal.
+
+#17.
+Japanese: 0(ゼロ)とO(オー)、1(イチ)とI(アイ)等もご確認ください。
+Translation: Silakan periksa kembali angka 0 (nol) dengan O (huruf O), 1 (satu) dengan I (huruf I), dll.
+
+#18.
+Japanese: 解除キーURLをクリップボードにコピーしますか？
+Translation: Salin URL kunci pembuka ke clipboard?
+
+#19.
+Japanese: ウェブブラウザを起動できませんでした。
+Translation: Gagal menjalankan browser web.
+
+#20.
+Japanese: に接続します。
+Translation: Menyambung ke.
+
+#21.
+Japanese: 解除しないとディスクレスでプレイできません。
+Translation: Anda tidak bisa bermain tanpa disk kecuali proteksi dilepaskan.
+
+#22.
+Japanese: 解除キーはインターネット経由で入手したものを入れてください。
+Translation: Silakan masukkan kunci pembuka yang diperoleh melalui internet.
+
+#23.
+Japanese: 正しく解除しました。
+Translation: Berhasil dilepaskan.
+
+#24.
+Japanese: DC4のDVDをセットしてください
+Translation: Silakan masukkan DVD DC4
+
+#25.
+Japanese: K.$バージョン情報
+Translation: K.$Informasi Versi
+
+#26.
+Japanese: ウインドウサイズを元に戻す
+Translation: Kembalikan ukuran jendela
+
+#27.
+Japanese: を選択してください
+Translation: Silakan pilih
+
+#28.
+Japanese: ディスクレス化を行いますか？
+Translation: Aktifkan mode tanpa disk?
+
+#29.
+Japanese: 画面解像度/画面色数:%d x
+Translation: Resolusi Layar/Kedalaman Warna:%d x
+
+#30.
+Japanese: を作成しました。
+Translation: telah dibuat.
+
+#31.
+Japanese: フォルダが選択できませんでした。
+Translation: Folder tidak dapat dipilih.
+
+#32.
+Japanese: フォルダを選択してください
+Translation: Silakan pilih folder
+
+#33.
+Japanese: ウインドウサイズを固定する
+Translation: Kunci ukuran jendela
+
+#34.
+Japanese: ウインドウサイズの固定を解除する
+Translation: Lepas kunci ukuran jendela
+
+#35.
+Japanese: ログアウトしました
+Translation: Berhasil logout
+
+#36.
+Japanese: 終了しますか？
+Translation: Ingin keluar?
+
+#37.
+Japanese: ログインに失敗しました。
+Translation: Login gagal.
+
+#38.
+Japanese: 通信ができませんでした。
+Translation: Gagal berkomunikasi.
+
+#39.
+Japanese: に書き込めません。
+Translation: Tidak dapat menulis ke.
+
+#40.
+Japanese: DC4　インストール
+Translation: Instalasi DC4
+
+#41.
+Japanese: DirectXはインストールされてます。
+Translation: DirectX sudah terinstal.
+
+#42.
+Japanese: すでにメディアレス化されています。
+Translation: Sudah dalam mode tanpa media.
+
+#43.
+Japanese: すでにディスクレス化されています。
+Translation: Sudah dalam mode tanpa disk.
+
+#44.
+Japanese: 実行されてますので、ディスクレス認証が起動できません。
+Translation: Karena sedang berjalan, autentikasi tanpa disk tidak dapat dimulai.
+
+#45.
+Japanese: }@ＭＳ ゴシック
+Translation: }@MS Gothic
+
+#46.
+Japanese: 入力がされてない箇所がありますがよろしいですか？
+Translation: Masih ada bagian yang belum diisi, apakah tidak apa-apa?
+
+#47.
+Japanese: @か.が入力されてないメールアドレスです。
+Translation: Alamat email tidak mengandung @ atau titik (.).
+
+#48.
+Japanese: セーブデータの更新に失敗しました。
+Translation: Gagal memperbarui data save.
+
+#49.
+Japanese: セーブデータの取得に失敗しました。
+Translation: Gagal mengambil data save.
+
+#50.
+Japanese: コマンドセーブの::の数が多い
+Translation: Terlalu banyak jumlah :: pada command save
+
+#51.
+Japanese: 学生特権
+Translation: Hak Istimewa Pelajar
+
+#52.
+Japanese: 秘されしモノ
+Translation: Sesuatu yang Tersembunyi
+
+#53.
+Japanese: 願いの軌跡
+Translation: Jejak Harapan
+
+#54.
+Japanese: 奇跡を願っても
+Translation: Meski Mengharap Keajaiban
+
+#55.
+Japanese: 今この手の中の幸福
+Translation: Kebahagiaan di Tangan Ini Sekarang
+
+#56.
+Japanese: 愛という幸福
+Translation: Kebahagiaan yang Disebut Cinta
+
+#57.
+Japanese: もしこの心届くなら
+Translation: Jika Hati Ini Bisa Sampai Padamu
+
+#58.
+Japanese: 震える心抱いて
+Translation: Memeluk Hati yang Bergetar
+
+#59.
+Japanese: 心奏でて
+Translation: Melodi Hati
+
+#60.
+Japanese: 奮い立つ心
+Translation: Semangat yang Membara
+
+#61.
+Japanese: 重ね想う
+Translation: Perasaan yang Bertumpuk
+
+#62.
+Japanese: 並んで歩くだけでも
+Translation: Meski Hanya Berjalan Berdampingan
+
+#63.
+Japanese: 抜き足差し足猫の足
+Translation: Berjinjit Seperti Langkah Kaki Kucing
+
+#64.
+Japanese: こんな上々の休日
+Translation: Hari Libur yang Luar Biasa
+
+#65.
+Japanese: 心躍り胸弾む
+Translation: Hati Berdebar Penuh Suka Cita
+
+#66.
+Japanese: 足取り軽く心軽く
+Translation: Langkah Ringan, Hati Tenang
+
+#67.
+Japanese: 静かに冴える夜
+Translation: Malam yang Hening dan Jernih
+
+#68.
+Japanese: まだまだ今日は終わらない
+Translation: Hari Ini Masih Belum Berakhir
+
+#69.
+Japanese: 実家のような心地よさ
+Translation: Kenyamanan Seperti di Rumah Sendiri
+
+#70.
+Japanese: 解き放て青春
+Translation: Lepaskan Masa Muda
+
+#71.
+Japanese: 学食か購買か弁当か
+Translation: Kantin, Koperasi, atau Bekal?
+
+#72.
+Japanese: 未来への資産
+Translation: Aset untuk Masa Depan
+
+#73.
+Japanese: かったるくない通学路
+Translation: Jalan Sekolah yang Tidak Membosankan
+
+#74.
+Japanese: 心躍る幕開け
+Translation: Pembukaan yang Mendebarkan
+
+#75.
+Japanese: のんびり長閑に
+Translation: Santai dan Tenang
+
+#76.
+Japanese: 親友≒悪友
+Translation: Sahabat Karib≒Teman Nakal
+
+#77.
+Japanese: ちょこっと自分らしく
+Translation: Sedikit Menjadi Diriku Sendiri
+
+#78.
+Japanese: これでも風紀委員ですから
+Translation: Biar Begini, Aku Tetap Anggota Komite Disiplin
+
+#79.
+Japanese: 少しだけ譲れないもの
+Translation: Sesuatu yang Tak Bisa Kukompromikan
+
+#80.
+Japanese: 恋愛請負、執行致します
+Translation: Kontraktor Cinta, Akan Segera Bertugas
+
+#81.
+Japanese: 甘くて美味しいのはいかが？
+Translation: Mau Sesuatu yang Manis dan Lezat?
+
+#82.
+Japanese: 小悪魔？裏モード？
+Translation: Iblis Kecil? Mode Rahasia?
+
+#83.
+Japanese: 穏やかに舞うサクラのように
+Translation: Bagai Sakura yang Menari dengan Tenang
+
+#84.
+Japanese: 穏やかなお日様のように
+Translation: Bagai Matahari yang Hangat
+
+#85.
+Japanese: 風に舞う花のように
+Translation: Bagai Bunga yang Menari Ditiup Angin
+
+#86.
+Japanese: いつか見た、懐かしい夢
+Translation: Mimpi Nostalgia yang Pernah Kulihat Dulu
+
+#87.
+Japanese: いつか見た夢
+Translation: Mimpi yang Pernah Kulihat
+
+#88.
+Japanese: Ｄ．Ｃ．
+Translation: D.C.
+
+#89.
+Japanese: 明日への期待
+Translation: Harapan untuk Esok Hari
+
+#90.
+Japanese: バレンタインな打ち上げ
+Translation: Perayaan Valentine
+
+#91.
+Japanese: 恋のレジェンドバトル
+Translation: Pertempuran Legendaris Cinta
+
+#92.
+Japanese: 恋パの朝
+Translation: Pagi di Hari Pesta Cinta
+
+#93.
+Japanese: 明日は恋パ
+Translation: Besok Adalah Pesta Cinta
+
+#94.
+Japanese: ８つ目の大罪
+Translation: Dosa Besar Kedelapan
+
+#95.
+Japanese: サプライズは秘密
+Translation: Kejutan Itu Rahasia
+
+#96.
+Japanese: 寝顔はかわいい二乃
+Translation: Wajah Tidur Nino yang Imut
+
+#97.
+Japanese: 準備はあと１日
+Translation: Persiapan Tinggal Satu Hari Lagi
+
+#98.
+Japanese: 演技でも俺らしく
+Translation: Tetap Jadi Diriku Meski Sedang Berakting
+
+#99.
+Japanese: 詩名いじり
+Translation: Menggoda Shiina
+
+#100.
+Japanese: 至福と無駄遣い
+Translation: Kebahagiaan dan Pemborosan
+
+#101.
+Japanese: ネゴシエイター二乃
+Translation: Nino sang Negosiator
+
+#102.
+Japanese: 大詰めの作業割
+Translation: Pembagian Tugas Tahap Akhir
+
+#103.
+Japanese: 泉先生の商い講義
+Translation: Kuliah Bisnis dari Ibu Guru Izumi
+
+#104.
+Japanese: 特命大使ちょこ
+Translation: Duta Besar Khusus Choko
+
+#105.
+Japanese: 明日からまた忙しく
+Translation: Mulai Besok Akan Sibuk Lagi
+
+#106.
+Japanese: 止まった時計
+Translation: Jam yang Terhenti
+
+#107.
+Japanese: 台本読み練習
+Translation: Latihan Membaca Naskah
+
+#108.
+Japanese: 杉並と詩名
+Translation: Suginami dan Shiina
+
+#109.
+Japanese: うろぼろす
+Translation: Ouroboros
+
+#110.
+Japanese: ファンタジーな回想
+Translation: Kenangan Fantasi
+
+#111.
+Japanese: さてもうひと頑張り
+Translation: Baiklah, Mari Berusaha Sedikit Lagi
+
+#112.
+Japanese: いつもよりは寝過ごして
+Translation: Tidur Lebih Lama dari Biasanya
+
+#113.
+Japanese: もう一度見たい
+Translation: Ingin Melihatnya Sekali Lagi
+
+#114.
+Japanese: 果たしてバグか？
+Translation: Apakah Ini Bug?
+
+#115.
+Japanese: 稀有な体験
+Translation: Pengalaman yang Langka
+
+#116.
+Japanese: 楽しみですね
+Translation: Menyenangkan, ya
+
+#117.
+Japanese: 新アトラクションのお誘い
+Translation: Undakan ke Atraksi Baru
+
+#118.
+Japanese: ちぇしの雨宿り
+Translation: Cheshi Berteduh dari Hujan
+
+#119.
+Japanese: 台本のための質問
+Translation: Pertanyaan Demi Naskah
+
+#120.
+Japanese: 偶然の同行
+Translation: Pergi Bersama Secara Kebetulan
+
+#121.
+Japanese: 風紀委員とのネゴ
+Translation: Negosiasi dengan Komite Disiplin
+
+#122.
+Japanese: 地味な作業のご褒美
+Translation: Hadiah untuk Pekerjaan yang Membosankan
+
+#123.
+Japanese: 手が足りなそうなのは
+Translation: Kelihatannya Kekurangan Tenaga
+
+#124.
+Japanese: ご飯を食べて頑張ろう
+Translation: Mari Makan dan Berusaha
+
+#125.
+Japanese: 心地よい疲労
+Translation: Kelelahan yang Menyenangkan
+
+#126.
+Japanese: 有能有里栖のお手伝い
+Translation: Membantu Arisu yang Kompeten
+
+#127.
+Japanese: 詩名とちよ子の関係
+Translation: Hubungan Antara Shiina dan Chiyoko
+
+#128.
+Japanese: 恋愛請負も忘れずに
+Translation: Jangan Lupakan Tugas Kontraktor Cinta
+
+#129.
+Japanese: チラシの手伝い
+Translation: Membantu Membagikan Brosur
+
+#130.
+Japanese: 遊撃一登の選択
+Translation: Pilihan Ichito Sang Pemain Bebas
+
+#131.
+Japanese: SSR史上最大作戦
+Translation: Operasi Terbesar dalam Sejarah SSR
+
+#132.
+Japanese: 微笑みの爆弾
+Translation: Bom Senyuman
+
+#133.
+Japanese: どうなることやら
+Translation: Entah Akan Jadi Bagaimana
+
+#134.
+Japanese: 言い出しっぺの法則
+Translation: Hukum Siapa yang Mengusulkan, Dia yang Melakukan
+
+#135.
+Japanese: ちょこっとの期待
+Translation: Sedikit Harapan
+
+#136.
+Japanese: ふとよぎる閃き
+Translation: Kilasan Inspirasi yang Tiba-tiba
+
+#137.
+Japanese: 明日も一歩
+Translation: Melangkah Lagi Besok
+
+#138.
+Japanese: 有里栖の相談
+Translation: Konsultasi Arisu
+
+#139.
+Japanese: 泉先生の宇宙人講義
+Translation: Kuliah Alien dari Ibu Guru Izumi
+
+#140.
+Japanese: 乙女ゲームな乙女たち
+Translation: Para Gadis yang Bagai di Game Otome
+
+#141.
+Japanese: 変わった猫と
+Translation: Bersama Kucing yang Aneh
+
+#142.
+Japanese: 彼女の遠慮
+Translation: Rasa Sungkan Miliknya
+
+#143.
+Japanese: アイドルの苦悩
+Translation: Penderitaan Sang Idola
+
+#144.
+Japanese: 人気者アリス
+Translation: Alice yang Populer
+
+#145.
+Japanese: 楽しくなる予感
+Translation: Firasat Bahwa Ini Akan Menjadi Seru
+
+#146.
+Japanese: SSRバレンタイン対策
+Translation: Persiapan Valentine SSR
+
+#147.
+Japanese: 転校生
+Translation: Murid Pindahan
+
+#148.
+Japanese: お馴染みの面々
+Translation: Wajah-wajah yang Familiar
+
+#149.
+Japanese: お決まりの朝
+Translation: Pagi yang Seperti Biasanya
+
+#150.
+Japanese: これはただの夢？
+Translation: Apakah Ini Hanya Mimpi?
+
+#151.
+Japanese: 無限へと漸近する過ち
+Translation: Kesalahan yang Mendekati Tak Terhingga
+
+#152.
+Japanese: SSR始動
+Translation: SSR Dimulai
+
+#153.
+Japanese: それぞれの感想
+Translation: Kesan Masing-masing
+
+#154.
+Japanese: 杉並と迷宮
+Translation: Suginami dan Labirin
+
+#155.
+Japanese: 有里栖と自由落下
+Translation: Arisu dan Terjun Bebas
+
+#156.
+Japanese: ひよりと耐久勝負
+Translation: Adu Ketahanan dengan Hiyori
+
+#157.
+Japanese: 諳子とお城
+Translation: Sorane dan Istana
+
+#158.
+Japanese: 二乃とショッピング
+Translation: Belanja Bersama Nino
+
+#159.
+Japanese: どうしようかな
+Translation: Apa yang Harus Kulakukan, ya
+
+#160.
+Japanese: いざワンダーランド
+Translation: Mari Menuju Wonderland
+
+#161.
+Japanese: 突然の雷鳴！？
+Translation: Guntur Tiba-tiba!?
+
+#162.
+Japanese: 有里栖からのお誘い
+Translation: Undakan dari Arisu
+
+#163.
+Japanese: ジジイと満月
+Translation: Si Kakek Tua dan Bulan Purnama
+
+#164.
+Japanese: 反省会という名の
+Translation: Sesuatu yang Disebut Sesi Evaluasi
+
+#165.
+Japanese: 泉先生の雑学講義
+Translation: Kuliah Pengetahuan Umum dari Ibu Guru Izumi
+
+#166.
+Japanese: らしくないやる気
+Translation: Motivasi yang Tidak Seperti Biasanya
+
+#167.
+Japanese: 充実した夕食
+Translation: Makan Malam yang Memuaskan
+
+#168.
+Japanese: 役割分担という式
+Translation: Rumus yang Disebut Pembagian Tugas
+
+#169.
+Japanese: 青春の１ページ
+Translation: Satu Halaman Masa Muda
+
+#170.
+Japanese: 活動開始！
+Translation: Mulai Beraksi!
+
+#171.
+Japanese: 屋上集合
+Translation: Kumpul di Atap
+
+#172.
+Japanese: 集まった仲間たち
+Translation: Teman-teman yang Berkumpul
+
+#173.
+Japanese: 二乃の条件
+Translation: Syarat dari Nino
+
+#174.
+Japanese: 助けてあげたい
+Translation: Ingin Menolongnya
+
+#175.
+Japanese: 楽しいランチタイム
+Translation: Waktu Makan Siang yang Seru
+
+#176.
+Japanese: 月曜の朝も清々しく
+Translation: Pagi Hari Senin yang Menyegarkan
+
+#177.
+Japanese: 白河と美嶋
+Translation: Shirakawa dan Mishima
+
+#178.
+Japanese: 杉並から入電！
+Translation: Panggilan Masuk dari Suginami!
+
+#179.
+Japanese: 休日のルーチン
+Translation: Rutinitas Hari Libur
+
+#180.
+Japanese: WLがオープンしたら？
+Translation: Bagaimana Jika WL Dibuka?
+
+#181.
+Japanese: 日常的学園生活
+Translation: Kehidupan Sekolah Sehari-hari
+
+#182.
+Japanese: いつもの朝
+Translation: Pagi Seperti Biasanya
+
+#183.
+Japanese: あの人の夢
+Translation: Mimpi Orang Itu
+
+#184.
+Japanese: 我が家の日常
+Translation: Keseharian di Rumah Kami
+
+#185.
+Japanese: 黄昏のうたたね
+Translation: Tidur Ayam di Kala Senja
+
+#186.
+Japanese: いつかの夢
+Translation: Mimpi di Suatu Hari
+
+#187.
+Japanese: 楽しさの拡散
+Translation: Penyebaran Kegembiraan
+
+#188.
+Japanese: 恋に恋する女の子
+Translation: Cewek yang Sedang Jatuh Cinta pada Cinta
+
+#189.
+Japanese: 作為的な運命？
+Translation: Takdir yang Disengaja?
+
+#190.
+Japanese: お部屋デートで
+Translation: Kencan di Dalam Kamar
+
+#191.
+Japanese: 一番近くにいたい
+Translation: Ingin Berada di Tempat Terdekat
+
+#192.
+Japanese: 自分らしくいられるよう
+Translation: Agar Bisa Menjadi Diriku Sendiri
+
+#193.
+Japanese: デートみたいなもの
+Translation: Sesuatu yang Mirip Kencan
+
+#194.
+Japanese: 模索するＣＨＯＣＯ
+Translation: Choco yang Sedang Mencari Jawaban
+
+#195.
+Japanese: 詩名は敏腕マネ？
+Translation: Apakah Shiina Manajer yang Hebat?
+
+#196.
+Japanese: 壁スカート防衛作戦
+Translation: Operasi Pertahanan Rok Dinding
+
+#197.
+Japanese: とっきー先生の授業
+Translation: Pelajaran dari Tokki-sensei
+
+#198.
+Japanese: 結果ちよ子とふたりで
+Translation: Akhirnya Berdua dengan Chiyoko
+
+#199.
+Japanese: 凹んでいるちよ子
+Translation: Chiyoko yang Sedang Murung
+
+#200.
+Japanese: ＣＨＯＣＯの変化
+Translation: Perubahan pada CHOCO
+
+#201.
+Japanese: ＫｏｔｏＲｉさんのお言葉
+Translation: Kata-kata dari Kotori-san
+
+#202.
+Japanese: ＫｏｔｏＲＩさんトーク
+Translation: Obrolan Kotori-san
+
+#203.
+Japanese: ＣＨＯＣＯとしての矜持
+Translation: Kebanggaan Sebagai CHOCO
+
+#204.
+Japanese: ちょこの呼び出し
+Translation: Panggilan dari Choco
+
+#205.
+Japanese: ふたりの距離
+Translation: Jarak di Antara Berdua
+
+#206.
+Japanese: やり直しと返答と
+Translation: Mengulang Kembali dan Jawaban
+
+#207.
+Japanese: もう心配いらない
+Translation: Sudah Tidak Perlu Khawatir Lagi
+
+#208.
+Japanese: 新たな形
+Translation: Bentuk yang Baru
+
+#209.
+Japanese: 少し考えさせて
+Translation: Biarkan Aku Berpikir Sebentar
+
+#210.
+Japanese: つながっている？
+Translation: Apakah Kita Terhubung?
+
+#211.
+Japanese: 高いところを覗く方法
+Translation: Cara Mengintip ke Tempat yang Tinggi
+
+#212.
+Japanese: 先行するひより
+Translation: Hiyori yang Pergi Duluan
+
+#213.
+Japanese: 打ち上げと臨時手伝い
+Translation: Perayaan dan Bantuan Darurat
+
+#214.
+Japanese: やりがいのある仕事
+Translation: Pekerjaan yang Layak Dilakukan
+
+#215.
+Japanese: バイトヘルプの依頼
+Translation: Permintaan Bantuan Kerja Sambilan
+
+#216.
+Japanese: 依頼募集スレッド
+Translation: Utas Lowongan Permintaan
+
+#217.
+Japanese: ＳＳＲ臨時招集
+Translation: Panggilan Darurat SSR
+
+#218.
+Japanese: 未羽と白河の秘密
+Translation: Rahasia Miu dan Shirakawa
+
+#219.
+Japanese: 哀しい夢
+Translation: Mimpi yang Sedih
+
+#220.
+Japanese: 白河の不調
+Translation: Kondisi Shirakawa yang Buruk
+
+#221.
+Japanese: 保留にさせてください
+Translation: Tolong Biarkan Aku Menundanya Dulu
+
+#222.
+Japanese: 伝わる気持ち
+Translation: Perasaan yang Tersampaikan
+
+#223.
+Japanese: 朔の夜の別れ
+Translation: Perpisahan di Malam Tanpa Bulan
+
+#224.
+Japanese: 知らないけど知ってる
+Translation: Aku Tidak Tahu Tapi Aku Tahu
+
+#225.
+Japanese: 手から伝わる温もり
+Translation: Kehangatan yang Tersalur dari Tangan
+
+#226.
+Japanese: 何度目かの団欒
+Translation: Entah Sudah Berapa Kali Berkumpul Bersama
+
+#227.
+Japanese: 乗り越えなくていい
+Translation: Kamu Tidak Perlu Melampauinya
+
+#228.
+Japanese: 為になるダラダラ
+Translation: Bermalas-malasan yang Ada Gunanya
+
+#229.
+Japanese: 未来の奥さん
+Translation: Calon Istri di Masa Depan
+
+#230.
+Japanese: 別れのリサイタル
+Translation: Resital Perpisahan
+
+#231.
+Japanese: 青春っぽい時間
+Translation: Waktu yang Terasa Seperti Masa Muda
+
+#232.
+Japanese: あと2週間の
+Translation: Tinggal 2 Minggu Lagi
+
+#233.
+Japanese: 満月の夜の邂逅
+Translation: Pertemuan di Malam Bulan Purnama
+
+#234.
+Japanese: カガミの魔法
+Translation: Sihir Kagami
+
+#235.
+Japanese: ちょこからのヒント
+Translation: Petunjuk dari Choco
+
+#236.
+Japanese: 異世界からの迷い人
+Translation: Seseorang yang Tersesat dari Dunia Lain
+
+#237.
+Japanese: 零と無限の交わる世界
+Translation: Dunia Tempat Nol dan Tak Terhingga Bertemu
+
+#238.
+Japanese: 月間ヌー春の特別号
+Translation: Majalah Bulanan Nuu Edisi Khusus Musim Semi
+
+#239.
+Japanese: 夢の中の景色と
+Translation: Pemandangan di Dalam Mimpi dan...
+
+#240.
+Japanese: 詩名のために
+Translation: Demi Shiina
+
+#241.
+Japanese: 半分は優しさで
+Translation: Setengahnya Terdiri dari Kebaikan
+
+#242.
+Japanese: これ以上付き合えない
+Translation: Aku Tidak Bisa Bersamamu Lebih Lama Lagi
+
+#243.
+Japanese: 雷を待ちながら
+Translation: Sambil Menunggu Petir
+
+#244.
+Japanese: 隠していたこと
+Translation: Hal yang Disembunyikan
+
+#245.
+Japanese: おうちにかえりたい
+Translation: Aku Ingin Pulang ke Rumah
+
+#246.
+Japanese: 特別な気持ち
+Translation: Perasaan yang Spesial
+
+#247.
+Japanese: ラブの匂い？
+Translation: Bau-bau Cinta?
+
+#248.
+Japanese: まだまだ知らないこと
+Translation: Hal-hal yang Masih Belum Diketahui
+
+#249.
+Japanese: そんなことでありがとう
+Translation: Terima Kasih untuk Hal Semacam Itu
+
+#250.
+Japanese: とても面倒くさい
+Translation: Sangat Merepotkan
+
+#251.
+Japanese: 団欒大好き人間
+Translation: Orang yang Sangat Suka Berkumpul Bersama
+
+#252.
+Japanese: 家族でおもてなし
+Translation: Jamuan Bersama Keluarga
+
+#253.
+Japanese: 杉並の好敵手
+Translation: Rival Suginami
+
+#254.
+Japanese: スパでのお仕事
+Translation: Pekerjaan di Spa
+
+#255.
+Japanese: 偶然のゲット
+Translation: Berhasil Mendapatkannya Secara Kebetulan
+
+#256.
+Japanese: 苦学生？な詩名
+Translation: Shiina sang Pelajar yang Susah?
+
+#257.
+Japanese: 見た目で判断しないで
+Translation: Jangan Menilai dari Penampilan
+
+#258.
+Japanese: 詩名の大好きな人
+Translation: Orang yang Sangat Dicintai Shiina
+
+#259.
+Japanese: 詩名とちょこの出会い
+Translation: Pertemuan Shiina dan Choco
+
+#260.
+Japanese: 懐かしい曲
+Translation: Lagu yang Membuat Nostalgia
+
+#261.
+Japanese: この先の未来へ
+Translation: Menuju Masa Depan di Depan Sana
+
+#262.
+Japanese: 特別な瞬間を
+Translation: Sebuah Momen yang Spesial
+
+#263.
+Japanese: 付属卒業式
+Translation: Upacara Kelulusan Sekolah Afiliasi
+
+#264.
+Japanese: 明日はいよいよ
+Translation: Akhirnya Besok Tiba
+
+#265.
+Japanese: スペシャル放送に向け
+Translation: Menuju Siaran Spesial
+
+#266.
+Japanese: ゲーム実況者ちよ子
+Translation: Chiyoko Sang Game Streamer
+
+#267.
+Japanese: 曲目決定
+Translation: Daftar Lagu Telah Ditentukan
+
+#268.
+Japanese: 卒業にはあの曲を
+Translation: Gunakan Lagu Itu untuk Kelulusan
+
+#269.
+Japanese: 打ち合わせという名の
+Translation: Sesuatu yang Disebut Rapat
+
+#270.
+Japanese: あの日の思い出
+Translation: Kenangan di Hari Itu
+
+#271.
+Japanese: 乱れのない心
+Translation: Hati yang Tenang
+
+#272.
+Japanese: 踏み出す一歩
+Translation: Melangkahkan Kaki
+
+#273.
+Japanese: 不思議な眼差し
+Translation: Tatapan yang Misterius
+
+#274.
+Japanese: 追求されたとしても
+Translation: Bahkan Jika Dikejar Sekalipun
+
+#275.
+Japanese: 視線の主は
+Translation: Pemilik Tatapan Itu Adalah...
+
+#276.
+Japanese: 美しき旋律
+Translation: Melodi yang Indah
+
+#277.
+Japanese: 詩名からの提案
+Translation: Usulan dari Shiina
+
+#278.
+Japanese: 止まる指先
+Translation: Ujung Jari yang Terhenti
+
+#279.
+Japanese: 意外な邂逅
+Translation: Pertemuan yang Tak Terduga
+
+#280.
+Japanese: 今回の依頼は……
+Translation: Permintaan Kali Ini Adalah...
+
+#281.
+Japanese: 春は節目の季節
+Translation: Musim Semi Adalah Musim Transisi
+
+#282.
+Japanese: 実家へＧＯ！
+Translation: Pergi ke Rumah Orang Tua!
+
+#283.
+Japanese: つけるべきケジメ
+Translation: Tanggung Jawab yang Harus Diselesaikan
+
+#284.
+Japanese: フラグより見るべきもの
+Translation: Hal yang Harus Dilihat Selain Flag
+
+#285.
+Japanese: 琴里の後押し
+Translation: Dukungan dari Kotori
+
+#286.
+Japanese: 俺にできることを
+Translation: Hal yang Bisa Aku Lakukan
+
+#287.
+Japanese: 神様からの贈り物
+Translation: Hadiah dari Tuhan
+
+#288.
+Japanese: ひよりちゃんを助けて
+Translation: Tolong Bantu Hiyori-chan
+
+#289.
+Japanese: 恋愛請負は廃業
+Translation: Bisnis Kontraktor Cinta Gulung Tikar
+
+#290.
+Japanese: ひよりを蝕むもの
+Translation: Sesuatu yang Menggerogoti Hiyori
+
+#291.
+Japanese: ＳＳＲみんなでフォロー
+Translation: Semua Anggota SSR Mendukung
+
+#292.
+Japanese: 先日のことは忘れて
+Translation: Lupakan Kejadian tempo hari
+
+#293.
+Japanese: 妖精舞う月夜に
+Translation: Di Malam Berbulan Saat Peri Menari
+
+#294.
+Japanese: 破られた１００％記録
+Translation: Rekor 100% yang Terpecahkan
+
+#295.
+Japanese: ひよりの初恋
+Translation: Cinta Pertama Hiyori
+
+#296.
+Japanese: 私が止めなくちゃ
+Translation: Aku Harus Menghentikannya
+
+#297.
+Japanese: 私には止められない
+Translation: Aku Tidak Bisa Menghentikannya
+
+#298.
+Japanese: ひよりのため
+Translation: Demi Hiyori
+
+#299.
+Japanese: まだ、でも、もう少し
+Translation: Masih, Tapi, Sebentar Lagi
+
+#300.
+Japanese: キャッチ・ザ・ひより
+Translation: Catch the Hiyori
+
+#301.
+Japanese: ひより、手こずる
+Translation: Hiyori Kesulitan
+
+#302.
+Japanese: 相手に寄り添ったこと
+Translation: Tentang Mendampingi Orang Lain
+
+#303.
+Japanese: 本校でもムササビ女子
+Translation: Bahkan di Sekolah Utama Pun Tetap Cewek Musasabi
+
+#304.
+Japanese: 翻弄するひより
+Translation: Hiyori yang Mempermainkan
+
+#305.
+Japanese: 未羽のアピール・デイ
+Translation: Hari Miu Unjuk Gigi
+
+#306.
+Japanese: キミがわからない
+Translation: Aku Tidak Mengertimu
+
+#307.
+Japanese: 他言無用な出会い
+Translation: Pertemuan yang Tak Boleh Dibocorkan
+
+#308.
+Japanese: いざ小旅行へ出発
+Translation: Mari Berangkat Menuju Wisata Singkat
+
+#309.
+Japanese: 友情と恋愛の線引き
+Translation: Batasan Antara Persahabatan dan Cinta
+
+#310.
+Japanese: いよいよ明日
+Translation: Akhirnya Besok
+
+#311.
+Japanese: ちょっとした優越感
+Translation: Sedikit Rasa Superior
+
+#312.
+Japanese: ついてくるつもり？
+Translation: Mau Ikut Juga?
+
+#313.
+Japanese: 決着はプールで！
+Translation: Selesaikan Ini di Kolam Renang!
+
+#314.
+Japanese: サプライズな計画
+Translation: Rencana Kejutan
+
+#315.
+Japanese: ひより天啓を得る
+Translation: Hiyori Mendapatkan Wahyu Ilahi
+
+#316.
+Japanese: ひよりのいじりポイント
+Translation: Titik Kelemahan Hiyori untuk Digoda
+
+#317.
+Japanese: 一登の心が動く時は？
+Translation: Kapan Hati Ichito Akan Tergerak?
+
+#318.
+Japanese: オールインワンで勝負
+Translation: Bertaruh dengan Semuanya
+
+#319.
+Japanese: ひよりからの事情聴取
+Translation: Interogasi dari Hiyori
+
+#320.
+Japanese: 後悔と迷いと
+Translation: Penyesalan dan Kebimbangan
+
+#321.
+Japanese: 突然の延長戦宣言！
+Translation: Deklarasi Perpanjangan Waktu Tiba-tiba!
+
+#322.
+Japanese: 俺の答えは……
+Translation: Jawabanku Adalah...
+
+#323.
+Japanese: 俺はどちらと……
+Translation: Aku Akan Bersama yang Mana...
+
+#324.
+Japanese: 卒業式のその後に
+Translation: Setelah Upacara Kelulusan
+
+#325.
+Japanese: 第二ボタンと気持ち
+Translation: Kancing Kedua dan Perasaan
+
+#326.
+Japanese: トキメキデート計画
+Translation: Rencana Kencan yang Mendebarkan
+
+#327.
+Japanese: 改めて勝負を
+Translation: Mari Bertanding Sekali Lagi
+
+#328.
+Japanese: 探偵と風紀委員
+Translation: Detektif dan Komite Disiplin
+
+#329.
+Japanese: 未羽の相談ごと
+Translation: Hal yang Ingin Dikonsultasikan Miu
+
+#330.
+Japanese: ひよりとお出かけ
+Translation: Pergi Bersama Hiyori
+
+#331.
+Japanese: ひよりの待ち伏せ
+Translation: Hiyori yang Menghadang
+
+#332.
+Japanese: 急ぎ咲かせし恋の花
+Translation: Bunga Cinta yang Bersemi dengan Cepat
+
+#333.
+Japanese: ３人寄っての
+Translation: Tiga Orang Berkumpul
+
+#334.
+Japanese: 信頼と真摯
+Translation: Kepercayaan dan Ketulusan
+
+#335.
+Japanese: 昼食を相席して
+Translation: Duduk Bersama Saat Makan Siang
+
+#336.
+Japanese: ひよりからの依頼
+Translation: Permintaan dari Hiyori
+
+#337.
+Japanese: 我悟りたる
+Translation: Aku Telah Mencapai Pencerahan
+
+#338.
+Japanese: 出合い頭アクシデント
+Translation: Kecelakaan Saat Berpapasan
+
+#339.
+Japanese: 将来に思いを馳せて
+Translation: Memikirkan Tentang Masa Depan
+
+#340.
+Japanese: 別の因果の先の世界
+Translation: Dunia di Ujung Kausalitas yang Lain
+
+#341.
+Japanese: 逢見諳子という存在
+Translation: Eksistensi Bernama Oumi Sorane
+
+#342.
+Japanese: ごめんね
+Translation: Maaf, ya
+
+#343.
+Japanese: もう一度キスを
+Translation: Berikan Aku Ciuman Sekali Lagi
+
+#344.
+Japanese: しあわせな涙
+Translation: Air Mata Bahagia
+
+#345.
+Japanese: 嫌な予感と看病と
+Translation: Firasat Buruk dan Merawat Orang Sakit
+
+#346.
+Japanese: かくれんぼの才能
+Translation: Bakat Bermain Petak Umpet
+
+#347.
+Japanese: みんなからの祝福
+Translation: Berkat dari Semuanya
+
+#348.
+Japanese: いつか見せてもらえたら
+Translation: Jika Suatu Saat Nanti Kamu Bisa Memperlihatkannya Padaku
+
+#349.
+Japanese: ふたりの愛のメモリー
+Translation: Memori Cinta Berdua
+
+#350.
+Japanese: 二乃の疑問
+Translation: Pertanyaan Nino
+
+#351.
+Japanese: 弟ではなくて
+Translation: Bukannya Sebagai Adik
+
+#352.
+Japanese: そら姉の笑顔を
+Translation: Senyuman Sora-nee
+
+#353.
+Japanese: 一登の不調？
+Translation: Ichito Sedang Tidak Fit?
+
+#354.
+Japanese: ベルガマスクの三番目
+Translation: Yang Ketiga dari Bergamasque
+
+#355.
+Japanese: 諳子と迷子
+Translation: Sorane dan Anak Hilang
+
+#356.
+Japanese: バイトのお願い
+Translation: Permintaan Kerja Sambilan
+
+#357.
+Japanese: 馴染んだウサ耳
+Translation: Telinga Kelinci yang Sudah Terbiasa
+
+#358.
+Japanese: ウサミミファンクラブ
+Translation: Fan Club Telinga Kelinci
+
+#359.
+Japanese: 諳子の家族の写真
+Translation: Foto Keluarga Sorane
+
+#360.
+Japanese: 良い旦那さんになれる
+Translation: Bisa Menjadi Suami yang Baik
+
+#361.
+Japanese: 心強い味方たち
+Translation: Teman-teman yang Bisa Diandalkan
+
+#362.
+Japanese: 一登好みの味に
+Translation: Menjadi Rasa Kesukaan Ichito
+
+#363.
+Japanese: 原因究明の時間に
+Translation: Waktunya Menyelidiki Penyebabnya
+
+#364.
+Japanese: 流石のSSR
+Translation: Seperti yang Diharapkan dari SSR
+
+#365.
+Japanese: 難なく突破で、いいの？
+Translation: Berhasil Melewatinya dengan Mudah, Tidak Apa-apa?
+
+#366.
+Japanese: 自由な校風だから
+Translation: Karena Budaya Sekolah yang Bebas
+
+#367.
+Japanese: ジジイに負けたくない
+Translation: Aku Tidak Mau Kalah dari Kakek Tua Itu
+
+#368.
+Japanese: わには苦手
+Translation: Aku Payah Menghadapi Buaya
+
+#369.
+Japanese: 最後は神頼み
+Translation: Terakhir, Berdoa pada Tuhan
+
+#370.
+Japanese: 久しぶりの買い物で
+Translation: Saat Berbelanja Setelah Sekian Lama
+
+#371.
+Japanese: カチューシャ擬態
+Translation: Kamuflase Bando
+
+#372.
+Japanese: ウサ耳対策会議
+Translation: Rapat Penanganan Telinga Kelinci
+
+#373.
+Japanese: 諳子の決意
+Translation: Tekad Sorane
+
+#374.
+Japanese: 誰かの夢とジジイと
+Translation: Mimpi Seseorang, Sang Kakek, dan...
+
+#375.
+Japanese: 落ち着いた両親
+Translation: Orang Tua yang Tenang
+
+#376.
+Japanese: 思いがけない異変
+Translation: Kejanggalan yang Tak Terduga
+
+#377.
+Japanese: 二乃が居たらまずい？
+Translation: Gawat Kalau Ada Nino di Sini?
+
+#378.
+Japanese: ウサ耳流出阻止
+Translation: Mencegah Kebocoran Foto Telinga Kelinci
+
+#379.
+Japanese: 初恋のお姉さん？
+Translation: Kakak Perempuan Cinta Pertama?
+
+#380.
+Japanese: ウサ耳諳子
+Translation: Sorane Bertelinga Kelinci
+
+#381.
+Japanese: ヒントは少女漫画に
+Translation: Petunjuknya Ada di Manga Shoujo
+
+#382.
+Japanese: 千里の道も一歩から
+Translation: Perjalanan Seribu Mil Dimulai dari Satu Langkah
+
+#383.
+Japanese: 現状を打破するには
+Translation: Untuk Mendobrak Situasi Saat Ini
+
+#384.
+Japanese: まずは認めてみる
+Translation: Mari Kita Akui Terlebih Dahulu
+
+#385.
+Japanese: 諳子のキスで……
+Translation: Dengan Ciuman dari Sorane...
+
+#386.
+Japanese: 未来への誓い
+Translation: Sumpah untuk Masa Depan
+
+#387.
+Japanese: みらいの妹へ
+Translation: Untuk Adik Perempuan di Masa Depan
+
+#388.
+Japanese: 二乃の中の真実
+Translation: Kebenaran di Dalam Diri Nino
+
+#389.
+Japanese: 全て私のせい
+Translation: Ini Semua Salahku
+
+#390.
+Japanese: 三美のお願い
+Translation: Permintaan Mitsumi
+
+#391.
+Japanese: ごめんなさい兄さん
+Translation: Maafkan Aku, Nii-san
+
+#392.
+Japanese: 明日の予定は？
+Translation: Apa Rencana untuk Besok?
+
+#393.
+Japanese: 変えたきっかけ
+Translation: Pemicu Perubahan
+
+#394.
+Japanese: たとえ恋人じゃなくても
+Translation: Meskipun Bukan Sebagai Kekasih
+
+#395.
+Japanese: 妹の好物
+Translation: Makanan Kesukaan Adik Perempuan
+
+#396.
+Japanese: 懐かしい呼び声
+Translation: Suara Panggilan yang Nostalgia
+
+#397.
+Japanese: いつもの二乃
+Translation: Nino yang Seperti Biasanya
+
+#398.
+Japanese: 三美のような妹に
+Translation: Menjadi Adik Seperti Mitsumi
+
+#399.
+Japanese: 妹を演じる二乃
+Translation: Nino yang Berperan Sebagai Adik Perempuan
+
+#400.
+Japanese: 普通の妹に
+Translation: Menjadi Adik Perempuan Biasa
+
+#401.
+Japanese: 三美から二乃へ
+Translation: Dari Mitsumi untuk Nino
+
+#402.
+Japanese: 近付くあの日
+Translation: Hari Itu Semakin Dekat
+
+#403.
+Japanese: 調子の悪そうな二乃
+Translation: Nino yang Kelihatannya Tidak Fit
+
+#404.
+Japanese: 救い上げる声
+Translation: Suara yang Menyelamatkan
+
+#405.
+Japanese: 二乃のおかげで
+Translation: Berkat Nino
+
+#406.
+Japanese: 水着ハプニング！
+Translation: Insiden Baju Renang!
+
+#407.
+Japanese: ピアノ部屋と二乃
+Translation: Ruang Piano dan Nino
+
+#408.
+Japanese: 愛ある仕返し
+Translation: Balas Dendam Penuh Cinta
+
+#409.
+Japanese: 夢にまで見た姿で
+Translation: Dalam Wujud yang Bahkan Muncul di Mimpi
+
+#410.
+Japanese: 夢で見た姿を
+Translation: Sosok yang Kulihat di Mimpi
+
+#411.
+Japanese: メンバーも待っていた
+Translation: Para Anggota Juga Telah Menunggu
+
+#412.
+Japanese: これが惚れた弱み
+Translation: Inilah Kelemahan Orang yang Sedang Jatuh Cinta
+
+#413.
+Japanese: 待っていたそら姉
+Translation: Sora-nee Telah Menunggu
+
+#414.
+Japanese: 家族と娘の恋人として
+Translation: Sebagai Keluarga dan Kekasih Putrinya
+
+#415.
+Japanese: 伝えないといけないこと
+Translation: Hal yang Harus Disampaikan
+
+#416.
+Japanese: １００点の答え
+Translation: Jawaban Nilai 100
+
+#417.
+Japanese: 妹としての距離感
+Translation: Jarak Sebagai Seorang Adik
+
+#418.
+Japanese: 衆人環視であーん
+Translation: Menyuapi di Depan Umum
+
+#419.
+Japanese: 悲しい夢と、重なる今と
+Translation: Mimpi Buruk yang Bertumpang Tindih dengan Masa Kini
+
+#420.
+Japanese: 気持ちは本物
+Translation: Perasaan Ini Nyata
+
+#421.
+Japanese: 苦手なものコンボ
+Translation: Kombo Hal-hal yang Tidak Disukai
+
+#422.
+Japanese: 期待と不安せめぎ合う
+Translation: Antara Harapan dan Kecemasan yang Saling Beradu
+
+#423.
+Japanese: 妹ですから普通です
+Translation: Namanya Juga Adik, Jadi Ini Biasa
+
+#424.
+Japanese: 二乃心は難しい
+Translation: Hati Nino Itu Sulit Dimengerti
+
+#425.
+Japanese: 機嫌を損ねた二乃？
+Translation: Apakah Nino Sedang Merajuk?
+
+#426.
+Japanese: 表面上はいつもの朝
+Translation: Secara Lahiriah Tetap Pagi Seperti Biasanya
+
+#427.
+Japanese: そら姉はお見通し
+Translation: Sora-nee Sudah Tahu Semuanya
+
+#428.
+Japanese: 有里栖のおせっかい
+Translation: Campur Tangan Arisu
+
+#429.
+Japanese: 友人と気分転換
+Translation: Mencari Suasana Baru Bersama Teman
+
+#430.
+Japanese: 二乃を見習って
+Translation: Belajarlah dari Nino
+
+#431.
+Japanese: 幼き日の二乃と
+Translation: Bersama Nino di Masa Kecil
+
+#432.
+Japanese: 妹だから
+Translation: Karena Aku Adalah Adikmu
+
+#433.
+Japanese: バイトを楽しんで
+Translation: Nikmatilah Kerja Sambilanmu
+
+#434.
+Japanese: 二乃とふたりで調査
+Translation: Menyelidiki Berdua Bersama Nino
+
+#435.
+Japanese: ３人でバイトのお誘い
+Translation: Undakan Kerja Sambilan untuk Bertiga
+
+#436.
+Japanese: 零次さんの気遣い
+Translation: Perhatian dari Reiji-san
+
+#437.
+Japanese: 二乃の料理チャレンジ
+Translation: Tantangan Memasak Nino
+
+#438.
+Japanese: 傍にいれくれる二乃
+Translation: Nino yang Selalu Ada di Sampingku
+
+#439.
+Japanese: 期待してもいい？
+Translation: Boleh Aku Berharap?
+
+#440.
+Japanese: 二乃ちゃんに決めた？
+Translation: Sudah Memilih Nino-chan?
+
+#441.
+Japanese: そら姉の意見
+Translation: Pendapat Sora-nee
+
+#442.
+Japanese: ぎこちないふたり
+Translation: Mereka Berdua yang Canggung
+
+#443.
+Japanese: 二乃のキスで……
+Translation: Dengan Ciuman dari Nino...
+
+#444.
+Japanese: 恋人か、家族か
+Translation: Kekasih atau Keluarga?
+
+#445.
+Japanese: これからもよろしく
+Translation: Mohon Bantuannya Mulai Sekarang
+
+#446.
+Japanese: 杉並らしい卒業式
+Translation: Upacara Kelulusan yang Sangat Khas Suginami
+
+#447.
+Japanese: サプライズも忘れずに
+Translation: Jangan Lupakan Kejutannya Juga
+
+#448.
+Japanese: プレゼントはフリーパス
+Translation: Hadiahnya Adalah Tiket Terusan
+
+#449.
+Japanese: 何気なく笑える放課後
+Translation: Waktu Pulang Sekolah yang Penuh Tawa Alami
+
+#450.
+Japanese: 自然な３人
+Translation: Ketiga Orang yang Terlihat Alami
+
+#451.
+Japanese: 今日は美味しいお弁当
+Translation: Hari Ini Bekalnya Enak
+
+#452.
+Japanese: しっくりくる３人
+Translation: Ketiga Orang yang Sangat Cocok
+
+#453.
+Japanese: そら姉のドッキリ
+Translation: Prank dari Sora-nee
+
+#454.
+Japanese: 二乃の特製お弁当
+Translation: Bekal Spesial Buatan Nino
+
+#455.
+Japanese: ご機嫌なそら姉
+Translation: Sora-nee yang Sedang Senang
+
+#456.
+Japanese: バイト代の使い道
+Translation: Cara Menggunakan Uang Hasil Kerja Sambilan
+
+#457.
+Japanese: そら姉のコスプレ？
+Translation: Sora-nee Cosplay?
+
+#458.
+Japanese: 両親と帰宅して
+Translation: Pulang Bersama Orang Tua
+
+#459.
+Japanese: ふたりとの約束
+Translation: Janji Bersama Mereka Berdua
+
+#460.
+Japanese: ふたりにも話をして
+Translation: Berbicaralah Juga pada Mereka Berdua
+
+#461.
+Japanese: バイト代とプレゼント
+Translation: Gaji Kerja Sambilan dan Hadiah
+
+#462.
+Japanese: そら姉も反対らしい
+Translation: Sepertinya Sora-nee Juga Tidak Setuju
+
+#463.
+Japanese: 二乃は反対らしい
+Translation: Sepertinya Nino Tidak Setuju
+
+#464.
+Japanese: もう一度バイトしない？
+Translation: Mau Kerja Sambilan Sekali Lagi?
+
+#465.
+Japanese: 雨の朝は憂鬱？
+Translation: Apakah Pagi yang Hujan Itu Suram?
+
+#466.
+Japanese: 買い物と有里栖と
+Translation: Belanja Bersama Arisu
+
+#467.
+Japanese: 久々の親子の団らん
+Translation: Kumpul Keluarga yang Sudah Lama Tidak Terjadi
+
+#468.
+Japanese: 楽しくも忙しい準備
+Translation: Persiapan yang Menyenangkan Namun Sibuk
+
+#469.
+Japanese: 帰ってくる両親
+Translation: Orang Tua yang Kembali Pulang
+
+#470.
+Japanese: 本校に進学したら
+Translation: Jika Melanjutkan ke Sekolah Utama
+
+#471.
+Japanese: 友達の進路は？
+Translation: Bagaimana dengan Masa Depan Teman-teman?
+
+#472.
+Japanese: 朝のお約束？
+Translation: Rutinitas di Pagi Hari?
+
+#473.
+Japanese: さようなら、ありがとう
+Translation: Selamat Tinggal, Terima Kasih
+
+#474.
+Japanese: 世界を変える恋
+Translation: Cinta yang Mengubah Dunia
+
+#475.
+Japanese: 頼もしい仲間たち
+Translation: Teman-teman yang Bisa Diandalkan
+
+#476.
+Japanese: 広がる恋心
+Translation: Rasa Cinta yang Menyebar
+
+#477.
+Japanese: ふくらむ希望
+Translation: Harapan yang Membuncah
+
+#478.
+Japanese: 恋愛強化期間
+Translation: Periode Penguatan Cinta
+
+#479.
+Japanese: 恋のモニタリング
+Translation: Monitoring Cinta
+
+#480.
+Japanese: 天枷・鷺澤共同作戦
+Translation: Operasi Bersama Amakase dan Sagisawa
+
+#481.
+Japanese: 恋の拡散大作戦
+Translation: Operasi Besar Penyebaran Cinta
+
+#482.
+Japanese: 一筋の希望
+Translation: Secercah Harapan
+
+#483.
+Japanese: ただいま、おかえり
+Translation: Aku Pulang, Selamat Datang di Rumah
+
+#484.
+Japanese: ありがとう
+Translation: Terima Kasih
+
+#485.
+Japanese: 優しい嘘
+Translation: Kebohongan yang Baik
+
+#486.
+Japanese: マジカルプールデート
+Translation: Kencan Kolam Renang Ajaib
+
+#487.
+Japanese: やり直したらしたいこと
+Translation: Hal yang Ingin Dilakukan Jika Bisa Mengulang Kembali
+
+#488.
+Japanese: 常坂元という男
+Translation: Pria Bernama Tokisaka Gen
+
+#489.
+Japanese: 世界とふたりと
+Translation: Dunia dan Mereka Berdua
+
+#490.
+Japanese: 使命よりも大切な
+Translation: Lebih Penting Daripada Misi
+
+#491.
+Japanese: Ｄ．Ｃ．の魔法
+Translation: Sihir D.C.
+
+#492.
+Japanese: 有里咲のプラン
+Translation: Rencana Arisa
+
+#493.
+Japanese: 俺と有里咲と有里栖と
+Translation: Aku, Arisa, dan Arisu
+
+#494.
+Japanese: 無理してそうな有里咲
+Translation: Arisa yang Kelihatannya Memaksakan Diri
+
+#495.
+Japanese: サクラの国の有里咲
+Translation: Arisa dari Negeri Sakura
+
+#496.
+Japanese: 満月と魔法とＶＲと彼女と
+Translation: Bulan Purnama, Sihir, VR, dan Dirinya
+
+#497.
+Japanese: オカルトな話
+Translation: Cerita Okultisme
+
+#498.
+Japanese: 久しぶりのＳＳＲ
+Translation: SSR Setelah Sekian Lama
+
+#499.
+Japanese: 確認した日付
+Translation: Tanggal yang Telah Dikonfirmasi
+
+#500.
+Japanese: 思いだしてはダメ
+Translation: Jangan Mengingatnya
+
+#501.
+Japanese: ＶＲ使用許可
+Translation: Izin Penggunaan VR
+
+#502.
+Japanese: ＡＬＩＣＥに会えれば
+Translation: Jika Bisa Bertemu ALICE
+
+#503.
+Japanese: アリスとＡＬＩＣＥ
+Translation: Alice dan ALICE
+
+#504.
+Japanese: 遊園地デート再び
+Translation: Kencan di Taman Hiburan Sekali Lagi
+
+#505.
+Japanese: 彼女と過ごした日々
+Translation: Hari-hari yang Dihabiskan Bersamanya
+
+#506.
+Japanese: 有里栖とメーパン
+Translation: Arisu dan Maipan
+
+#507.
+Japanese: もう一人の有里栖？
+Translation: Arisu yang Satunya Lagi?
+
+#508.
+Japanese: SSRのやさしさ
+Translation: Kebaikan SSR
+
+#509.
+Japanese: ホクロの位置！？
+Translation: Posisi Tahi Lalat!?
+
+#510.
+Japanese: 個別活動と称して
+Translation: Dengan Alasan Kegiatan Individu
+
+#511.
+Japanese: いつかの誰かの記憶
+Translation: Ingatan Seseorang di Suatu Waktu
+
+#512.
+Japanese: 神社で不安を和らげて
+Translation: Meredakan Kecemasan di Kuil
+
+#513.
+Japanese: 明日の約束
+Translation: Janji untuk Esok Hari
+
+#514.
+Japanese: 雪とピアノと
+Translation: Salju dan Piano
+
+#515.
+Japanese: 自分じゃないみたい
+Translation: Seperti Bukan Diriku Sendiri
+
+#516.
+Japanese: 家族も大事に
+Translation: Jagalah Juga Keluargamu
+
+#517.
+Japanese: ジジイに聞いた雪の話
+Translation: Cerita Tentang Salju yang Kudengar dari Si Kakek
+
+#518.
+Japanese: アリスの視線
+Translation: Tatapan Alice
+
+#519.
+Japanese: 他人の夢を見ている感じ
+Translation: Rasanya Seperti Melihat Mimpi Orang Lain
+
+#520.
+Japanese: 有里栖と同じ夢を再び
+Translation: Melihat Mimpi yang Sama dengan Arisu Sekali Lagi
+
+#521.
+Japanese: ここ一年の話
+Translation: Cerita Tentang Setahun Terakhir Ini
+
+#522.
+Japanese: 有里栖の食レポブログ
+Translation: Blog Ulasan Makanan Arisu
+
+#523.
+Japanese: 二重人格なのかな？
+Translation: Apakah Ini Kepribadian Ganda?
+
+#524.
+Japanese: 曖昧な記憶
+Translation: Ingatan yang Samar
+
+#525.
+Japanese: 夢の中の少年と少女
+Translation: Anak Laki-laki dan Perempuan di Dalam Mimpi
+
+#526.
+Japanese: ひとり水鏡湖へ
+Translation: Pergi Sendirian ke Danau Mizukagami
+
+#527.
+Japanese: 似ている景色
+Translation: Pemandangan yang Mirip
+
+#528.
+Japanese: 有里栖と巡る島
+Translation: Menjelajahi Pulau Bersama Arisu
+
+#529.
+Japanese: 初めて会った場所は？
+Translation: Di Mana Tempat Pertama Kali Kita Bertemu?
+
+#530.
+Japanese: 思い出探しをしよう
+Translation: Mari Mencari Kenangan
+
+#531.
+Japanese: 病み上がりの有里栖
+Translation: Arisu yang Baru Sembuh dari Sakit
+
+#532.
+Japanese: メイドさんの対応
+Translation: Pelayanan dari Pelayan
+
+#533.
+Japanese: 欠席の彼女
+Translation: Dirinya yang Tidak Hadir
+
+#534.
+Japanese: 気になった別れ際
+Translation: Momen Perpisahan yang Mengganjal di Hati
+
+#535.
+Japanese: 季節外れの雪
+Translation: Salju yang Turun di Luar Musimnya
+
+#536.
+Japanese: 鏡の中の涙？
+Translation: Air Mata di Dalam Cermin?
+
+#537.
+Japanese: 懐かしい記憶
+Translation: Kenangan yang Nostalgia
+
+#538.
+Japanese: 巨神を駆逐する
+Translation: Membasmi Raksasa
+
+#539.
+Japanese: 差し入れは二乃の弁当
+Translation: Makan Malamnya Adalah Bekal dari Nino
+
+#540.
+Japanese: エンタメのお仕事
+Translation: Pekerjaan di Bidang Hiburan
+
+#541.
+Japanese: 数学はマストです
+Translation: Matematika Itu Wajib
+
+#542.
+Japanese: 親子三人で
+Translation: Bertiga Sebagai Orang Tua dan Anak
+
+#543.
+Japanese: 鷺澤会長と娘
+Translation: Ketua Sagisawa dan Putrinya
+
+#544.
+Japanese: いざ初バイトへ
+Translation: Mari Menuju Kerja Sambilan Pertama
+
+#545.
+Japanese: 揺れる裾に釘付け
+Translation: Terpaku pada Ujung Baju yang Goyang
+
+#546.
+Japanese: バイトどうしよ
+Translation: Bagaimana dengan Kerja Sambilan, ya
+
+#547.
+Japanese: 一登さんご指名です
+Translation: Ada Permintaan Khusus untuk Ichito-san
+
+#548.
+Japanese: 雨は嫌いじゃないけど
+Translation: Aku Tidak Benci Hujan, Tapi...
+
+#549.
+Japanese: 名探偵の名推理
+Translation: Deduksi Hebat dari Detektif Ternama
+
+#550.
+Japanese: いろいろな親子関係
+Translation: Berbagai Macam Hubungan Orang Tua dan Anak
+
+#551.
+Japanese: 両親の帰宅予告
+Translation: Pemberitahuan Kepulangan Orang Tua
+
+#552.
+Japanese: 将来は財閥を？
+Translation: Apa Nanti Akan Mengurus Konglomerat?
+
+#553.
+Japanese: 泉先生へのオススメ
+Translation: Rekomendasi untuk Ibu Guru Izumi
+
+#554.
+Japanese: なんだか普段と違う朝
+Translation: Pagi yang Entah Mengapa Terasa Berbeda dari Biasanya
+
+#555.
+Japanese: 知らない呼び方
+Translation: Panggilan yang Tidak Kukenal
+
+#556.
+Japanese: データが違います。正しくインストールしてください。
+Translation: Data tidak sesuai. Silakan instal dengan benar.
+
+#557.
+Japanese: MESファイルを更新してください
+Translation: Silakan perbarui file MES
+
+#558.
+Japanese: MESファイルバッファがとれません
+Translation: Tidak dapat mengalokasikan buffer file MES
+
+#559.
+Japanese: ラベルが見つかりません
+Translation: Label tidak ditemukan
+
+#560.
+Japanese: インデックス数 flaied
+Translation: Jumlah indeks gagal
+
+#561.
+Japanese: Direct3Dの初期化に失敗しました
+Translation: Gagal melakukan inisialisasi Direct3D
+
+#562.
+Japanese: セカンダリバッファの作成に失敗しました
+Translation: Gagal membuat buffer sekunder
+
+#563.
+Japanese: dataチャンクが存在しません
+Translation: Chunk data tidak ada
+
+#564.
+Japanese: WAVEFORMATEXE情報の取得に失敗しました
+Translation: Gagal mendapatkan informasi WAVEFORMATEXE
+
+#565.
+Japanese: fmtチャンクが存在しません
+Translation: Chunk fmt tidak ada
+
+#566.
+Japanese: ではありません
+Translation: Bukanlah
+
+#567.
+Japanese: FONT:テキストテクスチャロック失敗
+Translation: FONT: Gagal mengunci tekstur teks
+
+#568.
+Japanese: HTTPまたはHTTPSでもないです
+Translation: Bukan HTTP maupun HTTPS
+
+#569.
+Japanese: HTTPファイル読み込みに失敗しました
+Translation: Gagal membaca file HTTP
+
+#570.
+Japanese: ステータスコードが成功でないです
+Translation: Kode status menunjukkan kegagalan
+
+#571.
+Japanese: ステータスコードの取得に失敗しました
+Translation: Gagal mendapatkan kode status
+
+#572.
+Japanese: HTTP要求送信に失敗しました
+Translation: Gagal mengirim permintaan HTTP
+
+#573.
+Japanese: HTTPリクエストに失敗しました
+Translation: Permintaan HTTP gagal
+
+#574.
+Japanese: HTTP接続に失敗しました
+Translation: Koneksi HTTP gagal
+
+#575.
+Japanese: WinInetの初期化に失敗しました
+Translation: Gagal melakukan inisialisasi WinInet
+
+#576.
+Japanese: URL解析に失敗しました
+Translation: Gagal menganalisis URL
+
+#577.
+Japanese: URLが不正です
+Translation: URL tidak valid
+
+#578.
+Japanese: コメントの文字数が多い
+Translation: Karakter komentar terlalu banyak
+
+Total entries: 578
+
+============================================================
+NEW DC4 PLUS HARMONY SCENARIO TITLES (MISSING TRANSLATIONS)
+============================================================
+
+Japanese: ◆あなたの私◆
+Translation: 
+
+Japanese: ◆お家デートだね◆
+Translation: 
+
+Japanese: ◆それぞれの時間◆
+Translation: 
+
+Japanese: ◆イタズラしちゃいます◆
+Translation: 
+
+Japanese: ◆サプライズ！◆
+Translation: 
+
+Japanese: ◆デートプラン◆
+Translation: 
+
+Japanese: ◆二人の時間◆
+Translation: 
+
+Japanese: ◆今はここにいるから◆
+Translation: 
+
+Japanese: ◆再会の食卓◆
+Translation: 
+
+Japanese: ◆大人の合わせ方◆
+Translation: 
+
+Japanese: ◆女の子として◆
+Translation: 
+
+Japanese: ◆家族計画◆
+Translation: 
+
+Japanese: ◆将来に向けて◆
+Translation: 
+
+Japanese: ◆思い出がほしいから◆
+Translation: 
+
+Japanese: ◆意外な一面？◆
+Translation: 
+
+Japanese: ◆愛の力だね◆
+Translation: 
+
+Japanese: ◆教えて下さい◆
+Translation: 
+
+Japanese: ◆未来の選択肢◆
+Translation: 
+
+Japanese: ◆楽しきことの予兆◆
+Translation: 
+
+Japanese: ◆癒やしをあげる◆
+Translation: 
+
+Japanese: ◆真面目な彼女◆
+Translation: 
+
+Japanese: ◆約束ですからね？◆
+Translation: 
+
+Japanese: ◆自重も必要！◆
+Translation: 
+
+Japanese: ◆追いついてみせる◆
+Translation: 
+

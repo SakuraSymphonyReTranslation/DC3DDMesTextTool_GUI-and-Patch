@@ -1,0 +1,17 @@
+# Build artifacts
+obj/
+.vs/
+
+# Python virtual env
+DC3DDPatch a/.venv/
+
+# Embedded repo metadata
+DC3DDPatch a/Detours/.git/
+
+# Temporary logs
+*.log
+*_log*.txt
+
+# OS/editor
+Thumbs.db
+.DS_Store
