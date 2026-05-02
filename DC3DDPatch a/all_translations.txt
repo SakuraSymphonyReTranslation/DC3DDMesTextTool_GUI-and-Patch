@@ -1,0 +1,2327 @@
+======================================================================
+COMPLETE TRANSLATION LIST
+======================================================================
+
+#1. 錬・
+   Translation: Japanese: ｛・
+   Max: 4 | Len: 12 | *** TOO LONG (over by 8) - NOT APPLIED ***
+
+#2. ◆タイトル名◆
+   Translation: *Nama Judul*
+   Max: 14 | Len: 12 | OK
+
+#3. 実行エラー
+   Translation: Error Run
+   Max: 10 | Len: 9 | OK
+
+#4. 」を実行できません！
+   Translation: " tdk dpt jalan!
+   Max: 20 | Len: 16 | OK
+
+#5. タイトル名なし
+   Translation: Tanpa Judul
+   Max: 14 | Len: 11 | OK
+
+#6. 接続に失敗しました。
+   Translation: Koneksi Gagal.
+   Max: 20 | Len: 14 | OK
+
+#7. ネットに接続しますよろしいですか？
+   Translation: Hubungkan ke internet, ok?
+   Max: 34 | Len: 26 | OK
+
+#8. D.C.4 〜ダ・カーポ4〜
+   Translation: D.C.4 ~Da Capo 4~
+   Max: 21 | Len: 17 | OK
+
+#9. 空良
+   Translation: Sora
+   Max: 4 | Len: 4 | OK
+
+#10. 櫻井
+   Translation: Saku
+   Max: 4 | Len: 4 | OK
+
+#11. @names.datが読めないか項目数が違います。
+   Translation: @names.dat error atau jumlah beda.
+   Max: 40 | Len: 34 | OK
+
+#12. 正しくインストールしてください
+   Translation: Mohon instal dgn benar.
+   Max: 30 | Len: 23 | OK
+
+#13. 正常に遊ぶためには、正しくインストールしてください
+   Translation: Agar lancar, mohon instal dgn benar.
+   Max: 50 | Len: 36 | OK
+
+#14. "%s"を作成してよろしいですか？
+   Translation: Buat "%s"? Apakah ok?
+   Max: 30 | Len: 21 | OK
+
+#15. データVer.%s
+   Translation: Data Ver.%s
+   Max: 15 | Len: 11 | OK
+
+#16. ログイン情報に空欄があります。
+   Translation: Info login ada yg kosong.
+   Max: 30 | Len: 25 | OK
+
+#17. 最大でインストールを行ってください。
+   Translation: Mohon lakukan instalasi penuh.
+   Max: 36 | Len: 30 | OK
+
+#18. 0(ゼロ)とO(オー)、1(イチ)とI(アイ)等もご確認ください。
+   Translation: Cek 0/O, 1/I, dan karakter mirip lainnya.
+   Max: 54 | Len: 41 | OK
+
+#19. 解除キーURLをクリップボードにコピーしますか？
+   Translation: Salin URL kunci buka ke clipboard?
+   Max: 45 | Len: 34 | OK
+
+#20. ウェブブラウザを起動できませんでした。
+   Translation: Gagal membuka peramban web.
+   Max: 38 | Len: 27 | OK
+
+#21. に接続します。
+   Translation: Menyambung ke.
+   Max: 14 | Len: 14 | OK
+
+#22. 解除しないとディスクレスでプレイできません。
+   Translation: Harus aktivasi utk main tanpa disk.
+   Max: 44 | Len: 35 | OK
+
+#23. 解除キーはインターネット経由で入手したものを入れてください。
+   Translation: Masukkan kunci buka yg didapat via internet.
+   Max: 60 | Len: 44 | OK
+
+#24. 正しく解除しました。
+   Translation: Berhasil dibuka.
+   Max: 20 | Len: 16 | OK
+
+#25. DC4のDVDをセットしてください
+   Translation: Masukkan DVD DC4.
+   Max: 28 | Len: 17 | OK
+
+#26. K.$バージョン情報
+   Translation: K.$ Info Versi
+   Max: 17 | Len: 14 | OK
+
+#27. ウインドウサイズを元に戻す
+   Translation: Reset ukuran jendela
+   Max: 26 | Len: 20 | OK
+
+#28. を選択してください
+   Translation: Mohon pilih
+   Max: 18 | Len: 11 | OK
+
+#29. ディスクレス化を行いますか？
+   Translation: Aktifkan mode tanpa disk?
+   Max: 28 | Len: 25 | OK
+
+#30. 画面解像度/画面色数:%d x
+   Translation: Resolusi/Warna:%d x
+   Max: 25 | Len: 19 | OK
+
+#31. を作成しました。
+   Translation: telah dibuat.
+   Max: 16 | Len: 13 | OK
+
+#32. フォルダが選択できませんでした。
+   Translation: Folder tidak dapat dipilih.
+   Max: 32 | Len: 27 | OK
+
+#33. フォルダを選択してください
+   Translation: Mohon pilih folder
+   Max: 26 | Len: 18 | OK
+
+#34. ウインドウサイズを固定する
+   Translation: Kunci ukuran jendela
+   Max: 26 | Len: 20 | OK
+
+#35. ウインドウサイズの固定を解除する
+   Translation: Buka kunci ukuran jendela
+   Max: 32 | Len: 25 | OK
+
+#36. ログアウトしました
+   Translation: Telah keluar
+   Max: 18 | Len: 12 | OK
+
+#37. 終了しますか？
+   Translation: Keluar?
+   Max: 14 | Len: 7 | OK
+
+#38. ログインに失敗しました。
+   Translation: Login gagal.
+   Max: 24 | Len: 12 | OK
+
+#39. 通信ができませんでした。
+   Translation: Gagal komunikasi.
+   Max: 24 | Len: 17 | OK
+
+#40. に書き込めません。
+   Translation: Tdk dpt menulis.
+   Max: 18 | Len: 16 | OK
+
+#41. DC4　インストール
+   Translation: Instal DC4
+   Max: 17 | Len: 10 | OK
+
+#42. DirectXはインストールされてます。
+   Translation: DirectX sudah terinstal.
+   Max: 33 | Len: 24 | OK
+
+#43. すでにメディアレス化されています。
+   Translation: Sudah mode tanpa media.
+   Max: 34 | Len: 23 | OK
+
+#44. すでにディスクレス化されています。
+   Translation: Sudah mode tanpa disk.
+   Max: 34 | Len: 22 | OK
+
+#45. 実行されてますので、ディスクレス認証が起動できません。
+   Translation: Sedang jalan; aktivasi tdk dpt dibuka.
+   Max: 54 | Len: 38 | OK
+
+#46. }@ＭＳ ゴシック
+   Translation: MS Gothic
+   Max: 16 | Len: 9 | OK
+
+#47. 入力がされてない箇所がありますがよろしいですか？
+   Translation: Ada bagian kosong. Apakah ok?
+   Max: 48 | Len: 29 | OK
+
+#48. @か.が入力されてないメールアドレスです。
+   Translation: Email kurang @ atau titik.
+   Max: 40 | Len: 26 | OK
+
+#49. セーブデータの更新に失敗しました。
+   Translation: Gagal update data save.
+   Max: 34 | Len: 23 | OK
+
+#50. セーブデータの取得に失敗しました。
+   Translation: Gagal ambil data save.
+   Max: 34 | Len: 22 | OK
+
+#51. コマンドセーブの::の数が多い
+   Translation: Terlalu banyak :: di cmd
+   Max: 28 | Len: 24 | OK
+
+#52. 学生特権
+   Translation: Hak Maba
+   Max: 8 | Len: 8 | OK
+
+#53. 秘されしモノ
+   Translation: Hal Rahasia
+   Max: 12 | Len: 11 | OK
+
+#54. 願いの軌跡
+   Translation: Jalur Doa
+   Max: 10 | Len: 9 | OK
+
+#55. 奇跡を願っても
+   Translation: Berdoa Ajaib
+   Max: 14 | Len: 12 | OK
+
+#56. 今この手の中の幸福
+   Translation: Bahagia di Tangan
+   Max: 18 | Len: 17 | OK
+
+#57. 愛という幸福
+   Translation: Cinta Bahagia
+   Max: 12 | Len: 13 | *** TOO LONG (over by 1) - NOT APPLIED ***
+
+#58. もしこの心届くなら
+   Translation: Jika Hati Sampai
+   Max: 18 | Len: 16 | OK
+
+#59. 震える心抱いて
+   Translation: Dekap Hati Iba
+   Max: 14 | Len: 14 | OK
+
+#60. 心奏でて
+   Translation: Alunan
+   Max: 8 | Len: 6 | OK
+
+#61. 奮い立つ心
+   Translation: Semangat
+   Max: 10 | Len: 8 | OK
+
+#62. 重ね想う
+   Translation: Perasaan
+   Max: 8 | Len: 8 | OK
+
+#63. 並んで歩くだけでも
+   Translation: Jalan Berdua Saja
+   Max: 18 | Len: 17 | OK
+
+#64. 抜き足差し足猫の足
+   Translation: Langkah Kaki Kucng
+   Max: 18 | Len: 18 | OK
+
+#65. こんな上々の休日
+   Translation: Liburan Hebat
+   Max: 16 | Len: 13 | OK
+
+#66. 心躍り胸弾む
+   Translation: Hati Girang
+   Max: 12 | Len: 11 | OK
+
+#67. 足取り軽く心軽く
+   Translation: Langkah Ringan
+   Max: 16 | Len: 14 | OK
+
+#68. 静かに冴える夜
+   Translation: Malam Tenang
+   Max: 14 | Len: 12 | OK
+
+#69. まだまだ今日は終わらない
+   Translation: Hari Belum Berakhir
+   Max: 24 | Len: 19 | OK
+
+#70. 実家のような心地よさ
+   Translation: Nyaman Bak di Rumah
+   Max: 20 | Len: 19 | OK
+
+#71. 解き放て青春
+   Translation: Lepas Remaja
+   Max: 12 | Len: 12 | OK
+
+#72. 学食か購買か弁当か
+   Translation: Kantin atau Bekal
+   Max: 18 | Len: 17 | OK
+
+#73. 未来への資産
+   Translation: Aset Depan
+   Max: 12 | Len: 10 | OK
+
+#74. かったるくない通学路
+   Translation: Jalan Tak Bosan
+   Max: 20 | Len: 15 | OK
+
+#75. 心躍る幕開け
+   Translation: Awal Senang
+   Max: 12 | Len: 11 | OK
+
+#76. のんびり長閑に
+   Translation: Waktu Santai
+   Max: 14 | Len: 12 | OK
+
+#77. 親友≒悪友
+   Translation: Teman Akrab
+   Max: 10 | Len: 11 | *** TOO LONG (over by 1) - NOT APPLIED ***
+
+#78. ちょこっと自分らしく
+   Translation: Sedikit Jadi Diri
+   Max: 20 | Len: 17 | OK
+
+#79. これでも風紀委員ですから
+   Translation: Tetap Komite Disiplin
+   Max: 24 | Len: 21 | OK
+
+#80. 少しだけ譲れないもの
+   Translation: Hal Tak Terganti
+   Max: 20 | Len: 16 | OK
+
+#81. 恋愛請負、執行致します
+   Translation: Biro Cinta, Siap!
+   Max: 22 | Len: 17 | OK
+
+#82. 甘くて美味しいのはいかが？
+   Translation: Mau Sesuatu Yg Manis?
+   Max: 26 | Len: 21 | OK
+
+#83. 小悪魔？裏モード？
+   Translation: Iblis? Mode Lain?
+   Max: 18 | Len: 17 | OK
+
+#84. 穏やかに舞うサクラのように
+   Translation: Bak Sakura Menari Tenang
+   Max: 26 | Len: 24 | OK
+
+#85. 穏やかなお日様のように
+   Translation: Bak Mentari Tenang
+   Max: 22 | Len: 18 | OK
+
+#86. 風に舞う花のように
+   Translation: Bak Bunga Angin
+   Max: 18 | Len: 15 | OK
+
+#87. いつか見た、懐かしい夢
+   Translation: Mimpi Lama Bersemi
+   Max: 22 | Len: 18 | OK
+
+#88. いつか見た夢
+   Translation: Mimpi Dulu
+   Max: 12 | Len: 10 | OK
+
+#89. Ｄ．Ｃ．
+   Translation: D.C.
+   Max: 8 | Len: 4 | OK
+
+#90. 明日への期待
+   Translation: Harapan Esok
+   Max: 12 | Len: 12 | OK
+
+#91. バレンタインな打ち上げ
+   Translation: Pesta Valentine
+   Max: 22 | Len: 15 | OK
+
+#92. 恋のレジェンドバトル
+   Translation: Duel Legenda Cinta
+   Max: 20 | Len: 18 | OK
+
+#93. 恋パの朝
+   Translation: Pagi Cin
+   Max: 8 | Len: 8 | OK
+
+#94. 明日は恋パ
+   Translation: Esok Pesta
+   Max: 10 | Len: 10 | OK
+
+#95. ８つ目の大罪
+   Translation: Dosa Ke-8
+   Max: 12 | Len: 9 | OK
+
+#96. サプライズは秘密
+   Translation: Rahasia Kejutan
+   Max: 16 | Len: 15 | OK
+
+#97. 寝顔はかわいい二乃
+   Translation: Wajah Tidur Nino
+   Max: 18 | Len: 16 | OK
+
+#98. 準備はあと１日
+   Translation: Sisa Satu Hari
+   Max: 14 | Len: 14 | OK
+
+#99. 演技でも俺らしく
+   Translation: Jadi Diri Akting
+   Max: 16 | Len: 16 | OK
+
+#100. 詩名いじり
+   Translation: Goda Shi
+   Max: 10 | Len: 8 | OK
+
+#101. 至福と無駄遣い
+   Translation: Bahagia Boros
+   Max: 14 | Len: 13 | OK
+
+#102. ネゴシエイター二乃
+   Translation: Negosiator Nino
+   Max: 18 | Len: 15 | OK
+
+#103. 大詰めの作業割
+   Translation: Tugas Akhir
+   Max: 14 | Len: 11 | OK
+
+#104. 泉先生の商い講義
+   Translation: Kuliah Izumi
+   Max: 16 | Len: 12 | OK
+
+#105. 特命大使ちょこ
+   Translation: Utusan Choko
+   Max: 14 | Len: 12 | OK
+
+#106. 明日からまた忙しく
+   Translation: Besok Sibuk Lagi
+   Max: 18 | Len: 16 | OK
+
+#107. 止まった時計
+   Translation: Jam Mati
+   Max: 12 | Len: 8 | OK
+
+#108. 台本読み練習
+   Translation: Latih Naskah
+   Max: 12 | Len: 12 | OK
+
+#109. 杉並と詩名
+   Translation: Sugi & Shi
+   Max: 10 | Len: 10 | OK
+
+#110. うろぼろす
+   Translation: Ouroboros
+   Max: 10 | Len: 9 | OK
+
+#111. ファンタジーな回想
+   Translation: Kenangan Khayal
+   Max: 18 | Len: 15 | OK
+
+#112. さてもうひと頑張り
+   Translation: Satu Usaha Lagi
+   Max: 18 | Len: 15 | OK
+
+#113. いつもよりは寝過ごして
+   Translation: Kesiangan Dr Biasa
+   Max: 22 | Len: 18 | OK
+
+#114. もう一度見たい
+   Translation: Ingin Lihat
+   Max: 14 | Len: 11 | OK
+
+#115. 果たしてバグか？
+   Translation: Apakah Bug?
+   Max: 16 | Len: 11 | OK
+
+#116. 稀有な体験
+   Translation: Pengalaman
+   Max: 10 | Len: 10 | OK
+
+#117. 楽しみですね
+   Translation: Gak Sabar Ya
+   Max: 12 | Len: 12 | OK
+
+#118. 新アトラクションのお誘い
+   Translation: Ajak Main Wahana Baru
+   Max: 24 | Len: 21 | OK
+
+#119. ちぇしの雨宿り
+   Translation: Cheshi Teduh
+   Max: 14 | Len: 12 | OK
+
+#120. 台本のための質問
+   Translation: Tanya Soal Teks
+   Max: 16 | Len: 15 | OK
+
+#121. 偶然の同行
+   Translation: Ikut Tiba2
+   Max: 10 | Len: 10 | OK
+
+#122. 風紀委員とのネゴ
+   Translation: Nego Komite Dis
+   Max: 16 | Len: 15 | OK
+
+#123. 地味な作業のご褒美
+   Translation: Hadiah Tugas Kecil
+   Max: 18 | Len: 18 | OK
+
+#124. 手が足りなそうなのは
+   Translation: Butuh Bantuan
+   Max: 20 | Len: 13 | OK
+
+#125. ご飯を食べて頑張ろう
+   Translation: Makan dan Berjuang
+   Max: 20 | Len: 18 | OK
+
+#126. 心地よい疲労
+   Translation: Lelah Nikmat
+   Max: 12 | Len: 12 | OK
+
+#127. 有能有里栖のお手伝い
+   Translation: Bantu Alice Hebat
+   Max: 20 | Len: 17 | OK
+
+#128. 詩名とちよ子の関係
+   Translation: Relasi Shi & Chiyo
+   Max: 18 | Len: 18 | OK
+
+#129. 恋愛請負も忘れずに
+   Translation: Ingat Tugas Cinta
+   Max: 18 | Len: 17 | OK
+
+#130. チラシの手伝い
+   Translation: Bantu Brosur
+   Max: 14 | Len: 12 | OK
+
+#131. 遊撃一登の選択
+   Translation: Pilihan Itto
+   Max: 14 | Len: 12 | OK
+
+#132. SSR史上最大作戦
+   Translation: Ops SSR Besar
+   Max: 15 | Len: 13 | OK
+
+#133. 微笑みの爆弾
+   Translation: Bom Senyum
+   Max: 12 | Len: 10 | OK
+
+#134. どうなることやら
+   Translation: Jadi Apa Nanti
+   Max: 16 | Len: 14 | OK
+
+#135. 言い出しっぺの法則
+   Translation: Hukum Inisiator
+   Max: 18 | Len: 15 | OK
+
+#136. ちょこっとの期待
+   Translation: Sedikit Harap
+   Max: 16 | Len: 13 | OK
+
+#137. ふとよぎる閃き
+   Translation: Ide Mendadak
+   Max: 14 | Len: 12 | OK
+
+#138. 明日も一歩
+   Translation: Satu Step
+   Max: 10 | Len: 9 | OK
+
+#139. 有里栖の相談
+   Translation: Curhat Alice
+   Max: 12 | Len: 12 | OK
+
+#140. 泉先生の宇宙人講義
+   Translation: Kuliah Alien
+   Max: 18 | Len: 12 | OK
+
+#141. 乙女ゲームな乙女たち
+   Translation: Gadis Game Otome
+   Max: 20 | Len: 16 | OK
+
+#142. 変わった猫と
+   Translation: Kucing Aneh
+   Max: 12 | Len: 11 | OK
+
+#143. 彼女の遠慮
+   Translation: Rasa Segan
+   Max: 10 | Len: 10 | OK
+
+#144. アイドルの苦悩
+   Translation: Derita Idol
+   Max: 14 | Len: 11 | OK
+
+#145. 人気者アリス
+   Translation: Alice Tenar
+   Max: 12 | Len: 11 | OK
+
+#146. 楽しくなる予感
+   Translation: Firasat Seru
+   Max: 14 | Len: 12 | OK
+
+#147. SSRバレンタイン対策
+   Translation: Rencana Valentine
+   Max: 19 | Len: 17 | OK
+
+#148. 転校生
+   Translation: Murid
+   Max: 6 | Len: 5 | OK
+
+#149. お馴染みの面々
+   Translation: Wajah Kenal
+   Max: 14 | Len: 11 | OK
+
+#150. お決まりの朝
+   Translation: Pagi Rutin
+   Max: 12 | Len: 10 | OK
+
+#151. これはただの夢？
+   Translation: Cuma Mimpi?
+   Max: 16 | Len: 11 | OK
+
+#152. 無限へと漸近する過ち
+   Translation: Salah Tak Terbatas
+   Max: 20 | Len: 18 | OK
+
+#153. SSR始動
+   Translation: SSR On
+   Max: 7 | Len: 6 | OK
+
+#154. それぞれの感想
+   Translation: Kesan Tiap Org
+   Max: 14 | Len: 14 | OK
+
+#155. 杉並と迷宮
+   Translation: Sugi & Lab
+   Max: 10 | Len: 10 | OK
+
+#156. 有里栖と自由落下
+   Translation: Terjun Alice
+   Max: 16 | Len: 12 | OK
+
+#157. ひよりと耐久勝負
+   Translation: Duel Hiyori
+   Max: 16 | Len: 11 | OK
+
+#158. 諳子とお城
+   Translation: Akiko Puri
+   Max: 10 | Len: 10 | OK
+
+#159. 二乃とショッピング
+   Translation: Belanja w/ Nino
+   Max: 18 | Len: 15 | OK
+
+#160. どうしようかな
+   Translation: Mau Ngapain
+   Max: 14 | Len: 11 | OK
+
+#161. いざワンダーランド
+   Translation: Ke Wonderland
+   Max: 18 | Len: 13 | OK
+
+#162. 突然の雷鳴！？
+   Translation: Petir Tiba2
+   Max: 14 | Len: 11 | OK
+
+#163. 有里栖からのお誘い
+   Translation: Ajak Alice
+   Max: 18 | Len: 10 | OK
+
+#164. ジジイと満月
+   Translation: Kakek Purnama
+   Max: 12 | Len: 13 | *** TOO LONG (over by 1) - NOT APPLIED ***
+
+#165. 反省会という名の
+   Translation: Rapat Evaluasi
+   Max: 16 | Len: 14 | OK
+
+#166. 泉先生の雑学講義
+   Translation: Kuliah Trivia
+   Max: 16 | Len: 13 | OK
+
+#167. らしくないやる気
+   Translation: Semangat Beda
+   Max: 16 | Len: 13 | OK
+
+#168. 充実した夕食
+   Translation: Makan Malam
+   Max: 12 | Len: 11 | OK
+
+#169. 役割分担という式
+   Translation: Bagi Tugas
+   Max: 16 | Len: 10 | OK
+
+#170. 青春の１ページ
+   Translation: Lembar Remaja
+   Max: 14 | Len: 13 | OK
+
+#171. 活動開始！
+   Translation: Mulai Ops!
+   Max: 10 | Len: 10 | OK
+
+#172. 屋上集合
+   Translation: Atap
+   Max: 8 | Len: 4 | OK
+
+#173. 集まった仲間たち
+   Translation: Kawan Kumpul
+   Max: 16 | Len: 12 | OK
+
+#174. 二乃の条件
+   Translation: Syarat Nino
+   Max: 10 | Len: 11 | *** TOO LONG (over by 1) - NOT APPLIED ***
+
+#175. 助けてあげたい
+   Translation: Ingin Bantu
+   Max: 14 | Len: 11 | OK
+
+#176. 楽しいランチタイム
+   Translation: Waktu Makan Siang
+   Max: 18 | Len: 17 | OK
+
+#177. 月曜の朝も清々しく
+   Translation: Senin Pagi Segar
+   Max: 18 | Len: 16 | OK
+
+#178. 白河と美嶋
+   Translation: Shi & Mish
+   Max: 10 | Len: 10 | OK
+
+#179. 杉並から入電！
+   Translation: Call dr Sugi!
+   Max: 14 | Len: 13 | OK
+
+#180. 休日のルーチン
+   Translation: Rutinitas
+   Max: 14 | Len: 9 | OK
+
+#181. WLがオープンしたら？
+   Translation: Jika WL Buka?
+   Max: 20 | Len: 13 | OK
+
+#182. 日常的学園生活
+   Translation: Hidup Sekolah
+   Max: 14 | Len: 13 | OK
+
+#183. いつもの朝
+   Translation: Pagi Biasa
+   Max: 10 | Len: 10 | OK
+
+#184. あの人の夢
+   Translation: Mimpinya
+   Max: 10 | Len: 8 | OK
+
+#185. 我が家の日常
+   Translation: Harian Rumah
+   Max: 12 | Len: 12 | OK
+
+#186. 黄昏のうたたね
+   Translation: Tidur Senja
+   Max: 14 | Len: 11 | OK
+
+#187. いつかの夢
+   Translation: Mimpi Dulu
+   Max: 10 | Len: 10 | OK
+
+#188. 楽しさの拡散
+   Translation: Sebar Seru
+   Max: 12 | Len: 10 | OK
+
+#189. 恋に恋する女の子
+   Translation: Gadis Mabuk Cnt
+   Max: 16 | Len: 15 | OK
+
+#190. 作為的な運命？
+   Translation: Takdir Buatan?
+   Max: 14 | Len: 14 | OK
+
+#191. お部屋デートで
+   Translation: Kencan Kamar
+   Max: 14 | Len: 12 | OK
+
+#192. 一番近くにいたい
+   Translation: Mau Terdekat
+   Max: 16 | Len: 12 | OK
+
+#193. 自分らしくいられるよう
+   Translation: Agar Jadi Diri
+   Max: 22 | Len: 14 | OK
+
+#194. デートみたいなもの
+   Translation: Seperti Kencan
+   Max: 18 | Len: 14 | OK
+
+#195. 模索するＣＨＯＣＯ
+   Translation: Choco Cari Jalan
+   Max: 18 | Len: 16 | OK
+
+#196. 詩名は敏腕マネ？
+   Translation: Shi Manajer?
+   Max: 16 | Len: 12 | OK
+
+#197. 壁スカート防衛作戦
+   Translation: Ops Jaga Rok
+   Max: 18 | Len: 12 | OK
+
+#198. とっきー先生の授業
+   Translation: Kelas Tokki
+   Max: 18 | Len: 11 | OK
+
+#199. 結果ちよ子とふたりで
+   Translation: Akhirnya w/ Chiyoko
+   Max: 20 | Len: 19 | OK
+
+#200. 凹んでいるちよ子
+   Translation: Chiyoko Sedih
+   Max: 16 | Len: 13 | OK
+
+#201. ＣＨＯＣＯの変化
+   Translation: Ubahan CHOCO
+   Max: 16 | Len: 12 | OK
+
+#202. ＫｏｔｏＲｉさんのお言葉
+   Translation: Kata-kata Kotori-san
+   Max: 24 | Len: 20 | OK
+
+#203. ＫｏｔｏＲＩさんトーク
+   Translation: Obrolan Kotori-san
+   Max: 22 | Len: 18 | OK
+
+#204. ＣＨＯＣＯとしての矜持
+   Translation: Kebanggaan CHOCO
+   Max: 22 | Len: 16 | OK
+
+#205. ちょこの呼び出し
+   Translation: Panggilan Choco
+   Max: 16 | Len: 15 | OK
+
+#206. ふたりの距離
+   Translation: Jarak Berdua
+   Max: 12 | Len: 12 | OK
+
+#207. やり直しと返答と
+   Translation: Ulang & Jawaban
+   Max: 16 | Len: 15 | OK
+
+#208. もう心配いらない
+   Translation: Tak Perlu Cemas
+   Max: 16 | Len: 15 | OK
+
+#209. 新たな形
+   Translation: Hal Baru
+   Max: 8 | Len: 8 | OK
+
+#210. 少し考えさせて
+   Translation: Beri Waktu
+   Max: 14 | Len: 10 | OK
+
+#211. つながっている？
+   Translation: Terhubung?
+   Max: 16 | Len: 10 | OK
+
+#212. 高いところを覗く方法
+   Translation: Cara Intip Tinggi
+   Max: 20 | Len: 17 | OK
+
+#213. 先行するひより
+   Translation: Hiyori Duluan
+   Max: 14 | Len: 13 | OK
+
+#214. 打ち上げと臨時手伝い
+   Translation: Pesta & Bantu-bantu
+   Max: 20 | Len: 19 | OK
+
+#215. やりがいのある仕事
+   Translation: Kerja Berharga
+   Max: 18 | Len: 14 | OK
+
+#216. バイトヘルプの依頼
+   Translation: Bantu Kerja Part
+   Max: 18 | Len: 16 | OK
+
+#217. 依頼募集スレッド
+   Translation: Utas Permintaan
+   Max: 16 | Len: 15 | OK
+
+#218. ＳＳＲ臨時招集
+   Translation: Panggilan SSR
+   Max: 14 | Len: 13 | OK
+
+#219. 未羽と白河の秘密
+   Translation: Rahasia Miu Shi
+   Max: 16 | Len: 15 | OK
+
+#220. 哀しい夢
+   Translation: Mimpi Ibu
+   Max: 8 | Len: 9 | *** TOO LONG (over by 1) - NOT APPLIED ***
+
+#221. 白河の不調
+   Translation: Kondisi Shi
+   Max: 10 | Len: 11 | *** TOO LONG (over by 1) - NOT APPLIED ***
+
+#222. 保留にさせてください
+   Translation: Mohon Tunda Dulu
+   Max: 20 | Len: 16 | OK
+
+#223. 伝わる気持ち
+   Translation: Rasa Sampai
+   Max: 12 | Len: 11 | OK
+
+#224. 朔の夜の別れ
+   Translation: Pisah Malam
+   Max: 12 | Len: 11 | OK
+
+#225. 知らないけど知ってる
+   Translation: Tak Tahu Tapi Tahu
+   Max: 20 | Len: 18 | OK
+
+#226. 手から伝わる温もり
+   Translation: Hangat Tanganmu
+   Max: 18 | Len: 15 | OK
+
+#227. 何度目かの団欒
+   Translation: Kumpul Lagi
+   Max: 14 | Len: 11 | OK
+
+#228. 乗り越えなくていい
+   Translation: Tak Perlu Lewati
+   Max: 18 | Len: 16 | OK
+
+#229. 為になるダラダラ
+   Translation: Santai Berguna
+   Max: 16 | Len: 14 | OK
+
+#230. 未来の奥さん
+   Translation: Calon Istri
+   Max: 12 | Len: 11 | OK
+
+#231. 別れのリサイタル
+   Translation: Resital Pisah
+   Max: 16 | Len: 13 | OK
+
+#232. 青春っぽい時間
+   Translation: Waktu Remaja
+   Max: 14 | Len: 12 | OK
+
+#233. あと2週間の
+   Translation: Sisa 2 Mgg
+   Max: 11 | Len: 10 | OK
+
+#234. 満月の夜の邂逅
+   Translation: Temu Purnama
+   Max: 14 | Len: 12 | OK
+
+#235. カガミの魔法
+   Translation: Sihir Kagami
+   Max: 12 | Len: 12 | OK
+
+#236. ちょこからのヒント
+   Translation: Petunjuk Choco
+   Max: 18 | Len: 14 | OK
+
+#237. 異世界からの迷い人
+   Translation: Tersesat Dunia
+   Max: 18 | Len: 14 | OK
+
+#238. 零と無限の交わる世界
+   Translation: Nol & Tak Terbatas
+   Max: 20 | Len: 18 | OK
+
+#239. 月間ヌー春の特別号
+   Translation: Edisi Khusus Nuu
+   Max: 18 | Len: 16 | OK
+
+#240. 夢の中の景色と
+   Translation: Pemandangan Mi
+   Max: 14 | Len: 14 | OK
+
+#241. 詩名のために
+   Translation: Demi Shiina
+   Max: 12 | Len: 11 | OK
+
+#242. 半分は優しさで
+   Translation: Separuh Kasih
+   Max: 14 | Len: 13 | OK
+
+#243. これ以上付き合えない
+   Translation: Tak Bisa Lanjut
+   Max: 20 | Len: 15 | OK
+
+#244. 雷を待ちながら
+   Translation: Menunggu Petir
+   Max: 14 | Len: 14 | OK
+
+#245. 隠していたこと
+   Translation: Hal Rahasia
+   Max: 14 | Len: 11 | OK
+
+#246. おうちにかえりたい
+   Translation: Ingin Pulang
+   Max: 18 | Len: 12 | OK
+
+#247. 特別な気持ち
+   Translation: Rasa Khusus
+   Max: 12 | Len: 11 | OK
+
+#248. ラブの匂い？
+   Translation: Bau Cinta?
+   Max: 12 | Len: 10 | OK
+
+#249. まだまだ知らないこと
+   Translation: Belum Mengetahui
+   Max: 20 | Len: 16 | OK
+
+#250. そんなことでありがとう
+   Translation: Makasih Untuk Itu
+   Max: 22 | Len: 17 | OK
+
+#251. とても面倒くさい
+   Translation: Sangat Repot
+   Max: 16 | Len: 12 | OK
+
+#252. 団欒大好き人間
+   Translation: Suka Berkumpul
+   Max: 14 | Len: 14 | OK
+
+#253. 家族でおもてなし
+   Translation: Jamuan Keluarga
+   Max: 16 | Len: 15 | OK
+
+#254. 杉並の好敵手
+   Translation: Rival Sugi
+   Max: 12 | Len: 10 | OK
+
+#255. スパでのお仕事
+   Translation: Kerja di Spa
+   Max: 14 | Len: 12 | OK
+
+#256. 偶然のゲット
+   Translation: Dapat Hoki
+   Max: 12 | Len: 10 | OK
+
+#257. 苦学生？な詩名
+   Translation: Shiina Miskin?
+   Max: 14 | Len: 14 | OK
+
+#258. 見た目で判断しないで
+   Translation: Jangan Nilai Fisik
+   Max: 20 | Len: 18 | OK
+
+#259. 詩名の大好きな人
+   Translation: Favorit Shiina
+   Max: 16 | Len: 14 | OK
+
+#260. 詩名とちょこの出会い
+   Translation: Pertemuan Shi Choco
+   Max: 20 | Len: 19 | OK
+
+#261. 懐かしい曲
+   Translation: Lagu Lama
+   Max: 10 | Len: 9 | OK
+
+#262. この先の未来へ
+   Translation: Ke Masa Depan
+   Max: 14 | Len: 13 | OK
+
+#263. 特別な瞬間を
+   Translation: Momen Unik
+   Max: 12 | Len: 10 | OK
+
+#264. 付属卒業式
+   Translation: Wisuda SMP
+   Max: 10 | Len: 10 | OK
+
+#265. 明日はいよいよ
+   Translation: Besok Waktunya
+   Max: 14 | Len: 14 | OK
+
+#266. スペシャル放送に向け
+   Translation: Menuju Siar Khusus
+   Max: 20 | Len: 18 | OK
+
+#267. ゲーム実況者ちよ子
+   Translation: Gamer Chiyoko
+   Max: 18 | Len: 13 | OK
+
+#268. 曲目決定
+   Translation: Cek Lagu
+   Max: 8 | Len: 8 | OK
+
+#269. 卒業にはあの曲を
+   Translation: Lagu Kelulusan
+   Max: 16 | Len: 14 | OK
+
+#270. 打ち合わせという名の
+   Translation: Namanya Juga Rapat
+   Max: 20 | Len: 18 | OK
+
+#271. あの日の思い出
+   Translation: Kenangan Itu
+   Max: 14 | Len: 12 | OK
+
+#272. 乱れのない心
+   Translation: Hati Tenang
+   Max: 12 | Len: 11 | OK
+
+#273. 踏み出す一歩
+   Translation: Langkah Maju
+   Max: 12 | Len: 12 | OK
+
+#274. 不思議な眼差し
+   Translation: Tatapan Aneh
+   Max: 14 | Len: 12 | OK
+
+#275. 追求されたとしても
+   Translation: Meski Dikejar
+   Max: 18 | Len: 13 | OK
+
+#276. 視線の主は
+   Translation: Si Penatap
+   Max: 10 | Len: 10 | OK
+
+#277. 美しき旋律
+   Translation: Nada Indah
+   Max: 10 | Len: 10 | OK
+
+#278. 詩名からの提案
+   Translation: Saran Shiina
+   Max: 14 | Len: 12 | OK
+
+#279. 止まる指先
+   Translation: Jari Diam
+   Max: 10 | Len: 9 | OK
+
+#280. 意外な邂逅
+   Translation: Temu Ajaib
+   Max: 10 | Len: 10 | OK
+
+#281. 今回の依頼は……
+   Translation: Tugas Kali Ini..
+   Max: 16 | Len: 16 | OK
+
+#282. 春は節目の季節
+   Translation: Musim Berubah
+   Max: 14 | Len: 13 | OK
+
+#283. 実家へＧＯ！
+   Translation: Ke Rumah!
+   Max: 12 | Len: 9 | OK
+
+#284. つけるべきケジメ
+   Translation: Akhiri Segalanya
+   Max: 16 | Len: 16 | OK
+
+#285. フラグより見るべきもの
+   Translation: Lihat Hal Penting
+   Max: 22 | Len: 17 | OK
+
+#286. 琴里の後押し
+   Translation: Bantu Kotori
+   Max: 12 | Len: 12 | OK
+
+#287. 俺にできることを
+   Translation: Yang Bisa Kulaku
+   Max: 16 | Len: 16 | OK
+
+#288. 神様からの贈り物
+   Translation: Hadiah Tuhan
+   Max: 16 | Len: 12 | OK
+
+#289. ひよりちゃんを助けて
+   Translation: Bantu Hiyori-chan
+   Max: 20 | Len: 17 | OK
+
+#290. 恋愛請負は廃業
+   Translation: Biro Cnt Tutup
+   Max: 14 | Len: 14 | OK
+
+#291. ひよりを蝕むもの
+   Translation: Yang Menyakiti
+   Max: 16 | Len: 14 | OK
+
+#292. ＳＳＲみんなでフォロー
+   Translation: SSR Ikut Dukung
+   Max: 22 | Len: 15 | OK
+
+#293. 先日のことは忘れて
+   Translation: Lupakan Hari Lalu
+   Max: 18 | Len: 17 | OK
+
+#294. 妖精舞う月夜に
+   Translation: Peri Rembulan
+   Max: 14 | Len: 13 | OK
+
+#295. 破られた１００％記録
+   Translation: Rekor 100 Persen
+   Max: 20 | Len: 16 | OK
+
+#296. ひよりの初恋
+   Translation: Cinta Hiyori
+   Max: 12 | Len: 12 | OK
+
+#297. 私が止めなくちゃ
+   Translation: Aku Harus Stop
+   Max: 16 | Len: 14 | OK
+
+#298. 私には止められない
+   Translation: Tak Bisa Kuhentian
+   Max: 18 | Len: 18 | OK
+
+#299. ひよりのため
+   Translation: Demi Hiyori
+   Max: 12 | Len: 11 | OK
+
+#300. まだ、でも、もう少し
+   Translation: Masih, Tp, Sebentar
+   Max: 20 | Len: 19 | OK
+
+#301. キャッチ・ザ・ひより
+   Translation: Tangkap Hiyori
+   Max: 20 | Len: 14 | OK
+
+#302. ひより、手こずる
+   Translation: Hiyori Kesulitan
+   Max: 16 | Len: 16 | OK
+
+#303. 相手に寄り添ったこと
+   Translation: Mendekat Ke Lawan
+   Max: 20 | Len: 17 | OK
+
+#304. 本校でもムササビ女子
+   Translation: Gadis Musasabi
+   Max: 20 | Len: 14 | OK
+
+#305. 翻弄するひより
+   Translation: Hiyori Perdaya
+   Max: 14 | Len: 14 | OK
+
+#306. 未羽のアピール・デイ
+   Translation: Hari Pesona Miu
+   Max: 20 | Len: 15 | OK
+
+#307. キミがわからない
+   Translation: Tak Memahamimu
+   Max: 16 | Len: 14 | OK
+
+#308. 他言無用な出会い
+   Translation: Temu Rahasia
+   Max: 16 | Len: 12 | OK
+
+#309. いざ小旅行へ出発
+   Translation: Ayo Berangkat
+   Max: 16 | Len: 13 | OK
+
+#310. 友情と恋愛の線引き
+   Translation: Batas Teman Cinta
+   Max: 18 | Len: 17 | OK
+
+#311. いよいよ明日
+   Translation: Besok Saatnya
+   Max: 12 | Len: 13 | *** TOO LONG (over by 1) - NOT APPLIED ***
+
+#312. ちょっとした優越感
+   Translation: Rasa Unggul
+   Max: 18 | Len: 11 | OK
+
+#313. ついてくるつもり？
+   Translation: Mau Ikut Juga?
+   Max: 18 | Len: 14 | OK
+
+#314. 決着はプールで！
+   Translation: Akhiri Di Kolam
+   Max: 16 | Len: 15 | OK
+
+#315. サプライズな計画
+   Translation: Rencana Kejutan
+   Max: 16 | Len: 15 | OK
+
+#316. ひより天啓を得る
+   Translation: Hiyori Dapat Ide
+   Max: 16 | Len: 16 | OK
+
+#317. ひよりのいじりポイント
+   Translation: Poin Goda Hiyori
+   Max: 22 | Len: 16 | OK
+
+#318. 一登の心が動く時は？
+   Translation: Kapan Hati Itto?
+   Max: 20 | Len: 16 | OK
+
+#319. オールインワンで勝負
+   Translation: Duel All In One
+   Max: 20 | Len: 15 | OK
+
+#320. ひよりからの事情聴取
+   Translation: Introgasi Hiyori
+   Max: 20 | Len: 16 | OK
+
+#321. 後悔と迷いと
+   Translation: Sesal & Ragu
+   Max: 12 | Len: 12 | OK
+
+#322. 突然の延長戦宣言！
+   Translation: Deklarasi Ekstra
+   Max: 18 | Len: 16 | OK
+
+#323. 俺の答えは……
+   Translation: Jawabanku...
+   Max: 14 | Len: 12 | OK
+
+#324. 俺はどちらと……
+   Translation: Aku Pilih Siapa
+   Max: 16 | Len: 15 | OK
+
+#325. 卒業式のその後に
+   Translation: Setelah Wisuda
+   Max: 16 | Len: 14 | OK
+
+#326. 第二ボタンと気持ち
+   Translation: Kancing & Perasaan
+   Max: 18 | Len: 18 | OK
+
+#327. トキメキデート計画
+   Translation: Rencana Kencan
+   Max: 18 | Len: 14 | OK
+
+#328. 改めて勝負を
+   Translation: Duel Lagi
+   Max: 12 | Len: 9 | OK
+
+#329. 探偵と風紀委員
+   Translation: Detektif & Kom
+   Max: 14 | Len: 14 | OK
+
+#330. 未羽の相談ごと
+   Translation: Masalah Miu
+   Max: 14 | Len: 11 | OK
+
+#331. ひよりとお出かけ
+   Translation: Pergi w/ Hiyori
+   Max: 16 | Len: 15 | OK
+
+#332. ひよりの待ち伏せ
+   Translation: Hadangan Hiyori
+   Max: 16 | Len: 15 | OK
+
+#333. 急ぎ咲かせし恋の花
+   Translation: Mekar Bunga Cinta
+   Max: 18 | Len: 17 | OK
+
+#334. ３人寄っての
+   Translation: Bertiga Saja
+   Max: 12 | Len: 12 | OK
+
+#335. 信頼と真摯
+   Translation: Kepercayaan
+   Max: 10 | Len: 11 | *** TOO LONG (over by 1) - NOT APPLIED ***
+
+#336. 昼食を相席して
+   Translation: Makan Siang
+   Max: 14 | Len: 11 | OK
+
+#337. ひよりからの依頼
+   Translation: Tugas Dr Hiyori
+   Max: 16 | Len: 15 | OK
+
+#338. 我悟りたる
+   Translation: Aku Paham
+   Max: 10 | Len: 9 | OK
+
+#339. 出合い頭アクシデント
+   Translation: Insiden Mendadak
+   Max: 20 | Len: 16 | OK
+
+#340. 将来に思いを馳せて
+   Translation: Memikirkan Depan
+   Max: 18 | Len: 16 | OK
+
+#341. 別の因果の先の世界
+   Translation: Dunia Sebab Lain
+   Max: 18 | Len: 16 | OK
+
+#342. 逢見諳子という存在
+   Translation: Sosok Akiko Oumi
+   Max: 18 | Len: 16 | OK
+
+#343. ごめんね
+   Translation: Maaf Ya
+   Max: 8 | Len: 7 | OK
+
+#344. もう一度キスを
+   Translation: Cium Sekali Lg
+   Max: 14 | Len: 14 | OK
+
+#345. しあわせな涙
+   Translation: Tangis Riang
+   Max: 12 | Len: 12 | OK
+
+#346. 嫌な予感と看病と
+   Translation: Firasat & Rawat
+   Max: 16 | Len: 15 | OK
+
+#347. かくれんぼの才能
+   Translation: Bakat Sembunyi
+   Max: 16 | Len: 14 | OK
+
+#348. みんなからの祝福
+   Translation: Berkat Semuanya
+   Max: 16 | Len: 15 | OK
+
+#349. いつか見せてもらえたら
+   Translation: Semoga Bisa Ditunjuk
+   Max: 22 | Len: 20 | OK
+
+#350. ふたりの愛のメモリー
+   Translation: Kenangan Cinta
+   Max: 20 | Len: 14 | OK
+
+#351. 二乃の疑問
+   Translation: Tanya Nino
+   Max: 10 | Len: 10 | OK
+
+#352. 弟ではなくて
+   Translation: Bukan Adik
+   Max: 12 | Len: 10 | OK
+
+#353. そら姉の笑顔を
+   Translation: Senyum Kakak
+   Max: 14 | Len: 12 | OK
+
+#354. 一登の不調？
+   Translation: Itto Sakit?
+   Max: 12 | Len: 11 | OK
+
+#355. ベルガマスクの三番目
+   Translation: Bergamask Ketiga
+   Max: 20 | Len: 16 | OK
+
+#356. 諳子と迷子
+   Translation: Akiko Sesat
+   Max: 10 | Len: 11 | *** TOO LONG (over by 1) - NOT APPLIED ***
+
+#357. バイトのお願い
+   Translation: Minta Kerja
+   Max: 14 | Len: 11 | OK
+
+#358. 馴染んだウサ耳
+   Translation: Telinga Kelinc
+   Max: 14 | Len: 14 | OK
+
+#359. ウサミミファンクラブ
+   Translation: Klub Fans Kelinci
+   Max: 20 | Len: 17 | OK
+
+#360. 諳子の家族の写真
+   Translation: Foto Fam Akiko
+   Max: 16 | Len: 14 | OK
+
+#361. 良い旦那さんになれる
+   Translation: Jadi Suami Hebat
+   Max: 20 | Len: 16 | OK
+
+#362. 心強い味方たち
+   Translation: Kawan Setia
+   Max: 14 | Len: 11 | OK
+
+#363. 一登好みの味に
+   Translation: Rasa Suka Itto
+   Max: 14 | Len: 14 | OK
+
+#364. 原因究明の時間に
+   Translation: Waktu Cari Sebab
+   Max: 16 | Len: 16 | OK
+
+#365. 流石のSSR
+   Translation: Hebat SSR
+   Max: 9 | Len: 9 | OK
+
+#366. 難なく突破で、いいの？
+   Translation: Tembus Mudah, Ok?
+   Max: 22 | Len: 17 | OK
+
+#367. 自由な校風だから
+   Translation: Sekolah Bebas
+   Max: 16 | Len: 13 | OK
+
+#368. ジジイに負けたくない
+   Translation: Ogah Kalah dr Kakek
+   Max: 20 | Len: 19 | OK
+
+#369. わには苦手
+   Translation: Takut Buaya
+   Max: 10 | Len: 11 | *** TOO LONG (over by 1) - NOT APPLIED ***
+
+#370. 最後は神頼み
+   Translation: Doa Terakhir
+   Max: 12 | Len: 12 | OK
+
+#371. 久しぶりの買い物で
+   Translation: Belanja Lagi
+   Max: 18 | Len: 12 | OK
+
+#372. カチューシャ擬態
+   Translation: Kamuflase Bando
+   Max: 16 | Len: 15 | OK
+
+#373. ウサ耳対策会議
+   Translation: Rapat Kelinci
+   Max: 14 | Len: 13 | OK
+
+#374. 諳子の決意
+   Translation: Tekad Akiko
+   Max: 10 | Len: 11 | *** TOO LONG (over by 1) - NOT APPLIED ***
+
+#375. 誰かの夢とジジイと
+   Translation: Mimpi & Kakek
+   Max: 18 | Len: 13 | OK
+
+#376. 落ち着いた両親
+   Translation: Ortu Tenang
+   Max: 14 | Len: 11 | OK
+
+#377. 思いがけない異変
+   Translation: Hal Tak Terduga
+   Max: 16 | Len: 15 | OK
+
+#378. 二乃が居たらまずい？
+   Translation: Gawat Ada Nino?
+   Max: 20 | Len: 15 | OK
+
+#379. ウサ耳流出阻止
+   Translation: Cegah Kelinci
+   Max: 14 | Len: 13 | OK
+
+#380. 初恋のお姉さん？
+   Translation: Kakak Cinta 1?
+   Max: 16 | Len: 14 | OK
+
+#381. ウサ耳諳子
+   Translation: Akiko Kelinc
+   Max: 10 | Len: 12 | *** TOO LONG (over by 2) - NOT APPLIED ***
+
+#382. ヒントは少女漫画に
+   Translation: Tips Komik Cewek
+   Max: 18 | Len: 16 | OK
+
+#383. 千里の道も一歩から
+   Translation: Mulai Satu Step
+   Max: 18 | Len: 15 | OK
+
+#384. 現状を打破するには
+   Translation: Pecahkan Situasi
+   Max: 18 | Len: 16 | OK
+
+#385. まずは認めてみる
+   Translation: Coba Akui Dulu
+   Max: 16 | Len: 14 | OK
+
+#386. 諳子のキスで……
+   Translation: Ciuman Akiko..
+   Max: 16 | Len: 14 | OK
+
+#387. 未来への誓い
+   Translation: Janji Depan
+   Max: 12 | Len: 11 | OK
+
+#388. みらいの妹へ
+   Translation: Ke Adik Esok
+   Max: 12 | Len: 12 | OK
+
+#389. 二乃の中の真実
+   Translation: Fakta Nino
+   Max: 14 | Len: 10 | OK
+
+#390. 全て私のせい
+   Translation: Salahku Semua
+   Max: 12 | Len: 13 | *** TOO LONG (over by 1) - NOT APPLIED ***
+
+#391. 三美のお願い
+   Translation: Minta Mibi
+   Max: 12 | Len: 10 | OK
+
+#392. ごめんなさい兄さん
+   Translation: Maafkan Aku Kakak
+   Max: 18 | Len: 17 | OK
+
+#393. 明日の予定は？
+   Translation: Jadwal Esok?
+   Max: 14 | Len: 12 | OK
+
+#394. 変えたきっかけ
+   Translation: Pemicu Ubah
+   Max: 14 | Len: 11 | OK
+
+#395. たとえ恋人じゃなくても
+   Translation: Meski Bukan Pacar
+   Max: 22 | Len: 17 | OK
+
+#396. 妹の好物
+   Translation: Suka Adi
+   Max: 8 | Len: 8 | OK
+
+#397. 懐かしい呼び声
+   Translation: Suara Akrab
+   Max: 14 | Len: 11 | OK
+
+#398. いつもの二乃
+   Translation: Nino Biasa
+   Max: 12 | Len: 10 | OK
+
+#399. 三美のような妹に
+   Translation: Jadi Adik Mibi
+   Max: 16 | Len: 14 | OK
+
+#400. 妹を演じる二乃
+   Translation: Nino Jadi Adik
+   Max: 14 | Len: 14 | OK
+
+#401. 普通の妹に
+   Translation: Adik Biasa
+   Max: 10 | Len: 10 | OK
+
+#402. 三美から二乃へ
+   Translation: Mibi ke Nino
+   Max: 14 | Len: 12 | OK
+
+#403. 近付くあの日
+   Translation: Hari Dekat
+   Max: 12 | Len: 10 | OK
+
+#404. 調子の悪そうな二乃
+   Translation: Nino Tak Sehat
+   Max: 18 | Len: 14 | OK
+
+#405. 救い上げる声
+   Translation: Suara Tolong
+   Max: 12 | Len: 12 | OK
+
+#406. 二乃のおかげで
+   Translation: Berkat Nino
+   Max: 14 | Len: 11 | OK
+
+#407. 水着ハプニング！
+   Translation: Insiden Baju Ren
+   Max: 16 | Len: 16 | OK
+
+#408. ピアノ部屋と二乃
+   Translation: Ruang Piano Nino
+   Max: 16 | Len: 16 | OK
+
+#409. 愛ある仕返し
+   Translation: Balas Kasih
+   Max: 12 | Len: 11 | OK
+
+#410. 夢にまで見た姿で
+   Translation: Sosok Di Mimpi
+   Max: 16 | Len: 14 | OK
+
+#411. 夢で見た姿を
+   Translation: Wujud Mimpi
+   Max: 12 | Len: 11 | OK
+
+#412. メンバーも待っていた
+   Translation: Member Menunggu
+   Max: 20 | Len: 15 | OK
+
+#413. これが惚れた弱み
+   Translation: Lemah Krn Cinta
+   Max: 16 | Len: 15 | OK
+
+#414. 待っていたそら姉
+   Translation: Kak Sora Tunggu
+   Max: 16 | Len: 15 | OK
+
+#415. 家族と娘の恋人として
+   Translation: Keluarga & Pacar
+   Max: 20 | Len: 16 | OK
+
+#416. 伝えないといけないこと
+   Translation: Harus Disampaikan
+   Max: 22 | Len: 17 | OK
+
+#417. １００点の答え
+   Translation: Jawab Sempurna
+   Max: 14 | Len: 14 | OK
+
+#418. 妹としての距離感
+   Translation: Jarak Adik
+   Max: 16 | Len: 10 | OK
+
+#419. 衆人環視であーん
+   Translation: Suapi Di Umum
+   Max: 16 | Len: 13 | OK
+
+#420. 悲しい夢と、重なる今と
+   Translation: Mimpi Sedih & Kini
+   Max: 22 | Len: 18 | OK
+
+#421. 気持ちは本物
+   Translation: Rasa Asli
+   Max: 12 | Len: 9 | OK
+
+#422. 苦手なものコンボ
+   Translation: Kombo Tak Suka
+   Max: 16 | Len: 14 | OK
+
+#423. 期待と不安せめぎ合う
+   Translation: Harap & Cemas
+   Max: 20 | Len: 13 | OK
+
+#424. 妹ですから普通です
+   Translation: Adik, Jadi Biasa
+   Max: 18 | Len: 16 | OK
+
+#425. 二乃心は難しい
+   Translation: Hati Nino Sulit
+   Max: 14 | Len: 15 | *** TOO LONG (over by 1) - NOT APPLIED ***
+
+#426. 機嫌を損ねた二乃？
+   Translation: Nino Ngambek?
+   Max: 18 | Len: 13 | OK
+
+#427. 表面上はいつもの朝
+   Translation: Pagi Yg Biasa
+   Max: 18 | Len: 13 | OK
+
+#428. そら姉はお見通し
+   Translation: Kakak Paham
+   Max: 16 | Len: 11 | OK
+
+#429. 有里栖のおせっかい
+   Translation: Alice Ikut Campur
+   Max: 18 | Len: 17 | OK
+
+#430. 友人と気分転換
+   Translation: Main w/ Kawan
+   Max: 14 | Len: 13 | OK
+
+#431. 二乃を見習って
+   Translation: Contoh Nino
+   Max: 14 | Len: 11 | OK
+
+#432. 幼き日の二乃と
+   Translation: Nino Masa Kecil
+   Max: 14 | Len: 15 | *** TOO LONG (over by 1) - NOT APPLIED ***
+
+#433. 妹だから
+   Translation: Krn Adik
+   Max: 8 | Len: 8 | OK
+
+#434. バイトを楽しんで
+   Translation: Nikmati Kerja
+   Max: 16 | Len: 13 | OK
+
+#435. 二乃とふたりで調査
+   Translation: Selidiki w/ Nino
+   Max: 18 | Len: 16 | OK
+
+#436. ３人でバイトのお誘い
+   Translation: Ajak Kerja Bertiga
+   Max: 20 | Len: 18 | OK
+
+#437. 零次さんの気遣い
+   Translation: Peduli Reiji
+   Max: 16 | Len: 12 | OK
+
+#438. 二乃の料理チャレンジ
+   Translation: Nino Masak
+   Max: 20 | Len: 10 | OK
+
+#439. 傍にいれくれる二乃
+   Translation: Nino Di Sisi
+   Max: 18 | Len: 12 | OK
+
+#440. 期待してもいい？
+   Translation: Boleh Berharap?
+   Max: 16 | Len: 15 | OK
+
+#441. 二乃ちゃんに決めた？
+   Translation: Pilih Nino-chan?
+   Max: 20 | Len: 16 | OK
+
+#442. そら姉の意見
+   Translation: Opini Kakak
+   Max: 12 | Len: 11 | OK
+
+#443. ぎこちないふたり
+   Translation: Berdua Kaku
+   Max: 16 | Len: 11 | OK
+
+#444. 二乃のキスで……
+   Translation: Ciuman Nino...
+   Max: 16 | Len: 14 | OK
+
+#445. 恋人か、家族か
+   Translation: Pacar/Fam?
+   Max: 14 | Len: 10 | OK
+
+#446. これからもよろしく
+   Translation: Mohon Bantuannya
+   Max: 18 | Len: 16 | OK
+
+#447. 杉並らしい卒業式
+   Translation: Wisuda Ala Sugi
+   Max: 16 | Len: 15 | OK
+
+#448. サプライズも忘れずに
+   Translation: Ingat Kejutannya
+   Max: 20 | Len: 16 | OK
+
+#449. プレゼントはフリーパス
+   Translation: Hadiah Tiket Bebas
+   Max: 22 | Len: 18 | OK
+
+#450. 何気なく笑える放課後
+   Translation: Tawa Sepulang Seko
+   Max: 20 | Len: 18 | OK
+
+#451. 自然な３人
+   Translation: Alami 3 Org
+   Max: 10 | Len: 11 | *** TOO LONG (over by 1) - NOT APPLIED ***
+
+#452. 今日は美味しいお弁当
+   Translation: Bekal Enak Hari Ini
+   Max: 20 | Len: 19 | OK
+
+#453. しっくりくる３人
+   Translation: Tiga Org Cocok
+   Max: 16 | Len: 14 | OK
+
+#454. そら姉のドッキリ
+   Translation: Prank Kak Sora
+   Max: 16 | Len: 14 | OK
+
+#455. 二乃の特製お弁当
+   Translation: Bekal Spe Nino
+   Max: 16 | Len: 14 | OK
+
+#456. ご機嫌なそら姉
+   Translation: Kak Sora Happy
+   Max: 14 | Len: 14 | OK
+
+#457. バイト代の使い道
+   Translation: Gaji Part Time
+   Max: 16 | Len: 14 | OK
+
+#458. そら姉のコスプレ？
+   Translation: Kak Sora Cosplay?
+   Max: 18 | Len: 17 | OK
+
+#459. 両親と帰宅して
+   Translation: Pulang w/ Ortu
+   Max: 14 | Len: 14 | OK
+
+#460. ふたりとの約束
+   Translation: Janji Berdua
+   Max: 14 | Len: 12 | OK
+
+#461. ふたりにも話をして
+   Translation: Bicara Berdua
+   Max: 18 | Len: 13 | OK
+
+#462. バイト代とプレゼント
+   Translation: Gaji & Hadiah
+   Max: 20 | Len: 13 | OK
+
+#463. そら姉も反対らしい
+   Translation: Kakak Menolak
+   Max: 18 | Len: 13 | OK
+
+#464. 二乃は反対らしい
+   Translation: Nino Menolak
+   Max: 16 | Len: 12 | OK
+
+#465. もう一度バイトしない？
+   Translation: Kerja Lagi Gak?
+   Max: 22 | Len: 15 | OK
+
+#466. 雨の朝は憂鬱？
+   Translation: Pagi Hujan?
+   Max: 14 | Len: 11 | OK
+
+#467. 買い物と有里栖と
+   Translation: Belanja w/ Alice
+   Max: 16 | Len: 16 | OK
+
+#468. 久々の親子の団らん
+   Translation: Kumpul Keluarga
+   Max: 18 | Len: 15 | OK
+
+#469. 楽しくも忙しい準備
+   Translation: Persiapan Seru
+   Max: 18 | Len: 14 | OK
+
+#470. 帰ってくる両親
+   Translation: Ortu Pulang
+   Max: 14 | Len: 11 | OK
+
+#471. 本校に進学したら
+   Translation: Jika Masuk Sma
+   Max: 16 | Len: 14 | OK
+
+#472. 友達の進路は？
+   Translation: Jalur Teman?
+   Max: 14 | Len: 12 | OK
+
+#473. 朝のお約束？
+   Translation: Janji Pagi?
+   Max: 12 | Len: 11 | OK
+
+#474. さようなら、ありがとう
+   Translation: Selamat Tinggal
+   Max: 22 | Len: 15 | OK
+
+#475. 世界を変える恋
+   Translation: Cinta Ubah Dnia
+   Max: 14 | Len: 15 | *** TOO LONG (over by 1) - NOT APPLIED ***
+
+#476. 頼もしい仲間たち
+   Translation: Teman Handal
+   Max: 16 | Len: 12 | OK
+
+#477. 広がる恋心
+   Translation: Cinta Mekar
+   Max: 10 | Len: 11 | *** TOO LONG (over by 1) - NOT APPLIED ***
+
+#478. ふくらむ希望
+   Translation: Harap Tumbuh
+   Max: 12 | Len: 12 | OK
+
+#479. 恋愛強化期間
+   Translation: Masa Cinta
+   Max: 12 | Len: 10 | OK
+
+#480. 恋のモニタリング
+   Translation: Pantau Cinta
+   Max: 16 | Len: 12 | OK
+
+#481. 天枷・鷺澤共同作戦
+   Translation: Operasi Gabungan
+   Max: 18 | Len: 16 | OK
+
+#482. 恋の拡散大作戦
+   Translation: Operasi Sebar
+   Max: 14 | Len: 13 | OK
+
+#483. 一筋の希望
+   Translation: Sinar Harap
+   Max: 10 | Len: 11 | *** TOO LONG (over by 1) - NOT APPLIED ***
+
+#484. ただいま、おかえり
+   Translation: Pulang & Sambut
+   Max: 18 | Len: 15 | OK
+
+#485. ありがとう
+   Translation: Makasih Ya
+   Max: 10 | Len: 10 | OK
+
+#486. 優しい嘘
+   Translation: Bohong
+   Max: 8 | Len: 6 | OK
+
+#487. マジカルプールデート
+   Translation: Kencan Kolam Ajaib
+   Max: 20 | Len: 18 | OK
+
+#488. やり直したらしたいこと
+   Translation: Ingin Ulang Lagi
+   Max: 22 | Len: 16 | OK
+
+#489. 常坂元という男
+   Translation: Sosok Itto Tok
+   Max: 14 | Len: 14 | OK
+
+#490. 世界とふたりと
+   Translation: Dunia & Berdua
+   Max: 14 | Len: 14 | OK
+
+#491. 使命よりも大切な
+   Translation: Penting Dr Misi
+   Max: 16 | Len: 15 | OK
+
+#492. Ｄ．Ｃ．の魔法
+   Translation: Sihir D.C.
+   Max: 14 | Len: 10 | OK
+
+#493. 有里咲のプラン
+   Translation: Rencana Arisa
+   Max: 14 | Len: 13 | OK
+
+#494. 俺と有里咲と有里栖と
+   Translation: Aku Arisa Alice
+   Max: 20 | Len: 15 | OK
+
+#495. 無理してそうな有里咲
+   Translation: Arisa Berusaha
+   Max: 20 | Len: 14 | OK
+
+#496. サクラの国の有里咲
+   Translation: Arisa Negr Sakura
+   Max: 18 | Len: 17 | OK
+
+#497. 満月と魔法とＶＲと彼女と
+   Translation: Bulan Sihir VR Dia
+   Max: 24 | Len: 18 | OK
+
+#498. オカルトな話
+   Translation: Kisah Gaib
+   Max: 12 | Len: 10 | OK
+
+#499. 久しぶりのＳＳＲ
+   Translation: SSR Lagi
+   Max: 16 | Len: 8 | OK
+
+#500. 確認した日付
+   Translation: Cek Tanggal
+   Max: 12 | Len: 11 | OK
+
+#501. 思いだしてはダメ
+   Translation: Jangan Ingat
+   Max: 16 | Len: 12 | OK
+
+#502. ＶＲ使用許可
+   Translation: Izin Pakai VR
+   Max: 12 | Len: 13 | *** TOO LONG (over by 1) - NOT APPLIED ***
+
+#503. ＡＬＩＣＥに会えれば
+   Translation: Jika Temu ALICE
+   Max: 20 | Len: 15 | OK
+
+#504. アリスとＡＬＩＣＥ
+   Translation: Alice & ALICE
+   Max: 18 | Len: 13 | OK
+
+#505. 遊園地デート再び
+   Translation: Kencan Taman
+   Max: 16 | Len: 12 | OK
+
+#506. 彼女と過ごした日々
+   Translation: Hari Bersamanya
+   Max: 18 | Len: 15 | OK
+
+#507. 有里栖とメーパン
+   Translation: Alice & Mepan
+   Max: 16 | Len: 13 | OK
+
+#508. もう一人の有里栖？
+   Translation: Alice Satunya?
+   Max: 18 | Len: 14 | OK
+
+#509. SSRのやさしさ
+   Translation: Kebaikan SSR
+   Max: 13 | Len: 12 | OK
+
+#510. ホクロの位置！？
+   Translation: Posisi Tahi L!
+   Max: 16 | Len: 14 | OK
+
+#511. 個別活動と称して
+   Translation: Aksi Sendiri
+   Max: 16 | Len: 12 | OK
+
+#512. いつかの誰かの記憶
+   Translation: Memori Seseorang
+   Max: 18 | Len: 16 | OK
+
+#513. 神社で不安を和らげて
+   Translation: Tenang Di Kuil
+   Max: 20 | Len: 14 | OK
+
+#514. 明日の約束
+   Translation: Janji Esok
+   Max: 10 | Len: 10 | OK
+
+#515. 雪とピアノと
+   Translation: Salju Piano
+   Max: 12 | Len: 11 | OK
+
+#516. 自分じゃないみたい
+   Translation: Bukan Diriku
+   Max: 18 | Len: 12 | OK
+
+#517. 家族も大事に
+   Translation: Jaga Famili
+   Max: 12 | Len: 11 | OK
+
+#518. ジジイに聞いた雪の話
+   Translation: Kisah Salju Kakek
+   Max: 20 | Len: 17 | OK
+
+#519. アリスの視線
+   Translation: Tatap Alice
+   Max: 12 | Len: 11 | OK
+
+#520. 他人の夢を見ている感じ
+   Translation: Rasa Mimpi Orang
+   Max: 22 | Len: 16 | OK
+
+#521. 有里栖と同じ夢を再び
+   Translation: Mimpi Sama Alice
+   Max: 20 | Len: 16 | OK
+
+#522. ここ一年の話
+   Translation: Cerita Setahun
+   Max: 12 | Len: 14 | *** TOO LONG (over by 2) - NOT APPLIED ***
+
+#523. 有里栖の食レポブログ
+   Translation: Blog Makan Alice
+   Max: 20 | Len: 16 | OK
+
+#524. 二重人格なのかな？
+   Translation: Kepribadian Ganda?
+   Max: 18 | Len: 18 | OK
+
+#525. 曖昧な記憶
+   Translation: Memori Kabur
+   Max: 10 | Len: 12 | *** TOO LONG (over by 2) - NOT APPLIED ***
+
+#526. 夢の中の少年と少女
+   Translation: Bocah Di Mimpi
+   Max: 18 | Len: 14 | OK
+
+#527. ひとり水鏡湖へ
+   Translation: Ke Danau Suikyo
+   Max: 14 | Len: 15 | *** TOO LONG (over by 1) - NOT APPLIED ***
+
+#528. 似ている景色
+   Translation: Mirip View
+   Max: 12 | Len: 10 | OK
+
+#529. 有里栖と巡る島
+   Translation: Keliling Pulau
+   Max: 14 | Len: 14 | OK
+
+#530. 初めて会った場所は？
+   Translation: Tempat Temu Awal?
+   Max: 20 | Len: 17 | OK
+
+#531. 思い出探しをしよう
+   Translation: Cari Kenangan
+   Max: 18 | Len: 13 | OK
+
+#532. 病み上がりの有里栖
+   Translation: Alice Baru Sembuh
+   Max: 18 | Len: 17 | OK
+
+#533. メイドさんの対応
+   Translation: Respon Pelayan
+   Max: 16 | Len: 14 | OK
+
+#534. 欠席の彼女
+   Translation: Dia Absen
+   Max: 10 | Len: 9 | OK
+
+#535. 気になった別れ際
+   Translation: Saat Berpisah
+   Max: 16 | Len: 13 | OK
+
+#536. 季節外れの雪
+   Translation: Salju Aneh
+   Max: 12 | Len: 10 | OK
+
+#537. 鏡の中の涙？
+   Translation: Air Mata?
+   Max: 12 | Len: 9 | OK
+
+#538. 懐かしい記憶
+   Translation: Memori Lama
+   Max: 12 | Len: 11 | OK
+
+#539. 巨神を駆逐する
+   Translation: Basmi Raksasa
+   Max: 14 | Len: 13 | OK
+
+#540. 差し入れは二乃の弁当
+   Translation: Bekal Dari Nino
+   Max: 20 | Len: 15 | OK
+
+#541. エンタメのお仕事
+   Translation: Kerja Hiburan
+   Max: 16 | Len: 13 | OK
+
+#542. 数学はマストです
+   Translation: Matematika Wajib
+   Max: 16 | Len: 16 | OK
+
+#543. 親子三人で
+   Translation: Bertiga Fam
+   Max: 10 | Len: 11 | *** TOO LONG (over by 1) - NOT APPLIED ***
+
+#544. 鷺澤会長と娘
+   Translation: Ketua & Anak
+   Max: 12 | Len: 12 | OK
+
+#545. いざ初バイトへ
+   Translation: Kerja Pertama
+   Max: 14 | Len: 13 | OK
+
+#546. 揺れる裾に釘付け
+   Translation: Terpaku Rok
+   Max: 16 | Len: 11 | OK
+
+#547. バイトどうしよ
+   Translation: Kerja Apa Ya
+   Max: 14 | Len: 12 | OK
+
+#548. 一登さんご指名です
+   Translation: Itto Dipanggil
+   Max: 18 | Len: 14 | OK
+
+#549. 雨は嫌いじゃないけど
+   Translation: Tak Benci Hujan
+   Max: 20 | Len: 15 | OK
+
+#550. 名探偵の名推理
+   Translation: Deduksi Hebat
+   Max: 14 | Len: 13 | OK
+
+#551. いろいろな親子関係
+   Translation: Relasi Ortu-Anak
+   Max: 18 | Len: 16 | OK
+
+#552. 両親の帰宅予告
+   Translation: Ortu Mau Plg
+   Max: 14 | Len: 12 | OK
+
+#553. 将来は財閥を？
+   Translation: Jadi Konglo?
+   Max: 14 | Len: 12 | OK
+
+#554. 泉先生へのオススメ
+   Translation: Saran Bu Izumi
+   Max: 18 | Len: 14 | OK
+
+#555. なんだか普段と違う朝
+   Translation: Pagi Yg Berbeda
+   Max: 20 | Len: 15 | OK
+
+#556. 知らない呼び方
+   Translation: Panggilan Aneh
+   Max: 14 | Len: 14 | OK
+
+#557. データが違います。正しくインストールしてください。
+   Translation: Data beda. Mohon instal ulang dgn benar.
+   Max: 50 | Len: 40 | OK
+
+#558. MESファイルを更新してください
+   Translation: Mohon perbarui file MES
+   Max: 29 | Len: 23 | OK
+
+#559. MESファイルバッファがとれません
+   Translation: Gagal ambil buffer file MES
+   Max: 31 | Len: 27 | OK
+
+#560. ラベルが見つかりません
+   Translation: Label tdk ditemukan
+   Max: 22 | Len: 19 | OK
+
+#561. インデックス数 flaied
+   Translation: Indeks gagal
+   Max: 21 | Len: 12 | OK
+
+#562. Direct3Dの初期化に失敗しました
+   Translation: Gagal inisialisasi D3D
+   Max: 30 | Len: 22 | OK
+
+#563. セカンダリバッファの作成に失敗しました
+   Translation: Gagal buat buffer sekunder
+   Max: 38 | Len: 26 | OK
+
+#564. dataチャンクが存在しません
+   Translation: Chunk data tdk ada
+   Max: 26 | Len: 18 | OK
+
+#565. WAVEFORMATEXE情報の取得に失敗しました
+   Translation: Gagal ambil info WAVEFORMAT
+   Max: 37 | Len: 27 | OK
+
+#566. fmtチャンクが存在しません
+   Translation: Chunk fmt tdk ada
+   Max: 25 | Len: 17 | OK
+
+#567. ではありません
+   Translation: Bukanlah
+   Max: 14 | Len: 8 | OK
+
+#568. FONT:テキストテクスチャロック失敗
+   Translation: FONT: Gagal kunci tekstur
+   Max: 33 | Len: 25 | OK
+
+#569. HTTPまたはHTTPSでもないです
+   Translation: Bukan HTTP atau HTTPS
+   Max: 27 | Len: 21 | OK
+
+#570. HTTPファイル読み込みに失敗しました
+   Translation: Gagal baca file HTTP
+   Max: 34 | Len: 20 | OK
+
+#571. ステータスコードが成功でないです
+   Translation: Kode status gagal
+   Max: 32 | Len: 17 | OK
+
+#572. ステータスコードの取得に失敗しました
+   Translation: Gagal ambil kode status
+   Max: 36 | Len: 23 | OK
+
+#573. HTTP要求送信に失敗しました
+   Translation: Gagal kirim HTTP
+   Max: 26 | Len: 16 | OK
+
+#574. HTTPリクエストに失敗しました
+   Translation: Permintaan HTTP gagal
+   Max: 28 | Len: 21 | OK
+
+#575. HTTP接続に失敗しました
+   Translation: Koneksi HTTP gagal
+   Max: 22 | Len: 18 | OK
+
+#576. WinInetの初期化に失敗しました
+   Translation: Gagal inisial WinInet
+   Max: 29 | Len: 21 | OK
+
+#577. URL解析に失敗しました
+   Translation: Gagal analisa URL
+   Max: 21 | Len: 17 | OK
+
+#578. URLが不正です
+   Translation: URL salah
+   Max: 13 | Len: 9 | OK
+
+#579. コメントの文字数が多い
+   Translation: Komentar kpnjangan
+   Max: 22 | Len: 18 | OK
+
+======================================================================
+SUMMARY
+  Included entries: 554
+  Skipped (too long, NOT in code): 25
+  Included but still over limit: 0
+  Total: 579
+======================================================================

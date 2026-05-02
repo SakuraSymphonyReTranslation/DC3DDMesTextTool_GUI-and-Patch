@@ -1,0 +1,22 @@
+CheckIcon (DC4 VA: 0x4049d0) Pattern: 6aff68ec94480064a1000000005081ec20010000a1d8aa4b0033c48984241c01
+  -> Not found in DC4PH
+CallSite (DC4 VA: 0x405013) Pattern: 0000e8b6f9ffff80bc24dc0600000074198d8424
+  -> Found in DC4PH at offset 0x4873, VA: 0x405473
+Real_BacklogFunc (DC4 VA: 0x404ee0) Pattern: b820270000e8565c0500a1d8aa4b0033c48984241c2700005556576803010000
+  -> Not found in DC4PH
+HookSite (DC4 VA: 0x405276) Pattern: 33db83e801894424100f882b0600008bd069c044
+  -> Found in DC4PH at offset 0x4ad6, VA: 0x4056d6
+
+Looking for TABLE_BASE references...
+Found reference to TABLE_BASE in DC4 at VA 0x404f93
+  Signature around ref: 006810150000566800da4b00e8d45b05
+  Opcode sig: 00005668
+Found reference to TABLE_BASE in DC4 at VA 0x4050d5
+  Signature around ref: 8d9424dc0600000500da4b008da42400
+  Opcode sig: 06000005
+Found reference to TABLE_BASE in DC4 at VA 0x4051ed
+  Signature around ref: 8d9424dc0600000500da4b008a0a8808
+  Opcode sig: 06000005
+Found reference to TABLE_BASE in DC4 at VA 0x4052b5
+  Signature around ref: 00fcffff2bc881e900da4b0042c74424
+  Opcode sig: 2bc881e9

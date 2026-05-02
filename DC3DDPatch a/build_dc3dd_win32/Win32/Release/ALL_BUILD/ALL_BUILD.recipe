@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>E:\Games\DC3DD\DC3DDMesTextTool_GUI - Copy berantakan\DC3DDPatch a\build_dc3dd_win32\Release\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>E:\Games\DC3DD\DC3DDMesTextTool_GUI - Copy berantakan\DC3DDPatch a\build_dc3dd_win32\Release\DC3DDLauncher.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>E:\Games\DC3DD\DC3DDMesTextTool_GUI - Copy berantakan\DC3DDPatch a\build_dc3dd_win32\Release\DC3DDPatch.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>E:\Games\DC3DD\DC3DDMesTextTool_GUI - Copy berantakan\DC3DDPatch a\build_dc3dd_win32\Release\ALL_BUILD</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

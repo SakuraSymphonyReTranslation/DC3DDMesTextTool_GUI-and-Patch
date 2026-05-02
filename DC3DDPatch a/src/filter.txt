@@ -1,0 +1,684 @@
+static const char* FilterSjisString(LPCSTR lpString, UINT* c_inout, bool performTranslation = true, bool replaceKatakanaDot = true) {
+  if (!lpString || *c_inout == 0)
+    return lpString;
+
+  static thread_local char s_buffer[1024]; // Safe upper bound for text out calls
+  UINT len = *c_inout;
+  if (len >= sizeof(s_buffer)) {
+    len = sizeof(s_buffer) - 1; // Truncate safely
+  }
+
+  bool modified = false;
+  UINT outLen = 0;
+  for (UINT i = 0; i < len; i++) {
+    unsigned char ch1 = (unsigned char)lpString[i];
+    
+    // Check for double-byte Shift-JIS characters
+    if ((ch1 >= 0x81 && ch1 <= 0x9F) || (ch1 >= 0xE0 && ch1 <= 0xFC)) {
+      if (i + 1 < len) {
+        unsigned char ch2 = (unsigned char)lpString[i + 1];
+        char replacement = 0;
+        
+        if (performTranslation) {
+          if (ch1 == 0x81) {
+            switch (ch2) {
+              case 0x40: replacement = ' '; break; // Full space
+            case 0x41: replacement = ','; break; // 、
+            case 0x42: replacement = '.'; break; // 。
+            case 0x43: replacement = ','; break; // ，
+            case 0x44: replacement = '.'; break; // ．
+            case 0x45: replacement = ' '; break; // ・
+            case 0x46: replacement = ':'; break; // ：
+            case 0x47: replacement = ';'; break; // ；
+            case 0x48: replacement = '?'; break; // ？
+            case 0x49: replacement = '!'; break; // ！
+            case 0x5B: replacement = '-'; break; // ー
+            case 0x5C: replacement = '-'; break; // ―
+            case 0x5D: replacement = '-'; break; // ‐
+            case 0x5E: replacement = '/'; break; // ／
+            case 0x5F: replacement = '\\'; break;// ＼
+            case 0x60: replacement = '~'; break; // ～
+            case 0x61: replacement = '|'; break; // ∥
+            case 0x62: replacement = '|'; break; // ｜
+            case 0x65: replacement = '\''; break;// ‘
+            case 0x66: replacement = '\''; break;// ’
+            case 0x67: replacement = '\"'; break;// “
+            case 0x68: replacement = '\"'; break;// ”
+            case 0x69: replacement = '('; break; // （
+            case 0x6A: replacement = ')'; break; // ）
+            case 0x6D: replacement = '['; break; // ［
+            case 0x6E: replacement = ']'; break; // ］
+            case 0x6F: replacement = '{'; break; // ｛
+            case 0x70: replacement = '}'; break; // ｝
+            case 0x7B: replacement = '+'; break; // ＋
+            case 0x7C: replacement = '-'; break; // －
+            case 0x81: replacement = '='; break; // ＝
+            case 0x83: replacement = '<'; break; // ＜
+            case 0x84: replacement = '>'; break; // ＞
+            case 0x93: replacement = '%'; break; // ％
+            case 0x94: replacement = '#'; break; // ＃
+            case 0x95: replacement = '&'; break; // ＆
+            case 0x96: replacement = '*'; break; // ＊
+            case 0x97: replacement = '@'; break; // ＠
+          }
+        } else if (ch1 == 0x82) {
+          if (ch2 >= 0x4F && ch2 <= 0x58) { // ０-９
+            replacement = '0' + (ch2 - 0x4F);
+          } else if (ch2 >= 0x60 && ch2 <= 0x79) { // Ａ-Ｚ
+            replacement = 'A' + (ch2 - 0x60);
+          } else if (ch2 >= 0x81 && ch2 <= 0x9A) { // ａ-ｚ
+            replacement = 'a' + (ch2 - 0x81);
+          }
+        }
+        }
+        
+        if (replacement != 0) {
+          s_buffer[outLen++] = replacement;
+          modified = true;
+          i++; // Skip the second byte
+          continue;
+        }
+        
+        // No translation found, copy the full 2-byte char as-is
+        s_buffer[outLen++] = lpString[i];
+        s_buffer[outLen++] = lpString[i + 1];
+        i++;
+      } else {
+        // Truncated multi-byte
+        s_buffer[outLen++] = lpString[i];
+      }
+      continue;
+    }
+    
+    // Single byte checks
+    if (replaceKatakanaDot && ch1 == '_') { // underscore (our custom space placeholder)
+      s_buffer[outLen++] = 0x20;  // Replace with ASCII space
+      modified = true;
+    } else {
+      s_buffer[outLen++] = lpString[i];
+    }
+  }
+
+  if (modified) {
+    s_buffer[outLen] = '\0';
+    *c_inout = outLen;
+    return s_buffer;
+  }
+  return lpString; // Return original if no changes needed
+}
+
+// --- Window Title & Font Size Scaling Hooks ---
+
+static decltype(&CreateWindowExW) Real_CreateWindowExW = CreateWindowExW;
+static HWND WINAPI Hook_CreateWindowExW(DWORD dwExStyle, LPCWSTR lpClassName, LPCWSTR lpWindowName, DWORD dwStyle, int X, int Y, int nWidth, int nHeight, HWND hWndParent, HMENU hMenu, HINSTANCE hInstance, LPVOID lpParam) {
+    if (lpWindowName && wcsstr(lpWindowName, L"D.C.") != NULL) {
+        lpWindowName = L"D.C. III DreamDays ~Da Capo III Dream Days~";
+    }
+    return Real_CreateWindowExW(dwExStyle, lpClassName, lpWindowName, dwStyle, X, Y, nWidth, nHeight, hWndParent, hMenu, hInstance, lpParam);
+}
+
+static decltype(&SetWindowTextA) Real_SetWindowTextA = SetWindowTextA;
+static BOOL WINAPI Hook_SetWindowTextA(HWND hWnd, LPCSTR lpString) {
+    if (lpString && strstr(lpString, "D.C.") != NULL) {
+        lpString = "D.C. III DreamDays ~Da Capo III Dream Days~";
+    }
+    return Real_SetWindowTextA(hWnd, lpString);
+}
+
+static decltype(&SetWindowTextW) Real_SetWindowTextW = SetWindowTextW;
+static BOOL WINAPI Hook_SetWindowTextW(HWND hWnd, LPCWSTR lpString) {
+    if (lpString && wcsstr(lpString, L"D.C.") != NULL) {
+        lpString = L"D.C. III DreamDays ~Da Capo III Dream Days~";
+    }
+    return Real_SetWindowTextW(hWnd, lpString);
+}
+
+// Guard flag: disable font hooks while ChooseFont dialog is open
+static bool g_inChooseFont = false;
+
+static decltype(&CreateFontIndirectA) Real_CreateFontIndirectA = CreateFontIndirectA;
+static HFONT WINAPI Hook_CreateFontIndirectA(LOGFONTA *lplf) {
+    if (lplf && !g_inChooseFont) {
+        int height = lplf->lfHeight;
+        int absHeight = height < 0 ? -height : height;
+        if (absHeight > 18 && absHeight < 100) {
+            int desired = g_fontManager.GetDialogueFontSize();
+            if (desired != 0) {
+                 lplf->lfHeight = (height < 0) ? -abs(desired) : abs(desired);
+                 std::wstring faceW = g_fontManager.GetDialogueFontName();
+                 if (faceW != L"MS Gothic" && faceW != L"ＭＳ ゴシック" && faceW.length() > 0) {
+                     WideCharToMultiByte(CP_ACP, 0, faceW.c_str(), -1, lplf->lfFaceName, LF_FACESIZE, NULL, NULL);
+                 }
+            }
+        }
+    }
+    return Real_CreateFontIndirectA(lplf);
+}
+
+static decltype(&CreateFontIndirectW) Real_CreateFontIndirectW = CreateFontIndirectW;
+static HFONT WINAPI Hook_CreateFontIndirectW(LOGFONTW *lplf) {
+    if (lplf && !g_inChooseFont) {
+        int height = lplf->lfHeight;
+        int absHeight = height < 0 ? -height : height;
+        if (absHeight > 18 && absHeight < 100) {
+            int desired = g_fontManager.GetDialogueFontSize();
+            if (desired != 0) {
+                 lplf->lfHeight = (height < 0) ? -abs(desired) : abs(desired);
+                 std::wstring faceW = g_fontManager.GetDialogueFontName();
+                 if (faceW != L"MS Gothic" && faceW != L"ＭＳ ゴシック" && faceW.length() > 0) {
+                     wcscpy_s(lplf->lfFaceName, LF_FACESIZE, faceW.c_str());
+                 }
+            }
+        }
+    }
+    return Real_CreateFontIndirectW(lplf);
+}
+
+static decltype(&CreateFontA) Real_CreateFontA = CreateFontA;
+static HFONT WINAPI Hook_CreateFontA(int cHeight, int cWidth, int cEscapement, int cOrientation, int cWeight, DWORD bItalic, DWORD bUnderline, DWORD bStrikeOut, DWORD iCharSet, DWORD iOutPrecision, DWORD iClipPrecision, DWORD iQuality, DWORD iPitchAndFamily, LPCSTR pszFaceName) {
+    if (!g_inChooseFont) {
+      int absHeight = cHeight < 0 ? -cHeight : cHeight;
+      if (absHeight > 18 && absHeight < 100) {
+          int desired = g_fontManager.GetDialogueFontSize();
+          if (desired != 0) {
+               cHeight = (cHeight < 0) ? -abs(desired) : abs(desired);
+          }
+      }
+    }
+    return Real_CreateFontA(cHeight, cWidth, cEscapement, cOrientation, cWeight, bItalic, bUnderline, bStrikeOut, iCharSet, iOutPrecision, iClipPrecision, iQuality, iPitchAndFamily, pszFaceName);
+}
+
+
+static HFONT WINAPI Hook_CreateFontW(int cHeight, int cWidth, int cEscapement, int cOrientation, int cWeight, DWORD bItalic, DWORD bUnderline, DWORD bStrikeOut, DWORD iCharSet, DWORD iOutPrecision, DWORD iClipPrecision, DWORD iQuality, DWORD iPitchAndFamily, LPCWSTR pszFaceName) {
+    if (!g_inChooseFont) {
+      int absHeight = cHeight < 0 ? -cHeight : cHeight;
+      if (absHeight > 18 && absHeight < 100) {
+          int desired = g_fontManager.GetDialogueFontSize();
+          if (desired != 0) {
+               cHeight = (cHeight < 0) ? -abs(desired) : abs(desired);
+          }
+      }
+    }
+    return Real_CreateFontW(cHeight, cWidth, cEscapement, cOrientation, cWeight, bItalic, bUnderline, bStrikeOut, iCharSet, iOutPrecision, iClipPrecision, iQuality, iPitchAndFamily, pszFaceName);
+}
+
+static bool IsUiElement(LPCSTR str, UINT c) {
+  if (!str || c == 0)
+    return false;
+
+
+  // Ensure null termination for safe strstr scanning if it's not already null-terminated
+  static thread_local char s_ui_buffer[1024];
+  UINT len = (c >= sizeof(s_ui_buffer)) ? sizeof(s_ui_buffer) - 1 : c;
+  memcpy(s_ui_buffer, str, len);
+  s_ui_buffer[len] = '\0';
+
+  const char *ui_elements[] = {"Scene Jump",
+                               "Putar Suara",
+                               "Kembali",
+                               "Aktifkan Thumbnail",
+                               "シーンジャンプ",
+                               "音声再生",
+                               "戻る",
+                               "サムネイル有効",
+                               "LOG",
+                               "Log",
+                               "log"};
+  for (const auto &elem : ui_elements) {
+    if (strstr(s_ui_buffer, elem) != nullptr) {
+      return true;
+    }
+  }
+  return false;
+}
+
+// Hook ExtTextOutA - UI Text Rendering (e.g. Character Names in Backlog)
+static BOOL WINAPI Hook_ExtTextOutA(HDC hdc, int x, int y, UINT options,
+                                    const RECT *lprect, LPCSTR lpString, UINT c,
+                                    const INT *lpDx) {
+
+  UINT originalC = c;
+  int actualLen = lstrlenA(lpString);
+  // If c==0, treat as null-terminated (so _ -> space filter still applies)
+  if (c == 0 && lpString && lpString[0] != 0) {
+    c = (UINT)actualLen;
+  } else if (c > 0 && actualLen > c && actualLen < c + 150) {
+    c = actualLen;
+  }
+
+  UINT renderLen = c;
+  bool performTranslation = !(g_inBacklogRender && g_fontManager.GetDisableBacklogTranslation());
+  LPCSTR renderStr = FilterSjisString(lpString, &renderLen, performTranslation, true);
+
+  // Check for scenario title translation (save/load screen)
+  static thread_local char s_scenarioTitleBuf[256];
+  {
+    // Build null-terminated copy for lookup
+    UINT lookupLen = (renderLen < sizeof(s_scenarioTitleBuf) - 1) ? renderLen : sizeof(s_scenarioTitleBuf) - 1;
+    memcpy(s_scenarioTitleBuf, renderStr, lookupLen);
+    s_scenarioTitleBuf[lookupLen] = '\0';
+
+
+
+    const char* translated = g_fontManager.TranslateScenarioTitle(s_scenarioTitleBuf);
+    if (translated) {
+      renderStr = translated;
+      renderLen = (UINT)strlen(translated);
+    }
+  }
+
+  static thread_local HDC s_lastHdc_ExtTextOut = NULL;
+  static thread_local HFONT s_lastBgFont_ExtTextOut = NULL;
+  static thread_local int s_lastTmHeight_ExtTextOut = 0;
+  
+  HFONT currFont = (HFONT)GetCurrentObject(hdc, OBJ_FONT);
+  if (hdc != s_lastHdc_ExtTextOut || currFont != s_lastBgFont_ExtTextOut || s_lastHdc_ExtTextOut == NULL) {
+    TEXTMETRICA tm;
+    Real_GetTextMetricsA(hdc, &tm);
+    s_lastTmHeight_ExtTextOut = tm.tmHeight;
+    s_lastHdc_ExtTextOut = hdc;
+    s_lastBgFont_ExtTextOut = currFont;
+  }
+
+  bool isName = false;
+  if (g_inBacklogRender && !IsUiElement(lpString, c)) {
+    isName = (s_lastTmHeight_ExtTextOut <= 18);
+  }
+
+  int nameSpacing = isName ? g_fontManager.GetBacklogNameSpacing() : 0;
+  
+  if (g_inBacklogRender && g_fontManager.GetDisableBacklogSpacing()) {
+    nameSpacing = 0; // Skip character spacing
+  }
+
+  HFONT customFont = NULL;
+  HFONT oldFont = NULL;
+
+  bool hasCustomFont = false;
+  if (isName) {
+    hasCustomFont = ((g_fontManager.GetBacklogNameFontSize() != 0) ||
+                     (g_fontManager.GetBacklogNameFontName() != L"MS Gothic" && 
+                      g_fontManager.GetBacklogNameFontName() != L"ＭＳ ゴシック") ||
+                     (nameSpacing != 0));
+  } else if (g_inBacklogRender) {
+    hasCustomFont = ((g_fontManager.GetBacklogFontSize() != 0) ||
+                     (g_fontManager.GetBacklogFontName() != L"MS Gothic" && 
+                      g_fontManager.GetBacklogFontName() != L"ＭＳ ゴシック"));
+  }
+
+  if (g_inBacklogRender && g_fontManager.GetDisableBacklogFont()) {
+    hasCustomFont = false;
+  }
+
+  if (hasCustomFont) {
+    if (isName) {
+      customFont = g_fontManager.GetBacklogNameFont(s_lastTmHeight_ExtTextOut);
+    } else {
+      customFont = g_fontManager.GetBacklogFont(s_lastTmHeight_ExtTextOut);
+    }
+    oldFont = (HFONT)SelectObject(hdc, customFont);
+  }
+
+  int renderY = y;
+  if (!g_fontManager.GetDisableBacklogSpacing()) {
+    if (hasCustomFont) {
+      if (isName) {
+        renderY += g_fontManager.GetBacklogNameYOffset();
+      }
+    }
+  }
+
+  if (nameSpacing != 0) {
+    SetTextCharacterExtra(hdc, nameSpacing);
+  }
+
+  if (g_inBacklogRender && !isName) {
+    // Enable opaque background for Dialog Text to fill the spaced gaps
+    SetBkMode(hdc, OPAQUE);
+    // Dark transparent-like blue matching the BKLOGCHIP theme (RGB(0, 140,
+    // 255))
+    SetBkColor(hdc, RGB(0, 140, 255));
+  } else {
+    // Names and normal text remain transparent
+    SetBkMode(hdc, TRANSPARENT);
+  }
+
+  RECT fixedRect = {0};
+  const RECT* finalRect = lprect;
+  if (lprect != NULL && renderY != y) {
+      fixedRect = *lprect;
+      int deltaY = renderY - y;
+      fixedRect.top += deltaY;
+      fixedRect.bottom += deltaY;
+      finalRect = &fixedRect;
+  }
+  BOOL result = Real_ExtTextOutA(hdc, x, renderY, options, finalRect, renderStr, renderLen, lpDx);
+
+  SetBkMode(hdc, TRANSPARENT);
+
+  if (nameSpacing != 0) {
+    SetTextCharacterExtra(hdc, 0); // Restore
+  }
+
+  if (oldFont) {
+    SelectObject(hdc, oldFont);
+  }
+
+  return result;
+}
+
+static BOOL WINAPI Hook_GetTextExtentPoint32A(HDC hdc, LPCSTR lpString, int c,
+                                              LPSIZE lpSize) {
+  int actualLen = lstrlenA(lpString);
+  if (c > 0 && actualLen > c && actualLen < c + 150)
+    c = actualLen;
+  
+  UINT filteredLen = c;
+  bool performTranslation = !(g_inBacklogRender && g_fontManager.GetDisableBacklogTranslation());
+  lpString = FilterSjisString(lpString, &filteredLen, performTranslation, false);
+  c = filteredLen;
+
+  static thread_local HDC s_lastHdc_GetTextExtent = NULL;
+  static thread_local HFONT s_lastBgFont_GetTextExtent = NULL;
+  static thread_local int s_lastTmHeight_GetTextExtent = 0;
+  
+  HFONT currFont = (HFONT)GetCurrentObject(hdc, OBJ_FONT);
+  if (hdc != s_lastHdc_GetTextExtent || currFont != s_lastBgFont_GetTextExtent || s_lastHdc_GetTextExtent == NULL) {
+    TEXTMETRICA tm;
+    Real_GetTextMetricsA(hdc, &tm);
+    s_lastTmHeight_GetTextExtent = tm.tmHeight;
+    s_lastHdc_GetTextExtent = hdc;
+    s_lastBgFont_GetTextExtent = currFont;
+  }
+
+  bool isName = false;
+  if (g_inBacklogRender && !IsUiElement(lpString, c)) {
+    isName = (s_lastTmHeight_GetTextExtent <= 18);
+  }
+
+  int nameSpacing = isName ? g_fontManager.GetBacklogNameSpacing() : 0;
+  if (g_inBacklogRender && g_fontManager.GetDisableBacklogSpacing()) {
+    nameSpacing = 0;
+  }
+
+  HFONT customFont = NULL;
+  HFONT oldFont = NULL;
+
+  bool hasCustomFont = false;
+  if (isName) {
+    hasCustomFont = ((g_fontManager.GetBacklogNameFontSize() != 0) ||
+                     (g_fontManager.GetBacklogNameFontName() != L"MS Gothic" && 
+                      g_fontManager.GetBacklogNameFontName() != L"ＭＳ ゴシック") ||
+                     (nameSpacing != 0));
+  } else if (g_inBacklogRender) {
+    hasCustomFont = ((g_fontManager.GetBacklogFontSize() != 0) ||
+                     (g_fontManager.GetBacklogFontName() != L"MS Gothic" && 
+                      g_fontManager.GetBacklogFontName() != L"ＭＳ ゴシック"));
+  }
+
+  if (g_inBacklogRender && g_fontManager.GetDisableBacklogFont()) {
+    hasCustomFont = false;
+  }
+
+  if (hasCustomFont) {
+    if (isName) {
+      customFont = g_fontManager.GetBacklogNameFont(s_lastTmHeight_GetTextExtent);
+    } else {
+      customFont = g_fontManager.GetBacklogFont(s_lastTmHeight_GetTextExtent);
+    }
+    oldFont = (HFONT)SelectObject(hdc, customFont);
+  }
+
+  if (nameSpacing != 0) {
+    SetTextCharacterExtra(hdc, nameSpacing);
+  }
+
+  BOOL result = Real_GetTextExtentPoint32A(hdc, lpString, c, lpSize);
+
+  if (!g_fontManager.GetDisableBacklogSpacing()) {
+    if (result && g_inBacklogRender && !isName) {
+      lpSize->cy += g_fontManager.GetBacklogLineSpacing();
+    } else if (result && !g_inBacklogRender && !IsUiElement(lpString, c)) {
+      lpSize->cy += g_fontManager.GetDialogueLineSpacing();
+    }
+  }
+
+  if (nameSpacing != 0) {
+    SetTextCharacterExtra(hdc, 0);
+  }
+  if (oldFont) {
+    SelectObject(hdc, oldFont);
+  }
+
+  return result;
+}
+
+static BOOL WINAPI Hook_GetTextExtentPoint32W(HDC hdc, LPCWSTR lpString, int c,
+                                              LPSIZE lpSize) {
+  BOOL result = Real_GetTextExtentPoint32W(hdc, lpString, c, lpSize);
+  return result;
+}
+
+// GetTextExtentExPoint Hooks
+static decltype(&GetTextExtentExPointA) Real_GetTextExtentExPointA =
+    GetTextExtentExPointA;
+static decltype(&GetTextExtentExPointW) Real_GetTextExtentExPointW =
+    GetTextExtentExPointW;
+
+static BOOL WINAPI Hook_GetTextExtentExPointA(HDC hdc, LPCSTR lpszString,
+                                              int cchString, int nMaxExtent,
+                                              LPINT lpnFit, LPINT lpnDx,
+                                              LPSIZE lpSize) {
+  int actualLen = lstrlenA(lpszString);
+  if (cchString > 0 && actualLen > cchString && actualLen < cchString + 150)
+    cchString = actualLen;
+  
+  UINT filteredLen = cchString;
+  bool performTranslation = !(g_inBacklogRender && g_fontManager.GetDisableBacklogTranslation());
+  lpszString = FilterSjisString(lpszString, &filteredLen, performTranslation, false);
+  cchString = filteredLen;
+
+  static thread_local HDC s_lastHdc_GetTextExtentEx = NULL;
+  static thread_local HFONT s_lastBgFont_GetTextExtentEx = NULL;
+  static thread_local int s_lastTmHeight_GetTextExtentEx = 0;
+  
+  HFONT currFont = (HFONT)GetCurrentObject(hdc, OBJ_FONT);
+  if (hdc != s_lastHdc_GetTextExtentEx || currFont != s_lastBgFont_GetTextExtentEx || s_lastHdc_GetTextExtentEx == NULL) {
+    TEXTMETRICA tm;
+    Real_GetTextMetricsA(hdc, &tm);
+    s_lastTmHeight_GetTextExtentEx = tm.tmHeight;
+    s_lastHdc_GetTextExtentEx = hdc;
+    s_lastBgFont_GetTextExtentEx = currFont;
+  }
+
+  bool isName = false;
+  if (g_inBacklogRender && !IsUiElement(lpszString, cchString)) {
+    isName = (s_lastTmHeight_GetTextExtentEx <= 18);
+  }
+
+  int nameSpacing = isName ? g_fontManager.GetBacklogNameSpacing() : 0;
+  if (g_inBacklogRender && g_fontManager.GetDisableBacklogSpacing()) {
+    nameSpacing = 0;
+  }
+
+  HFONT customFont = NULL;
+  HFONT oldFont = NULL;
+
+  bool hasCustomFont = false;
+  if (isName) {
+    hasCustomFont = ((g_fontManager.GetBacklogNameFontSize() != 0) ||
+                     (g_fontManager.GetBacklogNameFontName() != L"MS Gothic" && 
+                      g_fontManager.GetBacklogNameFontName() != L"ＭＳ ゴシック") ||
+                     (nameSpacing != 0));
+  } else if (g_inBacklogRender) {
+    hasCustomFont = ((g_fontManager.GetBacklogFontSize() != 0) ||
+                     (g_fontManager.GetBacklogFontName() != L"MS Gothic" && 
+                      g_fontManager.GetBacklogFontName() != L"ＭＳ ゴシック"));
+  }
+
+  if (g_inBacklogRender && g_fontManager.GetDisableBacklogFont()) {
+    hasCustomFont = false;
+  }
+
+  if (hasCustomFont) {
+    if (isName) {
+      customFont = g_fontManager.GetBacklogNameFont(s_lastTmHeight_GetTextExtentEx);
+    } else {
+      customFont = g_fontManager.GetBacklogFont(s_lastTmHeight_GetTextExtentEx);
+    }
+    oldFont = (HFONT)SelectObject(hdc, customFont);
+  }
+
+  if (nameSpacing != 0) {
+    SetTextCharacterExtra(hdc, nameSpacing);
+  }
+
+  BOOL result = Real_GetTextExtentExPointA(hdc, lpszString, cchString,
+                                           nMaxExtent, lpnFit, lpnDx, lpSize);
+
+  if (!g_fontManager.GetDisableBacklogSpacing()) {
+    if (result && g_inBacklogRender && !isName && lpSize != NULL) {
+      lpSize->cy += g_fontManager.GetBacklogLineSpacing();
+    } else if (result && !g_inBacklogRender && !IsUiElement(lpszString, cchString) && lpSize != NULL) {
+      lpSize->cy += g_fontManager.GetDialogueLineSpacing();
+    }
+  }
+
+  if (nameSpacing != 0) {
+    SetTextCharacterExtra(hdc, 0);
+  }
+  if (oldFont) {
+    SelectObject(hdc, oldFont);
+  }
+  return result;
+}
+
+static BOOL WINAPI Hook_GetTextExtentExPointW(HDC hdc, LPCWSTR lpszString,
+                                              int cchString, int nMaxExtent,
+                                              LPINT lpnFit, LPINT lpnDx,
+                                              LPSIZE lpSize) {
+  BOOL result = Real_GetTextExtentExPointW(hdc, lpszString, cchString,
+                                           nMaxExtent, lpnFit, lpnDx, lpSize);
+  return result;
+}
+
+// GetCharWidth32 Hooks
+static decltype(&GetCharWidth32A) Real_GetCharWidth32A = GetCharWidth32A;
+static decltype(&GetCharWidth32W) Real_GetCharWidth32W = GetCharWidth32W;
+
+static BOOL WINAPI Hook_GetCharWidth32A(HDC hdc, UINT iFirst, UINT iLast,
+                                        LPINT lpBuffer) {
+  BOOL res = Real_GetCharWidth32A(hdc, iFirst, iLast, lpBuffer);
+  return res;
+}
+
+static BOOL WINAPI Hook_GetCharWidth32W(HDC hdc, UINT iFirst, UINT iLast,
+                                        LPINT lpBuffer) {
+  BOOL res = Real_GetCharWidth32W(hdc, iFirst, iLast, lpBuffer);
+  return res;
+}
+
+static DWORD WINAPI Hook_GetGlyphOutlineA(HDC hdc, UINT uChar, UINT fuFormat,
+                                          LPGLYPHMETRICS lpgm, DWORD cjBuffer,
+                                          LPVOID pvBuffer, const MAT2 *lpmat2) {
+  // Redirect underscore (_) to space for rendering - underscore was used
+  // as space substitute in EncStr opcodes during MES import
+  if (uChar == '_') uChar = ' ';
+
+  DWORD r = GDI_ERROR;
+
+  static thread_local HDC s_lastHdc_GlyphOutline = NULL;
+  static thread_local HFONT s_lastBgFont_GlyphOutline = NULL;
+  static thread_local int s_lastTmHeight_GlyphOutline = 0;
+
+  HFONT currFont = (HFONT)GetCurrentObject(hdc, OBJ_FONT);
+  if (hdc != s_lastHdc_GlyphOutline || currFont != s_lastBgFont_GlyphOutline || s_lastHdc_GlyphOutline == NULL) {
+    TEXTMETRICA tm;
+    if (Real_GetTextMetricsA(hdc, &tm)) {
+      s_lastTmHeight_GlyphOutline = tm.tmHeight;
+    } else {
+      s_lastTmHeight_GlyphOutline = 0; // Fallback
+    }
+    s_lastHdc_GlyphOutline = hdc;
+    s_lastBgFont_GlyphOutline = currFont;
+  }
+
+  bool isName = false;
+  
+  if (g_inBacklogRender && s_lastTmHeight_GlyphOutline > 0 && !g_fontManager.GetDisableBacklogFont()) {
+    int fontSize = ScaleBacklogFontSize(s_lastTmHeight_GlyphOutline);
+    isName = (s_lastTmHeight_GlyphOutline <= 18);
+    
+    HFONT f = NULL;
+    if (isName) {
+      f = g_fontManager.GetBacklogNameFont(fontSize);
+    } else {
+      f = g_fontManager.GetBacklogFont(fontSize);
+    }
+
+    if (f) {
+      SelectObject(hdc, f); // Permanently mutate HDC for this loop
+      r = Real_GetGlyphOutlineA(hdc, uChar, fuFormat, lpgm, cjBuffer, pvBuffer,
+                                lpmat2);
+    }
+  }
+
+  if (r == GDI_ERROR) {
+    r = Real_GetGlyphOutlineA(hdc, uChar, fuFormat, lpgm, cjBuffer, pvBuffer,
+                              lpmat2);
+  }
+
+
+  if (r != GDI_ERROR && lpgm && g_inBacklogRender && !g_fontManager.GetDisableBacklogSpacing()) {
+    if (!isName) {
+      lpgm->gmptGlyphOrigin.x += g_fontManager.GetBacklogXOffset();
+      lpgm->gmptGlyphOrigin.y += g_fontManager.GetBacklogYOffset();
+
+
+      lpgm->gmCellIncX += g_fontManager.GetBacklogDialogSpacing();
+    } else {
+      lpgm->gmptGlyphOrigin.x += g_fontManager.GetBacklogNameXOffset();
+    }
+  }
+
+  return r;
+}
+
+static HANDLE WINAPI Hook_CreateFileA(
+    LPCSTR lpFileName, DWORD dwDesiredAccess, DWORD dwShareMode,
+    LPSECURITY_ATTRIBUTES lpSecurityAttributes, DWORD dwCreationDisposition,
+    DWORD dwFlagsAndAttributes, HANDLE hTemplateFile) {
+
+  static thread_local bool s_inCreateFile = false;
+  if (s_inCreateFile) {
+    return Real_CreateFileA(lpFileName, dwDesiredAccess, dwShareMode,
+                            lpSecurityAttributes, dwCreationDisposition,
+                            dwFlagsAndAttributes, hTemplateFile);
+  }
+
+  s_inCreateFile = true;
+
+  int lang = g_fontManager.GetLanguage();
+  if (lang == 1 || lang == 2) {
+    std::string newPath = ReplacePathA(lpFileName);
+    if (!newPath.empty()) {
+      // Resolve to absolute path to avoid CWD-dependent resolution issues
+      char absPath[MAX_PATH];
+      DWORD absLen = GetFullPathNameA(newPath.c_str(), MAX_PATH, absPath, NULL);
+      const char* finalPath = (absLen > 0 && absLen < MAX_PATH) ? absPath : newPath.c_str();
+
+      HANDLE h = Real_CreateFileA(finalPath, dwDesiredAccess, dwShareMode,
+                                  lpSecurityAttributes, dwCreationDisposition,
+                                  dwFlagsAndAttributes, hTemplateFile);
+      s_inCreateFile = false;
+      return h;
+    }
+  }
+
+  HANDLE h = Real_CreateFileA(lpFileName, dwDesiredAccess, dwShareMode,
+                              lpSecurityAttributes, dwCreationDisposition,
+                              dwFlagsAndAttributes, hTemplateFile);
+  s_inCreateFile = false;
+  return h;
+}
+

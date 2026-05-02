@@ -1,0 +1,5 @@
+D:/vns/DC4/DC4Patch a saus kode 24-2/DC4Patch a saus kode 23-2/DC4Patch a/build_dc4ph/CMakeFiles/detours.dir
+D:/vns/DC4/DC4Patch a saus kode 24-2/DC4Patch a saus kode 23-2/DC4Patch a/build_dc4ph/CMakeFiles/DC4Patch.dir
+D:/vns/DC4/DC4Patch a saus kode 24-2/DC4Patch a saus kode 23-2/DC4Patch a/build_dc4ph/CMakeFiles/DC4Launcher.dir
+D:/vns/DC4/DC4Patch a saus kode 24-2/DC4Patch a saus kode 23-2/DC4Patch a/build_dc4ph/CMakeFiles/edit_cache.dir
+D:/vns/DC4/DC4Patch a saus kode 24-2/DC4Patch a saus kode 23-2/DC4Patch a/build_dc4ph/CMakeFiles/rebuild_cache.dir

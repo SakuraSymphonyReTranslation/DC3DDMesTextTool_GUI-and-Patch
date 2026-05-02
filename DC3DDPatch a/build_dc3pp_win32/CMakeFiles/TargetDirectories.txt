@@ -1,0 +1,5 @@
+H:/Games/DC3PP/DC3PPMesTextTool_GUI - Copy berantakan/DC4Patch a/build_dc3pp_win32/CMakeFiles/detours.dir
+H:/Games/DC3PP/DC3PPMesTextTool_GUI - Copy berantakan/DC4Patch a/build_dc3pp_win32/CMakeFiles/DC4Patch.dir
+H:/Games/DC3PP/DC3PPMesTextTool_GUI - Copy berantakan/DC4Patch a/build_dc3pp_win32/CMakeFiles/DC4Launcher.dir
+H:/Games/DC3PP/DC3PPMesTextTool_GUI - Copy berantakan/DC4Patch a/build_dc3pp_win32/CMakeFiles/ALL_BUILD.dir
+H:/Games/DC3PP/DC3PPMesTextTool_GUI - Copy berantakan/DC4Patch a/build_dc3pp_win32/CMakeFiles/ZERO_CHECK.dir
