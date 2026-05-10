@@ -1,4 +1,4 @@
-# Install script for directory: E:/Games/DC3DD/DC3DDMesTextTool_GUI - Copy berantakan/DC3DDPatch a
+# Install script for directory: E:/Games/DC3DD/DC3DDMesTextTool_GUI and Patch/DC3DDPatch a
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,7 +35,7 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "E:/Games/DC3DD/DC3DDMesTextTool_GUI - Copy berantakan/DC3DDPatch a/build_dc3dd/install_local_manifest.txt"
+  file(WRITE "E:/Games/DC3DD/DC3DDMesTextTool_GUI and Patch/DC3DDPatch a/build_dc3dd/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -51,6 +51,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "E:/Games/DC3DD/DC3DDMesTextTool_GUI - Copy berantakan/DC3DDPatch a/build_dc3dd/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "E:/Games/DC3DD/DC3DDMesTextTool_GUI and Patch/DC3DDPatch a/build_dc3dd/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

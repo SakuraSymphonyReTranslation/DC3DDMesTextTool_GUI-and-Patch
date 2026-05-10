@@ -88,6 +88,8 @@ private:
   int m_dialogueFontSizeOverride = -19;
   int m_backlogFontSizeOverride = -19;
   int m_dialogueLineSpacing = 0;
+  int m_dialogueXOffset = 0;
+  int m_dialogueYOffset = 0;
   int m_backlogNameFontSizeOverride = -11;
   int m_backlogXOffset = 0;
   int m_backlogLineSpacing = 0;
@@ -155,11 +157,13 @@ public:
       if (hFile != INVALID_HANDLE_VALUE) {
         const char* defaultIni = 
             "[Fonts]\r\n"
-            "BacklogFont=\x82l\x82r \x83S\x83V\x83""b\x83N\r\n"
+            "BacklogFont=MS Gothic\r\n"
             "BacklogSize=-19\r\n"
-            "DialogueFont=\x82l\x82r \x83S\x83V\x83""b\x83N\r\n"
+            "DialogueFont=MS Gothic\r\n"
             "DialogueSize=-19\r\n"
-            "BacklogNameFont=\x82l\x82r \x83S\x83V\x83""b\x83N\r\n"
+            "DialogueXOffset=0\r\n"
+            "DialogueYOffset=0\r\n"
+            "BacklogNameFont=MS Gothic\r\n"
             "BacklogNameSize=-11\r\n"
             "BacklogXOffset=0\r\n"
             "BacklogLineSpacing=0\r\n"
@@ -325,6 +329,8 @@ public:
     m_dialogueFontSizeOverride = ReadInt(L"DialogueSize", 19);
     m_backlogFontSizeOverride = ReadInt(L"BacklogSize", 19);
     m_dialogueLineSpacing = ReadInt(L"DialogueLineSpacing", 0);
+    m_dialogueXOffset = ReadInt(L"DialogueXOffset", 0);
+    m_dialogueYOffset = ReadInt(L"DialogueYOffset", 0);
     m_backlogNameFontSizeOverride = ReadInt(L"BacklogNameSize", 11);
     m_backlogXOffset = ReadInt(L"BacklogXOffset", 0);
     m_backlogLineSpacing = ReadInt(L"BacklogLineSpacing", 0);
@@ -384,7 +390,7 @@ public:
 
     // If no custom dialogue font is set, try fallbacks
     if (m_dialogueFontName == L"ＭＳ ゴシック" || m_dialogueFontName == L"MS Gothic") {
-      const wchar_t *candidates[] = {L"ＭＳ ゴシック", L"MS Gothic", L"MS PGothic",
+      const wchar_t *candidates[] = {L"MS Gothic", L"ＭＳ ゴシック", L"MS PGothic",
                                      L"Yu Gothic UI", L"Tahoma"};
       for (auto name : candidates) {
         HFONT f = Real_CreateFontW(16, 0, 0, 0, FW_NORMAL, 0, 0, 0, SHIFTJIS_CHARSET,
@@ -507,26 +513,21 @@ public:
     m_backlogNameSpacing = nameSpacing;
     m_backlogDialogSpacing = dialogSpacing;
     m_dialogueLineSpacing = diagSpacing;
-    WritePrivateProfileStringW(L"Fonts", L"BacklogXOffset",
-                               std::to_wstring(xOffset).c_str(),
-                               m_iniPath.c_str());
-    WritePrivateProfileStringW(L"Fonts", L"BacklogYOffset",
-                               std::to_wstring(yOffset).c_str(),
-                               m_iniPath.c_str());
-    WritePrivateProfileStringW(L"Fonts", L"BacklogLineSpacing",
-                               std::to_wstring(spacing).c_str(),
-                               m_iniPath.c_str());
-    WritePrivateProfileStringW(L"Fonts", L"BacklogNameXOffset",
-                               std::to_wstring(nameXOffset).c_str(),
-                               m_iniPath.c_str());
-    WritePrivateProfileStringW(L"Fonts", L"BacklogNameYOffset",
-                               std::to_wstring(nameYOffset).c_str(),
-                               m_iniPath.c_str());
-    WritePrivateProfileStringW(L"Fonts", L"BacklogNameSpacing",
-                               std::to_wstring(nameSpacing).c_str(),
-                               m_iniPath.c_str());
+    WritePrivateProfileStringW(L"Fonts", L"BacklogXOffset", std::to_wstring(xOffset).c_str(), m_iniPath.c_str());
+    WritePrivateProfileStringW(L"Fonts", L"BacklogYOffset", std::to_wstring(yOffset).c_str(), m_iniPath.c_str());
+    WritePrivateProfileStringW(L"Fonts", L"BacklogLineSpacing", std::to_wstring(spacing).c_str(), m_iniPath.c_str());
+    WritePrivateProfileStringW(L"Fonts", L"BacklogNameXOffset", std::to_wstring(nameXOffset).c_str(), m_iniPath.c_str());
+    WritePrivateProfileStringW(L"Fonts", L"BacklogNameYOffset", std::to_wstring(nameYOffset).c_str(), m_iniPath.c_str());
+    WritePrivateProfileStringW(L"Fonts", L"BacklogNameSpacing", std::to_wstring(nameSpacing).c_str(), m_iniPath.c_str());
     WritePrivateProfileStringW(L"Fonts", L"BacklogDialogSpacing", std::to_wstring(dialogSpacing).c_str(), m_iniPath.c_str());
     WritePrivateProfileStringW(L"Fonts", L"DialogueLineSpacing", std::to_wstring(m_dialogueLineSpacing).c_str(), m_iniPath.c_str());
+  }
+
+  void SetDialogueOffsets(int xOffset, int yOffset) {
+    m_dialogueXOffset = xOffset;
+    m_dialogueYOffset = yOffset;
+    WritePrivateProfileStringW(L"Fonts", L"DialogueXOffset", std::to_wstring(xOffset).c_str(), m_iniPath.c_str());
+    WritePrivateProfileStringW(L"Fonts", L"DialogueYOffset", std::to_wstring(yOffset).c_str(), m_iniPath.c_str());
   }
 
   std::wstring GetDialogueFontName() const { return m_dialogueFontName; }
@@ -534,6 +535,8 @@ public:
   std::wstring GetBacklogNameFontName() const { return m_backlogNameFontName; }
   int GetDialogueFontSize() const { return m_dialogueFontSizeOverride; }
   int GetDialogueLineSpacing() const { return m_advancedSettings ? m_dialogueLineSpacing : 0; }
+  int GetDialogueXOffset() const { return m_advancedSettings ? m_dialogueXOffset : 0; }
+  int GetDialogueYOffset() const { return m_advancedSettings ? m_dialogueYOffset : 0; }
   int GetBacklogFontSize() const { return m_backlogFontSizeOverride; }
   int GetBacklogNameFontSize() const { return m_backlogNameFontSizeOverride; }
   int GetBacklogXOffset() const {
@@ -613,6 +616,7 @@ static UINT_PTR g_cmdVersionInfo = 0;
 static UINT_PTR g_originalVersionCmd = 0;
 
 static void TraceLog(const char *fmt, ...) {
+  return; // Disable trace logging
   FILE *f = fopen("dc3dd_patch_trace.log", "a");
   if (!f) return;
   va_list ap;
@@ -1024,6 +1028,7 @@ static bool IsExecutableAddress(const void *ptr) {
 
 // Debug logging helper - writes to file for easy inspection
 static void DebugLogIcon(const char* fmt, ...) {
+    return; // Disable icon debugging
     static FILE* logFile = nullptr;
     if (!logFile) {
         logFile = fopen("DC3DD_icon_debug.log", "w");
@@ -1435,10 +1440,22 @@ static int WINAPI Hook_MultiByteToWideChar(UINT CodePage, DWORD dwFlags, LPCCH l
 // spacing
 static BOOL WINAPI Hook_GetTextMetricsA(HDC hdc, LPTEXTMETRICA lptm) {
   BOOL res = Real_GetTextMetricsA(hdc, lptm);
-  if (res && g_inBacklogRender) {
-    int spacing = g_fontManager.GetBacklogLineSpacing();
-    lptm->tmHeight += spacing;
-    lptm->tmAscent += spacing;
+  if (res) {
+    if (g_inBacklogRender) {
+      int spacing = g_fontManager.GetBacklogLineSpacing();
+      lptm->tmHeight += spacing;
+      lptm->tmAscent += spacing;
+    } else {
+      int yOffset = g_fontManager.GetDialogueYOffset();
+      // DO NOT modify tmAscent here, it causes underflow crashes! 
+      // We apply DialogueYOffset in GetGlyphOutline instead.
+      
+      int lineSpacing = g_fontManager.GetDialogueLineSpacing();
+      if (lineSpacing != 0) {
+          lptm->tmHeight += lineSpacing;
+          if (lptm->tmHeight < 1) lptm->tmHeight = 1;
+      }
+    }
   }
   return res;
 }
@@ -1684,22 +1701,30 @@ static BOOL WINAPI Hook_SetWindowTextW(HWND hWnd, LPCWSTR lpString) {
     return Real_SetWindowTextW(hWnd, lpString);
 }
 
+
 // Guard flag: disable font hooks while ChooseFont dialog is open
 static bool g_inChooseFont = false;
 
 static decltype(&CreateFontIndirectA) Real_CreateFontIndirectA = CreateFontIndirectA;
 static HFONT WINAPI Hook_CreateFontIndirectA(LOGFONTA *lplf) {
     if (lplf && !g_inChooseFont) {
+        TraceLog("Hook_CreateFontIndirectA: height=%d", lplf->lfHeight);
         int height = lplf->lfHeight;
         int absHeight = height < 0 ? -height : height;
-        if (absHeight > 18 && absHeight < 100) {
+        if (absHeight >= 12 && absHeight < 200) {
             int desired = g_fontManager.GetDialogueFontSize();
             if (desired != 0) {
-                 lplf->lfHeight = (height < 0) ? -abs(desired) : abs(desired);
+                 static LOGFONTA s_lfCacheA[32];
+                 static int s_lfCacheIdxA = 0;
+                 LOGFONTA* lfCopy = &s_lfCacheA[(s_lfCacheIdxA++) % 32];
+                 *lfCopy = *lplf;
+                 lfCopy->lfHeight = (height < 0) ? -abs(desired) : abs(desired);
+                 lfCopy->lfWidth = 0;
                  std::wstring faceW = g_fontManager.GetDialogueFontName();
                  if (faceW != L"MS Gothic" && faceW != L"ＭＳ ゴシック" && faceW.length() > 0) {
-                     WideCharToMultiByte(CP_ACP, 0, faceW.c_str(), -1, lplf->lfFaceName, LF_FACESIZE, NULL, NULL);
+                     WideCharToMultiByte(CP_ACP, 0, faceW.c_str(), -1, lfCopy->lfFaceName, LF_FACESIZE, NULL, NULL);
                  }
+                 return Real_CreateFontIndirectA(lfCopy);
             }
         }
     }
@@ -1709,16 +1734,23 @@ static HFONT WINAPI Hook_CreateFontIndirectA(LOGFONTA *lplf) {
 static decltype(&CreateFontIndirectW) Real_CreateFontIndirectW = CreateFontIndirectW;
 static HFONT WINAPI Hook_CreateFontIndirectW(LOGFONTW *lplf) {
     if (lplf && !g_inChooseFont) {
+        TraceLog("Hook_CreateFontIndirectW: height=%d, width=%d", lplf->lfHeight, lplf->lfWidth);
         int height = lplf->lfHeight;
         int absHeight = height < 0 ? -height : height;
-        if (absHeight > 18 && absHeight < 100) {
+        if (absHeight >= 12 && absHeight < 200) {
             int desired = g_fontManager.GetDialogueFontSize();
             if (desired != 0) {
-                 lplf->lfHeight = (height < 0) ? -abs(desired) : abs(desired);
+                 static LOGFONTW s_lfCacheW[32];
+                 static int s_lfCacheIdxW = 0;
+                 LOGFONTW* lfCopy = &s_lfCacheW[(s_lfCacheIdxW++) % 32];
+                 *lfCopy = *lplf;
+                 lfCopy->lfHeight = (height < 0) ? -abs(desired) : abs(desired);
+                 lfCopy->lfWidth = 0;
                  std::wstring faceW = g_fontManager.GetDialogueFontName();
                  if (faceW != L"MS Gothic" && faceW != L"ＭＳ ゴシック" && faceW.length() > 0) {
-                     wcscpy_s(lplf->lfFaceName, LF_FACESIZE, faceW.c_str());
+                     wcscpy_s(lfCopy->lfFaceName, LF_FACESIZE, faceW.c_str());
                  }
+                 return Real_CreateFontIndirectW(lfCopy);
             }
         }
     }
@@ -1728,28 +1760,32 @@ static HFONT WINAPI Hook_CreateFontIndirectW(LOGFONTW *lplf) {
 static decltype(&CreateFontA) Real_CreateFontA = CreateFontA;
 static HFONT WINAPI Hook_CreateFontA(int cHeight, int cWidth, int cEscapement, int cOrientation, int cWeight, DWORD bItalic, DWORD bUnderline, DWORD bStrikeOut, DWORD iCharSet, DWORD iOutPrecision, DWORD iClipPrecision, DWORD iQuality, DWORD iPitchAndFamily, LPCSTR pszFaceName) {
     if (!g_inChooseFont) {
+        TraceLog("Hook_CreateFontA: height=%d", cHeight);
       int absHeight = cHeight < 0 ? -cHeight : cHeight;
-      if (absHeight > 18 && absHeight < 100) {
+      if (absHeight >= 12 && absHeight < 200) {
           int desired = g_fontManager.GetDialogueFontSize();
           if (desired != 0) {
                cHeight = (cHeight < 0) ? -abs(desired) : abs(desired);
+               cWidth = 0;
           }
       }
     }
     return Real_CreateFontA(cHeight, cWidth, cEscapement, cOrientation, cWeight, bItalic, bUnderline, bStrikeOut, iCharSet, iOutPrecision, iClipPrecision, iQuality, iPitchAndFamily, pszFaceName);
 }
 
-
 static HFONT WINAPI Hook_CreateFontW(int cHeight, int cWidth, int cEscapement, int cOrientation, int cWeight, DWORD bItalic, DWORD bUnderline, DWORD bStrikeOut, DWORD iCharSet, DWORD iOutPrecision, DWORD iClipPrecision, DWORD iQuality, DWORD iPitchAndFamily, LPCWSTR pszFaceName) {
     if (!g_inChooseFont) {
+        TraceLog("Hook_CreateFontW: height=%d, width=%d", cHeight, cWidth);
       int absHeight = cHeight < 0 ? -cHeight : cHeight;
-      if (absHeight > 18 && absHeight < 100) {
+      if (absHeight >= 12 && absHeight < 200) {
           int desired = g_fontManager.GetDialogueFontSize();
           if (desired != 0) {
                cHeight = (cHeight < 0) ? -abs(desired) : abs(desired);
+               cWidth = 0;
           }
       }
     }
+
     return Real_CreateFontW(cHeight, cWidth, cEscapement, cOrientation, cWeight, bItalic, bUnderline, bStrikeOut, iCharSet, iOutPrecision, iClipPrecision, iQuality, iPitchAndFamily, pszFaceName);
 }
 
@@ -1896,11 +1932,16 @@ static BOOL WINAPI Hook_ExtTextOutA(HDC hdc, int x, int y, UINT options,
     oldFont = (HFONT)SelectObject(hdc, customFont);
   }
 
+  int renderX = x;
   int renderY = y;
   if (!g_fontManager.GetDisableBacklogSpacing()) {
-    if (hasCustomFont) {
-      if (isName) {
+    if (g_inBacklogRender) {
+      if (hasCustomFont && isName) {
         renderY += g_fontManager.GetBacklogNameYOffset();
+      }
+    } else {
+      if (!IsUiElement(lpString, c)) {
+        renderY += g_fontManager.GetDialogueYOffset();
       }
     }
   }
@@ -1922,14 +1963,17 @@ static BOOL WINAPI Hook_ExtTextOutA(HDC hdc, int x, int y, UINT options,
 
   RECT fixedRect = {0};
   const RECT* finalRect = lprect;
-  if (lprect != NULL && renderY != y) {
+  if (lprect != NULL && (renderX != x || renderY != y)) {
       fixedRect = *lprect;
+      int deltaX = renderX - x;
       int deltaY = renderY - y;
+      fixedRect.left += deltaX;
+      fixedRect.right += deltaX;
       fixedRect.top += deltaY;
       fixedRect.bottom += deltaY;
       finalRect = &fixedRect;
   }
-  BOOL result = Real_ExtTextOutA(hdc, x, renderY, options, finalRect, renderStr, renderLen, lpDx);
+  BOOL result = Real_ExtTextOutA(hdc, renderX, renderY, options, finalRect, renderStr, renderLen, lpDx);
 
   SetBkMode(hdc, TRANSPARENT);
 
@@ -1948,6 +1992,26 @@ static decltype(&ExtTextOutW) Real_ExtTextOutW = ExtTextOutW;
 static BOOL WINAPI Hook_ExtTextOutW(HDC hdc, int x, int y, UINT options,
                                     const RECT *lprect, LPCWSTR lpString, UINT c,
                                     const INT *lpDx) {
+  int renderX = x;
+  int renderY = y;
+  if (!g_fontManager.GetDisableBacklogSpacing() && !g_inBacklogRender) {
+    renderX += g_fontManager.GetDialogueXOffset();
+    renderY += g_fontManager.GetDialogueYOffset();
+  }
+
+  RECT fixedRect = {0};
+  const RECT* finalRect = lprect;
+  if (lprect != NULL && (renderX != x || renderY != y)) {
+      fixedRect = *lprect;
+      int deltaX = renderX - x;
+      int deltaY = renderY - y;
+      fixedRect.left += deltaX;
+      fixedRect.right += deltaX;
+      fixedRect.top += deltaY;
+      fixedRect.bottom += deltaY;
+      finalRect = &fixedRect;
+  }
+
   if (lpString != NULL && c > 0 && c < 10000 && !(options & ETO_GLYPH_INDEX) && !IsBadReadPtr(lpString, c * sizeof(WCHAR))) {
     __try {
         WCHAR* buffer = new WCHAR[c + 1];
@@ -1959,14 +2023,14 @@ static BOOL WINAPI Hook_ExtTextOutW(HDC hdc, int x, int y, UINT options,
             }
         }
         buffer[c] = L'\0';
-        BOOL result = Real_ExtTextOutW(hdc, x, y, options, lprect, buffer, c, lpDx);
+        BOOL result = Real_ExtTextOutW(hdc, renderX, renderY, options, finalRect, buffer, c, lpDx);
         delete[] buffer;
         return result;
     } __except(1) {
         // Access violation or similar reading lpString
     }
   }
-  return Real_ExtTextOutW(hdc, x, y, options, lprect, lpString, c, lpDx);
+  return Real_ExtTextOutW(hdc, renderX, renderY, options, finalRect, lpString, c, lpDx);
 }
 
 static decltype(&TextOutA) Real_TextOutA = TextOutA;
@@ -1987,12 +2051,25 @@ static BOOL WINAPI Hook_TextOutA(HDC hdc, int x, int y, LPCSTR lpString, int c) 
   bool performTranslation = !(g_inBacklogRender && g_fontManager.GetDisableBacklogTranslation());
   LPCSTR renderStr = FilterSjisString(lpString, &renderLen, performTranslation, true);
 
-  return Real_TextOutA(hdc, x, y, renderStr, renderLen);
+  int renderX = x;
+  int renderY = y;
+  if (!g_inBacklogRender && !IsUiElement(renderStr, renderLen)) {
+      renderX += g_fontManager.GetDialogueXOffset();
+      renderY += g_fontManager.GetDialogueYOffset();
+  }
+
+  return Real_TextOutA(hdc, renderX, renderY, renderStr, renderLen);
 }
 
 static decltype(&TextOutW) Real_TextOutW = TextOutW;
 static BOOL WINAPI Hook_TextOutW(HDC hdc, int x, int y, LPCWSTR lpString, int c) {
-  return Real_TextOutW(hdc, x, y, lpString, c);
+  int renderX = x;
+  int renderY = y;
+  if (!g_inBacklogRender) {
+      renderX += g_fontManager.GetDialogueXOffset();
+      renderY += g_fontManager.GetDialogueYOffset();
+  }
+  return Real_TextOutW(hdc, renderX, renderY, lpString, c);
 }
 
 static decltype(&DrawTextA) Real_DrawTextA = DrawTextA;
@@ -2003,7 +2080,30 @@ static int WINAPI Hook_DrawTextA(HDC hdc, LPCSTR lpchText, int cchText, LPRECT l
   UINT renderLen = len;
   bool performTranslation = !(g_inBacklogRender && g_fontManager.GetDisableBacklogTranslation());
   LPCSTR renderStr = FilterSjisString(lpchText, &renderLen, performTranslation, true);
-  return Real_DrawTextA(hdc, renderStr, renderLen, lprc, format);
+
+  RECT fixedRect = {0};
+  const RECT* finalRect = lprc;
+  if (!g_inBacklogRender && !IsUiElement(renderStr, renderLen)) {
+    int xOffset = g_fontManager.GetDialogueXOffset();
+    int yOffset = g_fontManager.GetDialogueYOffset();
+    if (lprc != NULL && (xOffset != 0 || yOffset != 0)) {
+      fixedRect = *lprc;
+      fixedRect.left += xOffset;
+      fixedRect.right += xOffset;
+      fixedRect.top += yOffset;
+      fixedRect.bottom += yOffset;
+      finalRect = &fixedRect;
+    }
+  }
+
+  int result = Real_DrawTextA(hdc, renderStr, renderLen, (LPRECT)finalRect, format);
+  if (lprc != NULL && finalRect == &fixedRect && (format & DT_CALCRECT)) {
+      lprc->left = fixedRect.left - g_fontManager.GetDialogueXOffset();
+      lprc->right = fixedRect.right - g_fontManager.GetDialogueXOffset();
+      lprc->top = fixedRect.top - g_fontManager.GetDialogueYOffset();
+      lprc->bottom = fixedRect.bottom - g_fontManager.GetDialogueYOffset();
+  }
+  return result;
 }
 
 static decltype(&DrawTextW) Real_DrawTextW = DrawTextW;
@@ -2014,13 +2114,35 @@ static int WINAPI Hook_DrawTextW(HDC hdc, LPCWSTR lpchText, int cchText, LPRECT 
       len = 0;
       while (lpchText[len] != L'\0' && len < 10000) len++;
   }
+
+  RECT fixedRect = {0};
+  const RECT* finalRect = lprc;
+  if (!g_inBacklogRender) {
+    int xOffset = g_fontManager.GetDialogueXOffset();
+    int yOffset = g_fontManager.GetDialogueYOffset();
+    if (lprc != NULL && (xOffset != 0 || yOffset != 0)) {
+      fixedRect = *lprc;
+      fixedRect.left += xOffset;
+      fixedRect.right += xOffset;
+      fixedRect.top += yOffset;
+      fixedRect.bottom += yOffset;
+      finalRect = &fixedRect;
+    }
+  }
+
   WCHAR* buffer = new WCHAR[len + 1];
   for (int i = 0; i < len; i++) {
       if (lpchText[i] == L'_' || lpchText[i] == 0xFF3F) buffer[i] = L'X';
       else buffer[i] = lpchText[i];
   }
   buffer[len] = L'\0';
-  int result = Real_DrawTextW(hdc, buffer, len, lprc, format);
+  int result = Real_DrawTextW(hdc, buffer, len, (LPRECT)finalRect, format);
+  if (lprc != NULL && finalRect == &fixedRect && (format & DT_CALCRECT)) {
+      lprc->left = fixedRect.left - g_fontManager.GetDialogueXOffset();
+      lprc->right = fixedRect.right - g_fontManager.GetDialogueXOffset();
+      lprc->top = fixedRect.top - g_fontManager.GetDialogueYOffset();
+      lprc->bottom = fixedRect.bottom - g_fontManager.GetDialogueYOffset();
+  }
   delete[] buffer;
   return result;
 }
@@ -2033,7 +2155,30 @@ static int WINAPI Hook_DrawTextExA(HDC hdc, LPSTR lpchText, int cchText, LPRECT 
   UINT renderLen = len;
   bool performTranslation = !(g_inBacklogRender && g_fontManager.GetDisableBacklogTranslation());
   LPCSTR renderStr = FilterSjisString(lpchText, &renderLen, performTranslation, true);
-  return Real_DrawTextExA(hdc, (LPSTR)renderStr, renderLen, lprc, format, lpdtp);
+
+  RECT fixedRect = {0};
+  const RECT* finalRect = lprc;
+  if (!g_inBacklogRender && !IsUiElement(renderStr, renderLen)) {
+    int xOffset = g_fontManager.GetDialogueXOffset();
+    int yOffset = g_fontManager.GetDialogueYOffset();
+    if (lprc != NULL && (xOffset != 0 || yOffset != 0)) {
+      fixedRect = *lprc;
+      fixedRect.left += xOffset;
+      fixedRect.right += xOffset;
+      fixedRect.top += yOffset;
+      fixedRect.bottom += yOffset;
+      finalRect = &fixedRect;
+    }
+  }
+
+  int result = Real_DrawTextExA(hdc, (LPSTR)renderStr, renderLen, (LPRECT)finalRect, format, lpdtp);
+  if (lprc != NULL && finalRect == &fixedRect && (format & DT_CALCRECT)) {
+      lprc->left = fixedRect.left - g_fontManager.GetDialogueXOffset();
+      lprc->right = fixedRect.right - g_fontManager.GetDialogueXOffset();
+      lprc->top = fixedRect.top - g_fontManager.GetDialogueYOffset();
+      lprc->bottom = fixedRect.bottom - g_fontManager.GetDialogueYOffset();
+  }
+  return result;
 }
 
 static decltype(&DrawTextExW) Real_DrawTextExW = DrawTextExW;
@@ -2044,13 +2189,35 @@ static int WINAPI Hook_DrawTextExW(HDC hdc, LPWSTR lpchText, int cchText, LPRECT
       len = 0;
       while (lpchText[len] != L'\0' && len < 10000) len++;
   }
+
+  RECT fixedRect = {0};
+  const RECT* finalRect = lprc;
+  if (!g_inBacklogRender) {
+    int xOffset = g_fontManager.GetDialogueXOffset();
+    int yOffset = g_fontManager.GetDialogueYOffset();
+    if (lprc != NULL && (xOffset != 0 || yOffset != 0)) {
+      fixedRect = *lprc;
+      fixedRect.left += xOffset;
+      fixedRect.right += xOffset;
+      fixedRect.top += yOffset;
+      fixedRect.bottom += yOffset;
+      finalRect = &fixedRect;
+    }
+  }
+
   WCHAR* buffer = new WCHAR[len + 1];
   for (int i = 0; i < len; i++) {
       if (lpchText[i] == L'_' || lpchText[i] == 0xFF3F) buffer[i] = L'X';
       else buffer[i] = lpchText[i];
   }
   buffer[len] = L'\0';
-  int result = Real_DrawTextExW(hdc, buffer, len, lprc, format, lpdtp);
+  int result = Real_DrawTextExW(hdc, buffer, len, (LPRECT)finalRect, format, lpdtp);
+  if (lprc != NULL && finalRect == &fixedRect && (format & DT_CALCRECT)) {
+      lprc->left = fixedRect.left - g_fontManager.GetDialogueXOffset();
+      lprc->right = fixedRect.right - g_fontManager.GetDialogueXOffset();
+      lprc->top = fixedRect.top - g_fontManager.GetDialogueYOffset();
+      lprc->bottom = fixedRect.bottom - g_fontManager.GetDialogueYOffset();
+  }
   delete[] buffer;
   return result;
 }
@@ -2293,7 +2460,13 @@ static DWORD WINAPI Hook_GetGlyphOutlineW(HDC hdc, UINT uChar, UINT fuFormat,
                                           LPVOID pvBuffer, const MAT2 *lpmat2) {
   if (uChar == 0x3000) uChar = L' ';
   else if (uChar == 0xA0 || uChar == L'_' || uChar == 0xFF3F) uChar = L' ';
-  return Real_GetGlyphOutlineW(hdc, uChar, fuFormat, lpgm, cjBuffer, pvBuffer, lpmat2);
+  DWORD r = Real_GetGlyphOutlineW(hdc, uChar, fuFormat, lpgm, cjBuffer, pvBuffer, lpmat2);
+  
+  if (r != GDI_ERROR && lpgm && !g_inBacklogRender && !g_fontManager.GetDisableBacklogSpacing()) {
+      lpgm->gmptGlyphOrigin.x += g_fontManager.GetDialogueXOffset();
+      lpgm->gmptGlyphOrigin.y -= g_fontManager.GetDialogueYOffset(); // Larger origin Y = drawn higher
+  }
+  return r;
 }
 static DWORD WINAPI Hook_GetGlyphOutlineA(HDC hdc, UINT uChar, UINT fuFormat,
                                           LPGLYPHMETRICS lpgm, DWORD cjBuffer,
@@ -2354,15 +2527,18 @@ static DWORD WINAPI Hook_GetGlyphOutlineA(HDC hdc, UINT uChar, UINT fuFormat,
     // gmCellIncX retains its original underscore width naturally
   }
 
-  if (r != GDI_ERROR && lpgm && g_inBacklogRender && !g_fontManager.GetDisableBacklogSpacing()) {
-    if (!isName) {
-      lpgm->gmptGlyphOrigin.x += g_fontManager.GetBacklogXOffset();
-      lpgm->gmptGlyphOrigin.y += g_fontManager.GetBacklogYOffset();
-
-
-      lpgm->gmCellIncX += g_fontManager.GetBacklogDialogSpacing();
+  if (r != GDI_ERROR && lpgm && !g_fontManager.GetDisableBacklogSpacing()) {
+    if (g_inBacklogRender) {
+      if (!isName) {
+        lpgm->gmptGlyphOrigin.x += g_fontManager.GetBacklogXOffset();
+        lpgm->gmptGlyphOrigin.y += g_fontManager.GetBacklogYOffset();
+        lpgm->gmCellIncX += g_fontManager.GetBacklogDialogSpacing();
+      } else {
+        lpgm->gmptGlyphOrigin.x += g_fontManager.GetBacklogNameXOffset();
+      }
     } else {
-      lpgm->gmptGlyphOrigin.x += g_fontManager.GetBacklogNameXOffset();
+      lpgm->gmptGlyphOrigin.x += g_fontManager.GetDialogueXOffset();
+      lpgm->gmptGlyphOrigin.y -= g_fontManager.GetDialogueYOffset(); // Larger origin Y = drawn higher
     }
   }
 
@@ -2673,7 +2849,12 @@ static INT_PTR WINAPI Hook_DialogBoxParamA(HINSTANCE hInstance,
 #define IDC_LBL_BACKLOG_SIZE 1033
 #define IDC_LBL_DIALOGUE_LINE_SPACING 1034
 #define IDC_EDIT_DIALOGUE_LINE_SPACING 1035
-
+#define IDC_LBL_DIALOGUE_XOFFSET 1036
+#define IDC_EDIT_DIALOGUE_XOFFSET 1037
+#define IDC_LBL_DIALOGUE_YOFFSET 1038
+#define IDC_EDIT_DIALOGUE_YOFFSET 1039
+#define IDC_LBL_DIALOGUE_SPACING 1040
+#define IDC_EDIT_DIALOGUE_SPACING 1041
 
 static INT_PTR CALLBACK AdvancedSettingsDialogProc(HWND hwndDlg, UINT uMsg,
                                                    WPARAM wParam, LPARAM lParam);
@@ -2727,7 +2908,7 @@ static INT_PTR CALLBACK SettingsDialogProc(HWND hwndDlg, UINT uMsg,
 
       g_inChooseFont = true;
       if (ChooseFontW(&cf)) {
-        int height = abs(lf.lfHeight);
+        int height = lf.lfHeight;
         g_fontManager.SetDialogueFont(lf.lfFaceName, height);
         g_inChooseFont = false;
         MessageBoxW(hwndDlg, L"Dialogue font updated!", L"DC3DD Patch",
@@ -2752,7 +2933,7 @@ static INT_PTR CALLBACK SettingsDialogProc(HWND hwndDlg, UINT uMsg,
 
       g_inChooseFont = true;
       if (ChooseFontW(&cf)) {
-        int height = abs(lf.lfHeight);
+        int height = lf.lfHeight;
         g_fontManager.SetBacklogFont(lf.lfFaceName, height);
         g_inChooseFont = false;
         MessageBoxW(hwndDlg, L"Backlog font updated!", L"DC3DD Patch",
@@ -2777,7 +2958,7 @@ static INT_PTR CALLBACK SettingsDialogProc(HWND hwndDlg, UINT uMsg,
 
       g_inChooseFont = true;
       if (ChooseFontW(&cf)) {
-        int height = abs(lf.lfHeight);
+        int height = lf.lfHeight;
         g_fontManager.SetBacklogNameFont(lf.lfFaceName, height);
         g_inChooseFont = false;
         MessageBoxW(hwndDlg, L"Backlog Character Name font updated!",
@@ -3011,7 +3192,7 @@ static void ShowSettingsDialog() {
   pw = (WORD *)(pItem + 1);
   *pw++ = 0xFFFF;
   *pw++ = 0x0080; // Button class
-  const WCHAR *textAdv = L"Advanced Backlog Spacing...";
+  const WCHAR *textAdv = L"Advanced Settings...";
   wcscpy((WCHAR *)pw, textAdv);
   pw += wcslen(textAdv) + 1;
   *pw++ = 0;
@@ -3095,6 +3276,9 @@ static INT_PTR CALLBACK AdvancedSettingsDialogProc(HWND hwndDlg, UINT uMsg,
     SetDlgItemInt(hwndDlg, IDC_EDIT_NAME_YOFFSET, g_fontManager.GetBacklogNameYOffset(), TRUE);
     SetDlgItemInt(hwndDlg, IDC_EDIT_NAME_SPACING, g_fontManager.GetBacklogNameSpacing(), TRUE);
     SetDlgItemInt(hwndDlg, IDC_EDIT_DIALOG_SPACING, g_fontManager.GetBacklogDialogSpacing(), TRUE);
+    SetDlgItemInt(hwndDlg, IDC_EDIT_DIALOGUE_XOFFSET, g_fontManager.GetDialogueXOffset(), TRUE);
+    SetDlgItemInt(hwndDlg, IDC_EDIT_DIALOGUE_YOFFSET, g_fontManager.GetDialogueYOffset(), TRUE);
+    SetDlgItemInt(hwndDlg, IDC_EDIT_DIALOGUE_SPACING, g_fontManager.GetDialogueLineSpacing(), TRUE);
     return TRUE;
   }
 
@@ -3107,9 +3291,16 @@ static INT_PTR CALLBACK AdvancedSettingsDialogProc(HWND hwndDlg, UINT uMsg,
       int nameYOffset = GetDlgItemInt(hwndDlg, IDC_EDIT_NAME_YOFFSET, NULL, TRUE);
       int nameSpacing = GetDlgItemInt(hwndDlg, IDC_EDIT_NAME_SPACING, NULL, TRUE);
       int dialogSpacing = GetDlgItemInt(hwndDlg, IDC_EDIT_DIALOG_SPACING, NULL, TRUE);
+      
+      int diagXOffset = GetDlgItemInt(hwndDlg, IDC_EDIT_DIALOGUE_XOFFSET, NULL, TRUE);
+      int diagYOffset = GetDlgItemInt(hwndDlg, IDC_EDIT_DIALOGUE_YOFFSET, NULL, TRUE);
+      int diagSpacing = GetDlgItemInt(hwndDlg, IDC_EDIT_DIALOGUE_SPACING, NULL, TRUE);
 
       g_fontManager.SetBacklogOffsets(xOffset, yOffset, spacing, nameXOffset,
-                                      nameYOffset, nameSpacing, dialogSpacing, g_fontManager.GetDialogueLineSpacing());
+                                      nameYOffset, nameSpacing, dialogSpacing, diagSpacing);
+      
+      g_fontManager.SetDialogueOffsets(diagXOffset, diagYOffset);
+
       g_fontManager.SetAdvancedSettings(true); // Implicitly enabled when used
       EndDialog(hwndDlg, IDOK);
       return TRUE;
@@ -3135,13 +3326,13 @@ static void ShowAdvancedSettingsDialog(HWND parent) {
 
   DLGTEMPLATE *pDlg = (DLGTEMPLATE *)pw;
   pDlg->style = WS_POPUP | WS_BORDER | WS_SYSMENU | WS_CAPTION | DS_MODALFRAME | DS_CENTER | DS_SETFONT;
-  pDlg->cdit = 14; // 7 labels, 7 edits, 2 buttons
+  pDlg->cdit = 20; // 9 labels, 9 edits, 2 buttons
   pDlg->cx = 200;
-  pDlg->cy = 200;
+  pDlg->cy = 260;
 
   pw = (WORD *)(pDlg + 1);
   *pw++ = 0; *pw++ = 0;
-  wcscpy((WCHAR *)pw, L"Advanced Backlog Settings");
+  wcscpy((WCHAR *)pw, L"Advanced Settings");
   pw += wcslen((WCHAR *)pw) + 1;
   *pw++ = 9;
   wcscpy((WCHAR *)pw, L"Segoe UI");
@@ -3166,24 +3357,27 @@ static void ShowAdvancedSettingsDialog(HWND parent) {
   };
 
   // Line spacing moved to main menu
-  AddLabelAndEdit(IDC_LBL_XOFFSET, IDC_EDIT_XOFFSET, L"X Offset:", 30);
-  AddLabelAndEdit(IDC_LBL_YOFFSET, IDC_EDIT_YOFFSET, L"Y Offset:", 50);
+  AddLabelAndEdit(IDC_LBL_XOFFSET, IDC_EDIT_XOFFSET, L"Backlog X Offset:", 30);
+  AddLabelAndEdit(IDC_LBL_YOFFSET, IDC_EDIT_YOFFSET, L"Backlog Y Offset:", 50);
   AddLabelAndEdit(IDC_LBL_NAME_XOFFSET, IDC_EDIT_NAME_XOFFSET, L"Name X Offset:", 70);
   AddLabelAndEdit(IDC_LBL_NAME_YOFFSET, IDC_EDIT_NAME_YOFFSET, L"Name Y Offset:", 90);
   AddLabelAndEdit(IDC_LBL_NAME_SPACING, IDC_EDIT_NAME_SPACING, L"Name Ext Spacing:", 110);
   AddLabelAndEdit(IDC_LBL_DIALOG_SPACING, IDC_EDIT_DIALOG_SPACING, L"Base Ext Spacing:", 130);
+  AddLabelAndEdit(IDC_LBL_DIALOGUE_XOFFSET, IDC_EDIT_DIALOGUE_XOFFSET, L"Dialogue X Offset:", 150);
+  AddLabelAndEdit(IDC_LBL_DIALOGUE_YOFFSET, IDC_EDIT_DIALOGUE_YOFFSET, L"Dialogue Y Offset:", 170);
+  AddLabelAndEdit(IDC_LBL_DIALOGUE_SPACING, IDC_EDIT_DIALOGUE_SPACING, L"Dialogue Line Spacing:", 190);
 
   AlignDword(pw);
   DLGITEMTEMPLATE *pItem = (DLGITEMTEMPLATE *)pw;
   pItem->style = WS_CHILD | WS_VISIBLE | BS_DEFPUSHBUTTON | WS_TABSTOP;
-  pItem->x = 30; pItem->y = 160; pItem->cx = 50; pItem->cy = 16; pItem->id = IDC_BTN_OK;
+  pItem->x = 30; pItem->y = 220; pItem->cx = 50; pItem->cy = 16; pItem->id = IDC_BTN_OK;
   pw = (WORD *)(pItem + 1); *pw++ = 0xFFFF; *pw++ = 0x0080;
   wcscpy((WCHAR *)pw, L"OK"); pw += wcslen(L"OK") + 1; *pw++ = 0;
 
   AlignDword(pw);
   pItem = (DLGITEMTEMPLATE *)pw;
   pItem->style = WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON | WS_TABSTOP;
-  pItem->x = 100; pItem->y = 160; pItem->cx = 50; pItem->cy = 16; pItem->id = IDC_BTN_CANCEL;
+  pItem->x = 100; pItem->y = 220; pItem->cx = 50; pItem->cy = 16; pItem->id = IDC_BTN_CANCEL;
   pw = (WORD *)(pItem + 1); *pw++ = 0xFFFF; *pw++ = 0x0080;
   wcscpy((WCHAR *)pw, L"Cancel"); pw += wcslen(L"Cancel") + 1; *pw++ = 0;
 
@@ -3599,6 +3793,20 @@ static void CleanupSyncedFrom(const char* manifestFile, const char* cacheRelDir)
 static bool PatchIAT(HMODULE hModule, const char *dllName, PROC oldFunc,
                      PROC newFunc);
 
+
+static void SafeAttach(PVOID* ppPointer, PVOID pDetour, const char* name) {
+    TraceLog("Attaching %s...", name);
+    DetourTransactionBegin();
+    DetourUpdateThread(GetCurrentThread());
+    LONG attachErr = DetourAttach(ppPointer, pDetour);
+    LONG commitErr = DetourTransactionCommit();
+    if (attachErr != 0 || commitErr != 0) {
+        TraceLog("Failed to hook %s: attachErr=%ld commitErr=%ld", name, attachErr, commitErr);
+    } else {
+        TraceLog("Successfully hooked %s", name);
+    }
+}
+
 static void InitPatch() {
   TraceLog("InitPatch begin");
   // Install crash logger first so we can diagnose any crashes
@@ -3654,104 +3862,134 @@ static void InitPatch() {
   // Do NOT re-assign with GetProcAddress here — that would point Detours to
   // gdi32.dll's raw export instead of the IAT entry the game actually calls.
 
-  DetourTransactionBegin();
-  DetourUpdateThread(GetCurrentThread());
-  DetourAttach(&(PVOID &)Real_GetACP, Hook_GetACP);
-  DetourAttach(&(PVOID &)Real_GetOEMCP, Hook_GetOEMCP);
-  LONG detour1 = DetourTransactionCommit();
+  // removed bulk tx begin
+  // SafeAttach disabled for IAT -> Real_GetACP
+  // SafeAttach disabled for IAT -> Real_GetOEMCP
+  LONG detour1 = 0;
   TraceLog("InitPatch detour stage1 commit=%ld", detour1);
 
-  DetourTransactionBegin();
-  DetourUpdateThread(GetCurrentThread());
-  DetourAttach(&(PVOID &)Real_GetGlyphOutlineW, Hook_GetGlyphOutlineW);
-  DetourAttach(&(PVOID &)Real_GetGlyphOutlineA, Hook_GetGlyphOutlineA);
-  DetourAttach(&(PVOID &)Real_CreateFileA, Hook_CreateFileA);
-  DetourAttach(&(PVOID &)Real_CreateFileW, Hook_CreateFileW);
-  DetourAttach(&(PVOID &)Real_GetTextExtentPoint32A,
-               Hook_GetTextExtentPoint32A);
-  DetourAttach(&(PVOID &)Real_GetTextExtentPoint32W,
-               Hook_GetTextExtentPoint32W);
-  DetourAttach(&(PVOID &)Real_GetTextExtentExPointA,
-               Hook_GetTextExtentExPointA);
-  DetourAttach(&(PVOID &)Real_GetTextExtentExPointW,
-               Hook_GetTextExtentExPointW);
-  DetourAttach(&(PVOID &)Real_GetCharWidth32A, Hook_GetCharWidth32A);
-  DetourAttach(&(PVOID &)Real_GetCharWidth32W, Hook_GetCharWidth32W);
-  DetourAttach(&(PVOID &)Real_DrawTextA, Hook_DrawTextA);
-  DetourAttach(&(PVOID &)Real_DrawTextW, Hook_DrawTextW);
-  DetourAttach(&(PVOID &)Real_DrawTextExA, Hook_DrawTextExA);
-  DetourAttach(&(PVOID &)Real_DrawTextExW, Hook_DrawTextExW);
-  DetourAttach(&(PVOID &)Real_MultiByteToWideChar, Hook_MultiByteToWideChar);
+  // removed bulk tx begin
+  // SafeAttach disabled for IAT -> Real_GetGlyphOutlineW
+  // SafeAttach disabled for IAT -> Real_GetGlyphOutlineA
+  // SafeAttach disabled for IAT -> Real_CreateFileA
+  // SafeAttach disabled for IAT -> Real_CreateFileW
+  // SafeAttach disabled for IAT -> Real_GetTextExtentPoint32A
+  // SafeAttach disabled for IAT -> Real_GetTextExtentPoint32W
+  // SafeAttach disabled for IAT -> Real_GetTextExtentExPointA
+  // SafeAttach disabled for IAT -> Real_GetTextExtentExPointW
+  // SafeAttach disabled for IAT -> Real_GetCharWidth32A
+  // SafeAttach disabled for IAT -> Real_GetCharWidth32W
+  // SafeAttach disabled for IAT -> Real_DrawTextA
+  // SafeAttach disabled for IAT -> Real_DrawTextW
+  // SafeAttach disabled for IAT -> Real_DrawTextExA
+  // SafeAttach disabled for IAT -> Real_DrawTextExW
+  // Removed MultiByteToWideChar hook - crashes with Locale Emulator
+  // SafeAttach(&(PVOID &)Real_MultiByteToWideChar, (PVOID)Hook_MultiByteToWideChar, "Real_MultiByteToWideChar");
   // DVD/KEY verification bypass — LOGGING MODE (pass-through, no blocking)
-  DetourAttach(&(PVOID &)Real_MessageBoxA, Hook_MessageBoxA);
-  DetourAttach(&(PVOID &)Real_MessageBoxW, Hook_MessageBoxW);
-  DetourAttach(&(PVOID &)Real_MessageBoxExA, Hook_MessageBoxExA);
-  DetourAttach(&(PVOID &)Real_MessageBoxExW, Hook_MessageBoxExW);
-  DetourAttach(&(PVOID &)Real_MessageBoxIndirectA, Hook_MessageBoxIndirectA);
-  DetourAttach(&(PVOID &)Real_MessageBoxIndirectW, Hook_MessageBoxIndirectW);
-  DetourAttach(&(PVOID &)Real_DialogBoxParamA, Hook_DialogBoxParamA);
+  // SafeAttach disabled for IAT -> Real_MessageBoxA
+  // SafeAttach disabled for IAT -> Real_MessageBoxW
+  // SafeAttach disabled for IAT -> Real_MessageBoxExA
+  // SafeAttach disabled for IAT -> Real_MessageBoxExW
+  // SafeAttach disabled for IAT -> Real_MessageBoxIndirectA
+  // SafeAttach disabled for IAT -> Real_MessageBoxIndirectW
+  // SafeAttach disabled for IAT -> Real_DialogBoxParamA
   // Indonesian UI translation - menu hooks
-  DetourAttach(&(PVOID &)Real_AppendMenuA, Hook_AppendMenuA);
-  DetourAttach(&(PVOID &)Real_InsertMenuA, Hook_InsertMenuA);
-  DetourAttach(&(PVOID &)Real_ModifyMenuA, Hook_ModifyMenuA);
-  DetourAttach(&(PVOID &)Real_AppendMenuW, Hook_AppendMenuW);
-  DetourAttach(&(PVOID &)Real_InsertMenuW, Hook_InsertMenuW);
-  DetourAttach(&(PVOID &)Real_ModifyMenuW, Hook_ModifyMenuW);
-  DetourAttach(&(PVOID &)Real_TrackPopupMenu, Hook_TrackPopupMenu);
-  DetourAttach(&(PVOID &)Real_TrackPopupMenuEx, Hook_TrackPopupMenuEx);
+  // SafeAttach disabled for IAT -> Real_AppendMenuA
+  // SafeAttach disabled for IAT -> Real_InsertMenuA
+  // SafeAttach disabled for IAT -> Real_ModifyMenuA
+  // SafeAttach disabled for IAT -> Real_AppendMenuW
+  // SafeAttach disabled for IAT -> Real_InsertMenuW
+  // SafeAttach disabled for IAT -> Real_ModifyMenuW
+  // SafeAttach disabled for IAT -> Real_TrackPopupMenu
+  // SafeAttach disabled for IAT -> Real_TrackPopupMenuEx
   // Backlog font size reduction - hook the backlog function entry/exit.
   // These are version-dependent offsets, so attach only when executable.
   if (IsExecutableAddress(reinterpret_cast<void *>(Real_CheckIcon))) {
-    DetourAttach(&(PVOID &)Real_CheckIcon, Hook_CheckIcon);
+    SafeAttach(&(PVOID &)Real_CheckIcon, (PVOID)Hook_CheckIcon, "Real_CheckIcon");
     g_attachedCheckIcon = true;
   }
   if (IsExecutableAddress(reinterpret_cast<void *>(Real_CheckIconConfig))) {
-    DetourAttach(&(PVOID &)Real_CheckIconConfig, Hook_CheckIconConfig);
+    SafeAttach(&(PVOID &)Real_CheckIconConfig, (PVOID)Hook_CheckIconConfig, "Real_CheckIconConfig");
     g_attachedCheckIconConfig = true;
   }
   if (IsExecutableAddress(reinterpret_cast<void *>(Real_BacklogIconHandler))) {
-    DetourAttach(&(PVOID &)Real_BacklogIconHandler, Hook_BacklogIconHandler);
-    g_attachedBacklogIconHandler = true;
+    // SafeAttach(&(PVOID &)Real_BacklogIconHandler, (PVOID)Hook_BacklogIconHandler, "Real_BacklogIconHandler");
+    // g_attachedBacklogIconHandler = true;
   }
   // Backlog line spacing and text position
-  DetourAttach(&(PVOID &)Real_GetTextMetricsA, Hook_GetTextMetricsA);
+  // SafeAttach disabled for IAT -> Real_GetTextMetricsA
+  // SafeAttach disabled for IAT -> Real_CreateWindowExA
+  // SafeAttach disabled for IAT -> Real_CreateWindowExW
+  // SafeAttach disabled for IAT -> Real_SetWindowTextA
+  // SafeAttach disabled for IAT -> Real_SetWindowTextW
+  // Detours hooks for CreateFont APIs conflict with Locale Emulator's inline hooks.
+  // We use IAT hooking to intercept the calls BEFORE they reach LE's inline hooks.
+  // SafeAttach(&(PVOID &)Real_CreateFontIndirectA, (PVOID)Hook_CreateFontIndirectA, "Real_CreateFontIndirectA");
+  // SafeAttach(&(PVOID &)Real_CreateFontIndirectW, (PVOID)Hook_CreateFontIndirectW, "Real_CreateFontIndirectW");
+  // SafeAttach(&(PVOID &)Real_CreateFontA, (PVOID)Hook_CreateFontA, "Real_CreateFontA");
+  // SafeAttach(&(PVOID &)Real_CreateFontW, (PVOID)Hook_CreateFontW, "Real_CreateFontW");
 
-  DetourAttach(&(PVOID &)Real_CreateWindowExA, Hook_CreateWindowExA);
-  DetourAttach(&(PVOID &)Real_CreateWindowExW, Hook_CreateWindowExW);
-  DetourAttach(&(PVOID &)Real_SetWindowTextA, Hook_SetWindowTextA);
-  DetourAttach(&(PVOID &)Real_SetWindowTextW, Hook_SetWindowTextW);
-  DetourAttach(&(PVOID &)Real_CreateFontIndirectA, Hook_CreateFontIndirectA);
-  DetourAttach(&(PVOID &)Real_CreateFontIndirectW, Hook_CreateFontIndirectW);
-  DetourAttach(&(PVOID &)Real_CreateFontA, Hook_CreateFontA);
-  DetourAttach(&(PVOID &)Real_CreateFontW, Hook_CreateFontW);
-
-  DetourAttach(&(PVOID &)Real_ExtTextOutA, reinterpret_cast<PVOID>(Hook_ExtTextOutA));
-  DetourAttach(&(PVOID &)Real_ExtTextOutW, reinterpret_cast<PVOID>(Hook_ExtTextOutW));
-  DetourAttach(&(PVOID &)Real_TextOutA, reinterpret_cast<PVOID>(Hook_TextOutA));
-  DetourAttach(&(PVOID &)Real_TextOutW, reinterpret_cast<PVOID>(Hook_TextOutW));
+  // SafeAttach(&(PVOID &)Real_ExtTextOutA, reinterpret_cast<PVOID>(Hook_ExtTextOutA), "Real_ExtTextOutA");
+  // SafeAttach(&(PVOID &)Real_ExtTextOutW, reinterpret_cast<PVOID>(Hook_ExtTextOutW), "Real_ExtTextOutW");
+  // SafeAttach(&(PVOID &)Real_TextOutA, reinterpret_cast<PVOID>(Hook_TextOutA), "Real_TextOutA");
+  // SafeAttach(&(PVOID &)Real_TextOutW, reinterpret_cast<PVOID>(Hook_TextOutW), "Real_TextOutW");
   
   // NOTE: Hook_TitleLookup removed — 0x406120 is not a function entry point
   // (first byte is 0xE8=CALL), Detours corrupted the code stream.
   // Scenario titles now handled via patched sce_*.mes files in id_Data/.
 
-  LONG detour2 = DetourTransactionCommit();
+  LONG detour2 = 0;
   TraceLog("InitPatch detour stage2 commit=%ld", detour2);
 
   // Fallback IAT hooks for critical UI/menu path in case detours fail on target build.
   HMODULE hMain = GetModuleHandleA(NULL);
-  bool iatCWa = PatchIAT(hMain, "USER32.dll", (PROC)CreateWindowExA, (PROC)Hook_CreateWindowExA);
-  bool iatCWw = PatchIAT(hMain, "USER32.dll", (PROC)CreateWindowExW, (PROC)Hook_CreateWindowExW);
-  bool iatMBa = PatchIAT(hMain, "USER32.dll", (PROC)MessageBoxA, (PROC)Hook_MessageBoxA);
-  bool iatMBw = PatchIAT(hMain, "USER32.dll", (PROC)MessageBoxW, (PROC)Hook_MessageBoxW);
-  bool iatTPM = PatchIAT(hMain, "USER32.dll", (PROC)TrackPopupMenu, (PROC)Hook_TrackPopupMenu);
-  bool iatTPMX = PatchIAT(hMain, "USER32.dll", (PROC)TrackPopupMenuEx, (PROC)Hook_TrackPopupMenuEx);
-  TraceLog("InitPatch IAT CreateWindowExA=%d CreateWindowExW=%d MessageBoxA=%d MessageBoxW=%d TrackPopupMenu=%d TrackPopupMenuEx=%d",
-           iatCWa ? 1 : 0, iatCWw ? 1 : 0, iatMBa ? 1 : 0, iatMBw ? 1 : 0, iatTPM ? 1 : 0, iatTPMX ? 1 : 0);
+  PatchIAT(hMain, "GDI32.dll", (PROC)CreateFontA, (PROC)Hook_CreateFontA);
+  PatchIAT(hMain, "GDI32.dll", (PROC)CreateFontW, (PROC)Hook_CreateFontW);
 
-  // Backlog icon fix: trampoline hook currently disabled.
-  // if (g_fontManager.GetEnableBacklogAllIcon()) {
-  //   InstallBacklogIconHook();
-  // }
+  // IAT hooks to bypass Locale Emulator inline hook conflicts
+  PatchIAT(hMain, "GDI32.dll", (PROC)CreateFontIndirectA, (PROC)Hook_CreateFontIndirectA);
+  PatchIAT(hMain, "GDI32.dll", (PROC)CreateFontIndirectW, (PROC)Hook_CreateFontIndirectW);
+  PatchIAT(hMain, "KERNEL32.dll", (PROC)GetACP, (PROC)Hook_GetACP);
+  PatchIAT(hMain, "KERNEL32.dll", (PROC)GetOEMCP, (PROC)Hook_GetOEMCP);
+  PatchIAT(hMain, "GDI32.dll", (PROC)GetGlyphOutlineW, (PROC)Hook_GetGlyphOutlineW);
+  PatchIAT(hMain, "GDI32.dll", (PROC)GetGlyphOutlineA, (PROC)Hook_GetGlyphOutlineA);
+  PatchIAT(hMain, "KERNEL32.dll", (PROC)CreateFileA, (PROC)Hook_CreateFileA);
+  PatchIAT(hMain, "KERNEL32.dll", (PROC)CreateFileW, (PROC)Hook_CreateFileW);
+  PatchIAT(hMain, "GDI32.dll", (PROC)GetTextExtentPoint32A, (PROC)Hook_GetTextExtentPoint32A);
+  PatchIAT(hMain, "GDI32.dll", (PROC)GetTextExtentPoint32W, (PROC)Hook_GetTextExtentPoint32W);
+  PatchIAT(hMain, "GDI32.dll", (PROC)GetTextExtentExPointA, (PROC)Hook_GetTextExtentExPointA);
+  PatchIAT(hMain, "GDI32.dll", (PROC)GetTextExtentExPointW, (PROC)Hook_GetTextExtentExPointW);
+  PatchIAT(hMain, "GDI32.dll", (PROC)GetCharWidth32A, (PROC)Hook_GetCharWidth32A);
+  PatchIAT(hMain, "GDI32.dll", (PROC)GetCharWidth32W, (PROC)Hook_GetCharWidth32W);
+  PatchIAT(hMain, "USER32.dll", (PROC)DrawTextA, (PROC)Hook_DrawTextA);
+  PatchIAT(hMain, "USER32.dll", (PROC)DrawTextW, (PROC)Hook_DrawTextW);
+  PatchIAT(hMain, "USER32.dll", (PROC)DrawTextExA, (PROC)Hook_DrawTextExA);
+  PatchIAT(hMain, "USER32.dll", (PROC)DrawTextExW, (PROC)Hook_DrawTextExW);
+  PatchIAT(hMain, "USER32.dll", (PROC)MessageBoxA, (PROC)Hook_MessageBoxA);
+  PatchIAT(hMain, "USER32.dll", (PROC)MessageBoxW, (PROC)Hook_MessageBoxW);
+  PatchIAT(hMain, "USER32.dll", (PROC)MessageBoxExA, (PROC)Hook_MessageBoxExA);
+  PatchIAT(hMain, "USER32.dll", (PROC)MessageBoxExW, (PROC)Hook_MessageBoxExW);
+  PatchIAT(hMain, "USER32.dll", (PROC)MessageBoxIndirectA, (PROC)Hook_MessageBoxIndirectA);
+  PatchIAT(hMain, "USER32.dll", (PROC)MessageBoxIndirectW, (PROC)Hook_MessageBoxIndirectW);
+  PatchIAT(hMain, "USER32.dll", (PROC)DialogBoxParamA, (PROC)Hook_DialogBoxParamA);
+  PatchIAT(hMain, "USER32.dll", (PROC)AppendMenuA, (PROC)Hook_AppendMenuA);
+  PatchIAT(hMain, "USER32.dll", (PROC)InsertMenuA, (PROC)Hook_InsertMenuA);
+  PatchIAT(hMain, "USER32.dll", (PROC)ModifyMenuA, (PROC)Hook_ModifyMenuA);
+  PatchIAT(hMain, "USER32.dll", (PROC)AppendMenuW, (PROC)Hook_AppendMenuW);
+  PatchIAT(hMain, "USER32.dll", (PROC)InsertMenuW, (PROC)Hook_InsertMenuW);
+  PatchIAT(hMain, "USER32.dll", (PROC)ModifyMenuW, (PROC)Hook_ModifyMenuW);
+  PatchIAT(hMain, "USER32.dll", (PROC)TrackPopupMenu, (PROC)Hook_TrackPopupMenu);
+  PatchIAT(hMain, "USER32.dll", (PROC)TrackPopupMenuEx, (PROC)Hook_TrackPopupMenuEx);
+  PatchIAT(hMain, "GDI32.dll", (PROC)GetTextMetricsA, (PROC)Hook_GetTextMetricsA);
+  PatchIAT(hMain, "USER32.dll", (PROC)CreateWindowExA, (PROC)Hook_CreateWindowExA);
+  PatchIAT(hMain, "USER32.dll", (PROC)CreateWindowExW, (PROC)Hook_CreateWindowExW);
+  PatchIAT(hMain, "USER32.dll", (PROC)SetWindowTextA, (PROC)Hook_SetWindowTextA);
+  PatchIAT(hMain, "USER32.dll", (PROC)SetWindowTextW, (PROC)Hook_SetWindowTextW);
+  PatchIAT(hMain, "GDI32.dll", (PROC)ExtTextOutA, (PROC)Hook_ExtTextOutA);
+  PatchIAT(hMain, "GDI32.dll", (PROC)ExtTextOutW, (PROC)Hook_ExtTextOutW);
+  PatchIAT(hMain, "GDI32.dll", (PROC)TextOutA, (PROC)Hook_TextOutA);
+  PatchIAT(hMain, "GDI32.dll", (PROC)TextOutW, (PROC)Hook_TextOutW);
+
   TraceLog("InitPatch end");
 }
 
@@ -3760,14 +3998,12 @@ static void CleanupPatch() {
   // (game is exiting anyway, and restoring displaced bytes is complex)
 
   // Detach codepage hooks
-  DetourTransactionBegin();
-  DetourUpdateThread(GetCurrentThread());
+  // removed bulk tx begin
   DetourDetach(&(PVOID &)Real_GetACP, Hook_GetACP);
   DetourDetach(&(PVOID &)Real_GetOEMCP, Hook_GetOEMCP);
   DetourTransactionCommit();
 
-  DetourTransactionBegin();
-  DetourUpdateThread(GetCurrentThread());
+  // removed bulk tx begin
   DetourDetach(&(PVOID &)Real_GetGlyphOutlineW, Hook_GetGlyphOutlineW);
   DetourDetach(&(PVOID &)Real_GetGlyphOutlineA, Hook_GetGlyphOutlineA);
   DetourDetach(&(PVOID &)Real_CreateFileA, Hook_CreateFileA);

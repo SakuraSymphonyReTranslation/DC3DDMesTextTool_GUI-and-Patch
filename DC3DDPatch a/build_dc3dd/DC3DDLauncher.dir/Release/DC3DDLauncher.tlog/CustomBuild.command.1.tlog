@@ -1,6 +1,6 @@
-^E:\GAMES\DC3DD\DC3DDMESTEXTTOOL_GUI - COPY BERANTAKAN\DC3DDPATCH A\CMAKELISTS.TXT
+^E:\GAMES\DC3DD\DC3DDMESTEXTTOOL_GUI AND PATCH\DC3DDPATCH A\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SE:/Games/DC3DD/DC3DDMesTextTool_GUI - Copy berantakan/DC3DDPatch a" "-BE:/Games/DC3DD/DC3DDMesTextTool_GUI - Copy berantakan/DC3DDPatch a/build_dc3dd" --check-stamp-file "E:/Games/DC3DD/DC3DDMesTextTool_GUI - Copy berantakan/DC3DDPatch a/build_dc3dd/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" "-SE:/Games/DC3DD/DC3DDMesTextTool_GUI and Patch/DC3DDPatch a" "-BE:/Games/DC3DD/DC3DDMesTextTool_GUI and Patch/DC3DDPatch a/build_dc3dd" --check-stamp-file "E:/Games/DC3DD/DC3DDMesTextTool_GUI and Patch/DC3DDPatch a/build_dc3dd/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
