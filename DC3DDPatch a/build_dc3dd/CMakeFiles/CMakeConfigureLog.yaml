@@ -67,6 +67,7 @@ events:
         - "C:\\Users\\adamb\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-full_build\\bin"
         - "C:\\Users\\adamb\\.dotnet\\tools"
         - "C:\\Users\\adamb\\AppData\\Roaming\\npm"
+        - "C:\\Users\\adamb\\.lmstudio\\bin"
   -
     kind: "message-v1"
     backtrace:
@@ -83,9 +84,9 @@ events:
       The output was:
       0
       MSBuild version 17.14.40+3e7442088 for .NET Framework
-      Build started 4/27/2026 11:06:58 PM.
+      Build started 5/10/2026 7:48:55 AM.
       
-      Project "E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI - Copy berantakan\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\4.3.0-rc1\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      Project "E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI and Patch\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\4.3.0-rc1\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
@@ -98,7 +99,7 @@ events:
         CMakeCCompilerId.c
       Link:
         C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\\CMakeCCompilerId.obj
-        CompilerIdC.vcxproj -> E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI - Copy berantakan\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\4.3.0-rc1\\CompilerIdC\\CompilerIdC.exe
+        CompilerIdC.vcxproj -> E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI and Patch\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\4.3.0-rc1\\CompilerIdC\\CompilerIdC.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
         :VCEnd
@@ -106,13 +107,13 @@ events:
       FinalizeBuildStatus:
         Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
         Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
-      Done Building Project "E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI - Copy berantakan\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\4.3.0-rc1\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      Done Building Project "E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI and Patch\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\4.3.0-rc1\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
       
       Build succeeded.
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:02.15
+      Time Elapsed 00:00:03.35
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -120,7 +121,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
       
       The C compiler identification is MSVC, found in:
-        E:/Games/DC3DD/DC3DDMesTextTool_GUI - Copy berantakan/DC3DDPatch a/build_dc3dd/CMakeFiles/4.3.0-rc1/CompilerIdC/CompilerIdC.exe
+        E:/Games/DC3DD/DC3DDMesTextTool_GUI and Patch/DC3DDPatch a/build_dc3dd/CMakeFiles/4.3.0-rc1/CompilerIdC/CompilerIdC.exe
       
   -
     kind: "find-v1"
@@ -177,6 +178,7 @@ events:
       - "C:/Users/adamb/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/"
       - "C:/Users/adamb/.dotnet/tools/"
       - "C:/Users/adamb/AppData/Roaming/npm/"
+      - "C:/Users/adamb/.lmstudio/bin/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x86/link.com"
     found: "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x86/link.exe"
@@ -214,6 +216,7 @@ events:
         - "C:\\Users\\adamb\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-full_build\\bin"
         - "C:\\Users\\adamb\\.dotnet\\tools"
         - "C:\\Users\\adamb\\AppData\\Roaming\\npm"
+        - "C:\\Users\\adamb\\.lmstudio\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -269,6 +272,7 @@ events:
       - "C:/Users/adamb/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/"
       - "C:/Users/adamb/.dotnet/tools/"
       - "C:/Users/adamb/AppData/Roaming/npm/"
+      - "C:/Users/adamb/.lmstudio/bin/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x86/lld-link.com"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x86/lld-link.exe"
@@ -369,6 +373,9 @@ events:
       - "C:/Users/adamb/AppData/Roaming/npm/lld-link.com"
       - "C:/Users/adamb/AppData/Roaming/npm/lld-link.exe"
       - "C:/Users/adamb/AppData/Roaming/npm/lld-link"
+      - "C:/Users/adamb/.lmstudio/bin/lld-link.com"
+      - "C:/Users/adamb/.lmstudio/bin/lld-link.exe"
+      - "C:/Users/adamb/.lmstudio/bin/lld-link"
     found: false
     search_context:
       ENV{PATH}:
@@ -404,6 +411,7 @@ events:
         - "C:\\Users\\adamb\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-full_build\\bin"
         - "C:\\Users\\adamb\\.dotnet\\tools"
         - "C:\\Users\\adamb\\AppData\\Roaming\\npm"
+        - "C:\\Users\\adamb\\.lmstudio\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -457,6 +465,7 @@ events:
       - "C:/Users/adamb/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/"
       - "C:/Users/adamb/.dotnet/tools/"
       - "C:/Users/adamb/AppData/Roaming/npm/"
+      - "C:/Users/adamb/.lmstudio/bin/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x86/link.com"
     found: "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x86/link.exe"
@@ -494,6 +503,7 @@ events:
         - "C:\\Users\\adamb\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-full_build\\bin"
         - "C:\\Users\\adamb\\.dotnet\\tools"
         - "C:\\Users\\adamb\\AppData\\Roaming\\npm"
+        - "C:\\Users\\adamb\\.lmstudio\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -547,6 +557,7 @@ events:
       - "C:/Users/adamb/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/"
       - "C:/Users/adamb/.dotnet/tools/"
       - "C:/Users/adamb/AppData/Roaming/npm/"
+      - "C:/Users/adamb/.lmstudio/bin/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x86/mt.com"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x86/mt.exe"
@@ -647,6 +658,9 @@ events:
       - "C:/Users/adamb/AppData/Roaming/npm/mt.com"
       - "C:/Users/adamb/AppData/Roaming/npm/mt.exe"
       - "C:/Users/adamb/AppData/Roaming/npm/mt"
+      - "C:/Users/adamb/.lmstudio/bin/mt.com"
+      - "C:/Users/adamb/.lmstudio/bin/mt.exe"
+      - "C:/Users/adamb/.lmstudio/bin/mt"
     found: false
     search_context:
       ENV{PATH}:
@@ -682,6 +696,7 @@ events:
         - "C:\\Users\\adamb\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-full_build\\bin"
         - "C:\\Users\\adamb\\.dotnet\\tools"
         - "C:\\Users\\adamb\\AppData\\Roaming\\npm"
+        - "C:\\Users\\adamb\\.lmstudio\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -735,6 +750,7 @@ events:
       - "C:/Users/adamb/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/"
       - "C:/Users/adamb/.dotnet/tools/"
       - "C:/Users/adamb/AppData/Roaming/npm/"
+      - "C:/Users/adamb/.lmstudio/bin/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x86/lib.com"
     found: "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x86/lib.exe"
@@ -772,6 +788,7 @@ events:
         - "C:\\Users\\adamb\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-full_build\\bin"
         - "C:\\Users\\adamb\\.dotnet\\tools"
         - "C:\\Users\\adamb\\AppData\\Roaming\\npm"
+        - "C:\\Users\\adamb\\.lmstudio\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -831,6 +848,7 @@ events:
         - "C:\\Users\\adamb\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-full_build\\bin"
         - "C:\\Users\\adamb\\.dotnet\\tools"
         - "C:\\Users\\adamb\\AppData\\Roaming\\npm"
+        - "C:\\Users\\adamb\\.lmstudio\\bin"
   -
     kind: "message-v1"
     backtrace:
@@ -847,9 +865,9 @@ events:
       The output was:
       0
       MSBuild version 17.14.40+3e7442088 for .NET Framework
-      Build started 4/27/2026 11:07:01 PM.
+      Build started 5/10/2026 7:49:00 AM.
       
-      Project "E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI - Copy berantakan\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\4.3.0-rc1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      Project "E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI and Patch\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\4.3.0-rc1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
@@ -862,7 +880,7 @@ events:
         CMakeCXXCompilerId.cpp
       Link:
         C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\\CMakeCXXCompilerId.obj
-        CompilerIdCXX.vcxproj -> E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI - Copy berantakan\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\4.3.0-rc1\\CompilerIdCXX\\CompilerIdCXX.exe
+        CompilerIdCXX.vcxproj -> E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI and Patch\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\4.3.0-rc1\\CompilerIdCXX\\CompilerIdCXX.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
         :VCEnd
@@ -870,13 +888,13 @@ events:
       FinalizeBuildStatus:
         Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
         Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
-      Done Building Project "E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI - Copy berantakan\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\4.3.0-rc1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      Done Building Project "E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI and Patch\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\4.3.0-rc1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
       
       Build succeeded.
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.52
+      Time Elapsed 00:00:02.73
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -884,7 +902,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
       
       The CXX compiler identification is MSVC, found in:
-        E:/Games/DC3DD/DC3DDMesTextTool_GUI - Copy berantakan/DC3DDPatch a/build_dc3dd/CMakeFiles/4.3.0-rc1/CompilerIdCXX/CompilerIdCXX.exe
+        E:/Games/DC3DD/DC3DDMesTextTool_GUI and Patch/DC3DDPatch a/build_dc3dd/CMakeFiles/4.3.0-rc1/CompilerIdCXX/CompilerIdCXX.exe
       
   -
     kind: "find-v1"
@@ -941,6 +959,7 @@ events:
       - "C:/Users/adamb/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/"
       - "C:/Users/adamb/.dotnet/tools/"
       - "C:/Users/adamb/AppData/Roaming/npm/"
+      - "C:/Users/adamb/.lmstudio/bin/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x86/lld-link.com"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x86/lld-link.exe"
@@ -1041,6 +1060,9 @@ events:
       - "C:/Users/adamb/AppData/Roaming/npm/lld-link.com"
       - "C:/Users/adamb/AppData/Roaming/npm/lld-link.exe"
       - "C:/Users/adamb/AppData/Roaming/npm/lld-link"
+      - "C:/Users/adamb/.lmstudio/bin/lld-link.com"
+      - "C:/Users/adamb/.lmstudio/bin/lld-link.exe"
+      - "C:/Users/adamb/.lmstudio/bin/lld-link"
     found: false
     search_context:
       ENV{PATH}:
@@ -1076,6 +1098,7 @@ events:
         - "C:\\Users\\adamb\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-full_build\\bin"
         - "C:\\Users\\adamb\\.dotnet\\tools"
         - "C:\\Users\\adamb\\AppData\\Roaming\\npm"
+        - "C:\\Users\\adamb\\.lmstudio\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1131,6 +1154,7 @@ events:
       - "C:/Users/adamb/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/"
       - "C:/Users/adamb/.dotnet/tools/"
       - "C:/Users/adamb/AppData/Roaming/npm/"
+      - "C:/Users/adamb/.lmstudio/bin/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
       - "C:/Program Files/"
@@ -1240,6 +1264,9 @@ events:
       - "C:/Users/adamb/AppData/Roaming/npm/rc.com"
       - "C:/Users/adamb/AppData/Roaming/npm/rc.exe"
       - "C:/Users/adamb/AppData/Roaming/npm/rc"
+      - "C:/Users/adamb/.lmstudio/bin/rc.com"
+      - "C:/Users/adamb/.lmstudio/bin/rc.exe"
+      - "C:/Users/adamb/.lmstudio/bin/rc"
       - "C:/Program Files/bin/rc.com"
       - "C:/Program Files/bin/rc.exe"
       - "C:/Program Files/bin/rc"
@@ -1311,6 +1338,7 @@ events:
         - "C:\\Users\\adamb\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-full_build\\bin"
         - "C:\\Users\\adamb\\.dotnet\\tools"
         - "C:\\Users\\adamb\\AppData\\Roaming\\npm"
+        - "C:\\Users\\adamb\\.lmstudio\\bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/DC3DDPatch"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -1326,8 +1354,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "E:/Games/DC3DD/DC3DDMesTextTool_GUI - Copy berantakan/DC3DDPatch a/build_dc3dd/CMakeFiles/CMakeScratch/TryCompile-r7rlo9"
-      binary: "E:/Games/DC3DD/DC3DDMesTextTool_GUI - Copy berantakan/DC3DDPatch a/build_dc3dd/CMakeFiles/CMakeScratch/TryCompile-r7rlo9"
+      source: "E:/Games/DC3DD/DC3DDMesTextTool_GUI and Patch/DC3DDPatch a/build_dc3dd/CMakeFiles/CMakeScratch/TryCompile-y5hjp4"
+      binary: "E:/Games/DC3DD/DC3DDMesTextTool_GUI and Patch/DC3DDPatch a/build_dc3dd/CMakeFiles/CMakeScratch/TryCompile-y5hjp4"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
@@ -1337,39 +1365,39 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'E:/Games/DC3DD/DC3DDMesTextTool_GUI - Copy berantakan/DC3DDPatch a/build_dc3dd/CMakeFiles/CMakeScratch/TryCompile-r7rlo9'
+        Change Dir: 'E:/Games/DC3DD/DC3DDMesTextTool_GUI and Patch/DC3DDPatch a/build_dc3dd/CMakeFiles/CMakeScratch/TryCompile-y5hjp4'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e8ec2.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d7efe.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 4/27/2026 11:07:03 PM.
+        Build started 5/10/2026 7:49:04 AM.
         
-        Project "E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI - Copy berantakan\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\CMakeScratch\\TryCompile-r7rlo9\\cmTC_e8ec2.vcxproj" on node 1 (default targets).
+        Project "E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI and Patch\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\CMakeScratch\\TryCompile-y5hjp4\\cmTC_d7efe.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI - Copy berantakan\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\CMakeScratch\\TryCompile-r7rlo9\\Debug\\".
-          Creating directory "cmTC_e8ec2.dir\\Debug\\cmTC_e8ec2.tlog\\".
+          Creating directory "E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI and Patch\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\CMakeScratch\\TryCompile-y5hjp4\\Debug\\".
+          Creating directory "cmTC_d7efe.dir\\Debug\\cmTC_d7efe.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_e8ec2.dir\\Debug\\cmTC_e8ec2.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_e8ec2.dir\\Debug\\cmTC_e8ec2.tlog\\unsuccessfulbuild".
+          Creating "cmTC_d7efe.dir\\Debug\\cmTC_d7efe.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_d7efe.dir\\Debug\\cmTC_d7efe.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x86\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_e8ec2.dir\\Debug\\\\" /Fd"cmTC_e8ec2.dir\\Debug\\vc143.pdb" /external:W1 /TC /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x86\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_d7efe.dir\\Debug\\\\" /Fd"cmTC_d7efe.dir\\Debug\\vc143.pdb" /external:W1 /TC /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35222 for x86
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_e8ec2.dir\\Debug\\\\" /Fd"cmTC_e8ec2.dir\\Debug\\vc143.pdb" /external:W1 /TC /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_d7efe.dir\\Debug\\\\" /Fd"cmTC_d7efe.dir\\Debug\\vc143.pdb" /external:W1 /TC /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x86\\link.exe /OUT:"E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI - Copy berantakan\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\CMakeScratch\\TryCompile-r7rlo9\\Debug\\cmTC_e8ec2.exe" /INCREMENTAL /ILK:"cmTC_e8ec2.dir\\Debug\\cmTC_e8ec2.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/Games/DC3DD/DC3DDMesTextTool_GUI - Copy berantakan/DC3DDPatch a/build_dc3dd/CMakeFiles/CMakeScratch/TryCompile-r7rlo9/Debug/cmTC_e8ec2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"E:/Games/DC3DD/DC3DDMesTextTool_GUI - Copy berantakan/DC3DDPatch a/build_dc3dd/CMakeFiles/CMakeScratch/TryCompile-r7rlo9/Debug/cmTC_e8ec2.lib" /MACHINE:X86  /machine:X86 cmTC_e8ec2.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_e8ec2.vcxproj -> E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI - Copy berantakan\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\CMakeScratch\\TryCompile-r7rlo9\\Debug\\cmTC_e8ec2.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x86\\link.exe /OUT:"E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI and Patch\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\CMakeScratch\\TryCompile-y5hjp4\\Debug\\cmTC_d7efe.exe" /INCREMENTAL /ILK:"cmTC_d7efe.dir\\Debug\\cmTC_d7efe.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/Games/DC3DD/DC3DDMesTextTool_GUI and Patch/DC3DDPatch a/build_dc3dd/CMakeFiles/CMakeScratch/TryCompile-y5hjp4/Debug/cmTC_d7efe.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"E:/Games/DC3DD/DC3DDMesTextTool_GUI and Patch/DC3DDPatch a/build_dc3dd/CMakeFiles/CMakeScratch/TryCompile-y5hjp4/Debug/cmTC_d7efe.lib" /MACHINE:X86  /machine:X86 cmTC_d7efe.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_d7efe.vcxproj -> E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI and Patch\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\CMakeScratch\\TryCompile-y5hjp4\\Debug\\cmTC_d7efe.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_e8ec2.dir\\Debug\\cmTC_e8ec2.tlog\\unsuccessfulbuild".
-          Touching "cmTC_e8ec2.dir\\Debug\\cmTC_e8ec2.tlog\\cmTC_e8ec2.lastbuildstate".
-        Done Building Project "E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI - Copy berantakan\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\CMakeScratch\\TryCompile-r7rlo9\\cmTC_e8ec2.vcxproj" (default targets).
+          Deleting file "cmTC_d7efe.dir\\Debug\\cmTC_d7efe.tlog\\unsuccessfulbuild".
+          Touching "cmTC_d7efe.dir\\Debug\\cmTC_d7efe.tlog\\cmTC_d7efe.lastbuildstate".
+        Done Building Project "E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI and Patch\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\CMakeScratch\\TryCompile-y5hjp4\\cmTC_d7efe.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:01.59
+        Time Elapsed 00:00:02.50
         
       exitCode: 0
   -
@@ -1409,8 +1437,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "E:/Games/DC3DD/DC3DDMesTextTool_GUI - Copy berantakan/DC3DDPatch a/build_dc3dd/CMakeFiles/CMakeScratch/TryCompile-udlv8o"
-      binary: "E:/Games/DC3DD/DC3DDMesTextTool_GUI - Copy berantakan/DC3DDPatch a/build_dc3dd/CMakeFiles/CMakeScratch/TryCompile-udlv8o"
+      source: "E:/Games/DC3DD/DC3DDMesTextTool_GUI and Patch/DC3DDPatch a/build_dc3dd/CMakeFiles/CMakeScratch/TryCompile-3a48vp"
+      binary: "E:/Games/DC3DD/DC3DDMesTextTool_GUI and Patch/DC3DDPatch a/build_dc3dd/CMakeFiles/CMakeScratch/TryCompile-3a48vp"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1421,39 +1449,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'E:/Games/DC3DD/DC3DDMesTextTool_GUI - Copy berantakan/DC3DDPatch a/build_dc3dd/CMakeFiles/CMakeScratch/TryCompile-udlv8o'
+        Change Dir: 'E:/Games/DC3DD/DC3DDMesTextTool_GUI and Patch/DC3DDPatch a/build_dc3dd/CMakeFiles/CMakeScratch/TryCompile-3a48vp'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b7886.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_8b4e2.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 4/27/2026 11:07:06 PM.
+        Build started 5/10/2026 7:49:09 AM.
         
-        Project "E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI - Copy berantakan\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\CMakeScratch\\TryCompile-udlv8o\\cmTC_b7886.vcxproj" on node 1 (default targets).
+        Project "E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI and Patch\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\CMakeScratch\\TryCompile-3a48vp\\cmTC_8b4e2.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI - Copy berantakan\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\CMakeScratch\\TryCompile-udlv8o\\Debug\\".
-          Creating directory "cmTC_b7886.dir\\Debug\\cmTC_b7886.tlog\\".
+          Creating directory "E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI and Patch\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\CMakeScratch\\TryCompile-3a48vp\\Debug\\".
+          Creating directory "cmTC_8b4e2.dir\\Debug\\cmTC_8b4e2.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_b7886.dir\\Debug\\cmTC_b7886.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_b7886.dir\\Debug\\cmTC_b7886.tlog\\unsuccessfulbuild".
+          Creating "cmTC_8b4e2.dir\\Debug\\cmTC_8b4e2.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_8b4e2.dir\\Debug\\cmTC_8b4e2.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x86\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_b7886.dir\\Debug\\\\" /Fd"cmTC_b7886.dir\\Debug\\vc143.pdb" /external:W1 /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x86\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_8b4e2.dir\\Debug\\\\" /Fd"cmTC_8b4e2.dir\\Debug\\vc143.pdb" /external:W1 /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35222 for x86
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_b7886.dir\\Debug\\\\" /Fd"cmTC_b7886.dir\\Debug\\vc143.pdb" /external:W1 /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_8b4e2.dir\\Debug\\\\" /Fd"cmTC_8b4e2.dir\\Debug\\vc143.pdb" /external:W1 /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x86\\link.exe /OUT:"E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI - Copy berantakan\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\CMakeScratch\\TryCompile-udlv8o\\Debug\\cmTC_b7886.exe" /INCREMENTAL /ILK:"cmTC_b7886.dir\\Debug\\cmTC_b7886.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/Games/DC3DD/DC3DDMesTextTool_GUI - Copy berantakan/DC3DDPatch a/build_dc3dd/CMakeFiles/CMakeScratch/TryCompile-udlv8o/Debug/cmTC_b7886.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"E:/Games/DC3DD/DC3DDMesTextTool_GUI - Copy berantakan/DC3DDPatch a/build_dc3dd/CMakeFiles/CMakeScratch/TryCompile-udlv8o/Debug/cmTC_b7886.lib" /MACHINE:X86  /machine:X86 cmTC_b7886.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_b7886.vcxproj -> E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI - Copy berantakan\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\CMakeScratch\\TryCompile-udlv8o\\Debug\\cmTC_b7886.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x86\\link.exe /OUT:"E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI and Patch\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\CMakeScratch\\TryCompile-3a48vp\\Debug\\cmTC_8b4e2.exe" /INCREMENTAL /ILK:"cmTC_8b4e2.dir\\Debug\\cmTC_8b4e2.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/Games/DC3DD/DC3DDMesTextTool_GUI and Patch/DC3DDPatch a/build_dc3dd/CMakeFiles/CMakeScratch/TryCompile-3a48vp/Debug/cmTC_8b4e2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"E:/Games/DC3DD/DC3DDMesTextTool_GUI and Patch/DC3DDPatch a/build_dc3dd/CMakeFiles/CMakeScratch/TryCompile-3a48vp/Debug/cmTC_8b4e2.lib" /MACHINE:X86  /machine:X86 cmTC_8b4e2.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_8b4e2.vcxproj -> E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI and Patch\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\CMakeScratch\\TryCompile-3a48vp\\Debug\\cmTC_8b4e2.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_b7886.dir\\Debug\\cmTC_b7886.tlog\\unsuccessfulbuild".
-          Touching "cmTC_b7886.dir\\Debug\\cmTC_b7886.tlog\\cmTC_b7886.lastbuildstate".
-        Done Building Project "E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI - Copy berantakan\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\CMakeScratch\\TryCompile-udlv8o\\cmTC_b7886.vcxproj" (default targets).
+          Deleting file "cmTC_8b4e2.dir\\Debug\\cmTC_8b4e2.tlog\\unsuccessfulbuild".
+          Touching "cmTC_8b4e2.dir\\Debug\\cmTC_8b4e2.tlog\\cmTC_8b4e2.lastbuildstate".
+        Done Building Project "E:\\Games\\DC3DD\\DC3DDMesTextTool_GUI and Patch\\DC3DDPatch a\\build_dc3dd\\CMakeFiles\\CMakeScratch\\TryCompile-3a48vp\\cmTC_8b4e2.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:01.70
+        Time Elapsed 00:00:02.83
         
       exitCode: 0
   -

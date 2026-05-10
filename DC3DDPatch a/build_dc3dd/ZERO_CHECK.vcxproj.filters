@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="E:\Games\DC3DD\DC3DDMesTextTool_GUI - Copy berantakan\DC3DDPatch a\build_dc3dd\CMakeFiles\1e657f218fa19b726b97afa08c4b03b0\generate.stamp.rule">
+    <CustomBuild Include="E:\Games\DC3DD\DC3DDMesTextTool_GUI and Patch\DC3DDPatch a\build_dc3dd\CMakeFiles\64f5130e5340e07b6d51eb362d5bfcd5\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{1AC6E763-FD82-3082-8EC9-73206A8A5EC2}</UniqueIdentifier>
+      <UniqueIdentifier>{613B4F32-76E4-32B3-9512-53A5D83D804D}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
