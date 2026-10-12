@@ -103,8 +103,8 @@ namespace mes_text_tool
 				"[ILLEGAL PARAMETER] \n"
 				"At least 1 or 2 valid parameters are required.\n"
 				"Args: [-LOG <option>] [-CP <option>] [-GAME <option>] [PATH <must>]\n"
-				"Example: MesTextTool.exe -log -cp932 -dc3wy "
-				"D:\\YourGames\\DC3WY\\Advdata\\MES\n"
+				"Example: MesTextTool.exe -log -cp932 -dc3dd "
+				"D:\\YourGames\\DC3DD\\Advdata\\MES\n"
 			};
 
 			xcout::helper.set_attrs(console::attrs::text_dark_red);

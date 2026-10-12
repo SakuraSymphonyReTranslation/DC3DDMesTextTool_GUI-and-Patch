@@ -318,25 +318,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
   char exePath[MAX_PATH];
   char dllPath[MAX_PATH];
-#ifdef GAME_DC4PH
-  sprintf_s(exePath, "%s\\DC4PHDL.EXE", currentDir);
-  sprintf_s(dllPath, "%s\\DC4PHPatch.dll", currentDir);
-
-  if (GetFileAttributesA(exePath) == INVALID_FILE_ATTRIBUTES) {
-    MessageBoxA(NULL,
-                "DC4PHDL.EXE not found!\nPlease place this launcher in the DC4 "
-                "Plus Harmony game folder.",
-                "DC4PH Patch Launcher", MB_ICONERROR);
-    return 1;
-  }
-  if (GetFileAttributesA(dllPath) == INVALID_FILE_ATTRIBUTES) {
-    MessageBoxA(NULL,
-                "DC4PHPatch.dll not found!\nPlease place DC4PHPatch.dll in the "
-                "game folder.",
-                "DC4PH Patch Launcher", MB_ICONERROR);
-    return 1;
-  }
-#else
   sprintf_s(exePath, "%s\\DC3DD.EXE", currentDir);
   sprintf_s(dllPath, "%s\\DC3DDPatch.dll", currentDir);
 
@@ -356,7 +337,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
         "DC3DD Patch Launcher", MB_ICONERROR);
     return 1;
   }
-#endif
 
   PROCESS_INFORMATION pi = {};
   bool isWine = IsRunningUnderWine();

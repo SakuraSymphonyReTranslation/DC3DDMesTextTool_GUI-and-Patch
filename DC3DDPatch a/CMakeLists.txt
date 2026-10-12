@@ -8,12 +8,6 @@ if(CMAKE_SIZEOF_VOID_P EQUAL 8)
     message(FATAL_ERROR "Error: Building for x64, but x86 expected. Use x86 Native Tools Command Prompt.")
 endif()
 
-option(BUILD_DC4PH "Build for Da Capo 4 Plus Harmony" OFF)
-
-if(BUILD_DC4PH)
-    message(STATUS "Configuring build for Da Capo 4 Plus Harmony...")
-endif()
-
 # Detours library
 set(DETOURS_DIR "${CMAKE_SOURCE_DIR}/Detours/src")
 include_directories(${DETOURS_DIR})
@@ -31,7 +25,7 @@ add_library(detours STATIC
 # Patch DLL - injected by launcher
 # ============================================================================
 add_library(DC3DDPatch SHARED
-    src/dc4patch.cpp
+    src/dc3ddpatch.cpp
 )
 
 target_link_libraries(DC3DDPatch PRIVATE 
@@ -43,16 +37,12 @@ target_link_libraries(DC3DDPatch PRIVATE
 )
 
 set_target_properties(DC3DDPatch PROPERTIES
-    LINK_FLAGS "/DYNAMICBASE:NO"
+    LINK_FLAGS "/DYNAMICBASE:NO /MAP"
 )
 
-if(BUILD_DC4PH)
-    set_target_properties(DC3DDPatch PROPERTIES OUTPUT_NAME "DC4PHPatch")
-    target_compile_definitions(DC3DDPatch PRIVATE GAME_DC4PH)
-else()
-    set_target_properties(DC3DDPatch PROPERTIES OUTPUT_NAME "DC3DDPatch")
-    target_compile_definitions(DC3DDPatch PRIVATE GAME_DC3DD)
-endif()
+set_target_properties(DC3DDPatch PROPERTIES OUTPUT_NAME "DC3DDPatch")
+target_compile_definitions(DC3DDPatch PRIVATE GAME_DC3DD)
+
 
 # ============================================================================
 # Launcher - starts the game and injects patch DLL (no Locale Emulator dependency)
@@ -69,10 +59,5 @@ target_link_libraries(DC3DDLauncher PRIVATE
     advapi32
 )
 
-if(BUILD_DC4PH)
-    set_target_properties(DC3DDLauncher PROPERTIES OUTPUT_NAME "DC4PHLauncher")
-    target_compile_definitions(DC3DDLauncher PRIVATE GAME_DC4PH)
-else()
-    set_target_properties(DC3DDLauncher PROPERTIES OUTPUT_NAME "DC3DDLauncher")
-    target_compile_definitions(DC3DDLauncher PRIVATE GAME_DC3DD)
-endif()
+set_target_properties(DC3DDLauncher PROPERTIES OUTPUT_NAME "DC3DDLauncher")
+target_compile_definitions(DC3DDLauncher PRIVATE GAME_DC3DD)

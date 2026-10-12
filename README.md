@@ -1,158 +1,135 @@
-# DC3DD MES Text Tool (GUI + CLI)
+# DC3DD MES Text Tool v1.3 — GUI dan CLI
 
-A Windows tool for converting **Da Capo 3 Dream Days** script files between:
+Importer/exporter untuk **D.C.III Dream Days**, diperbarui 12 Oktober 2026.
 
-- `MES -> JSON` (export)
-- `JSON -> MES` (import)
+Distribusi ini hanya mendukung **Da Capo 3 Dream Days** (`dc3dd`, versi MES `0xA5A8`). GUI, CLI, tabel referensi C++, patch, dan launcher dikhususkan untuk game ini. Source utama patch: `DC3DDPatch a/src/dc3ddpatch.cpp`.
 
-It supports both:
+## Unduhan dan folder instalasi
 
-- Single file conversion
-- Batch conversion (entire folder)
+Unduh kedua paket terbaru dari [GitHub Releases](https://github.com/SakuraSymphonyReTranslation/DC3DDMesTextTool_GUI-and-Patch/releases/latest):
 
-## Tool Location
+- **DC3DDMesTextTool_GUI.rar**: importer/exporter MES ↔ JSON, GUI dan CLI.
+- **Released_patch.rar**: launcher, DLL patch, INI, dan berkas pendukung runtime.
 
-Main executable:
+`<GAME_DIR>` berarti **folder utama instalasi game pilihan pemain**, yaitu folder yang berisi `DC3DD.exe` dan `AdvData`. Ini placeholder dokumentasi: ganti dengan lokasi game Anda, tanpa tanda `<` dan `>`. Tidak ada drive atau lokasi instalasi wajib.
 
-- `bin\Release\net8.0-windows\DC3DDMesTextTool_GUI.exe`
-- `bin\Release\net8.0-windows\DC3DDMesTextTool_GUI.rar`
+1. Tutup game dan simpan salinan berkas lama yang akan diganti, terutama executable dan `DC3DDPatch.ini`.
+2. Ekstrak isi `Released_patch.rar` langsung ke `<GAME_DIR>`, sehingga `DC3DDLauncher.exe`, `DC3DDPatch.dll`, dan `DC3DDPatch.ini` berada di sebelah `DC3DD.exe`.
+3. Jalankan **`<GAME_DIR>\DC3DDLauncher.exe`** dengan working directory `<GAME_DIR>`. Jika memakai shortcut, isi **Start in** dengan folder tersebut.
+4. Pilih bahasa yang sesuai pada pengaturan patch. Berkas MES Indonesia ditempatkan di `<GAME_DIR>\id_Data\MES`; untuk bahasa Inggris, gunakan `<GAME_DIR>\eng_data\MES`.
 
-## Output Build Locations (Patch + Launcher)
+```text
+<GAME_DIR>/
+├── DC3DD.exe
+├── DC3DDLauncher.exe
+├── DC3DDPatch.dll
+├── DC3DDPatch.ini
+├── LEProc.exe
+├── LoaderDll.dll
+├── LocaleEmulator.dll
+├── AdvData/
+└── id_Data/
+    └── MES/
+```
 
-Patch and launcher build output:
+Kedua RAR menyediakan tool dan runtime patch; keduanya tidak berisi seluruh naskah terjemahan. Folder source repositori boleh ditempatkan di mana saja. Paket patch juga tersedia di `DC3DDPatch a/build/Released` pada source.
 
-- `DC3DDPatch a\build`
+## Buka aplikasi
 
-Ready-to-use release output:
+Ekstrak `DC3DDMesTextTool_GUI.rar` ke folder pilihan Anda dan jalankan `DC3DDMesTextTool_GUI.exe`. Jika memakai source repositori, jalankan `bin\Release\net8.0-windows\DC3DDMesTextTool_GUI.exe`.
+Paket siap pakai berada di folder yang sama: `DC3DDMesTextTool_GUI.rar`.
+Aplikasi membutuhkan .NET 8 Desktop Runtime.
 
-- `DC3DDPatch a\build\Released`
+## Single File
 
-## Important: Custom Launcher Required
+**MES → JSON (exporter)**
 
-To use this patch correctly, you must launch the game using the custom launcher:
+1. Isi **Input MES/JSON** dengan MES asli.
+2. Isi **Output**, atau kosongkan untuk membuat JSON di sebelah input.
+3. Klik **Export (MES -> JSON)**.
 
-For example - `H:\Games\DC3DD` is your game directory
-put - `DC3DDMesTextTool_GUI and Patch` or somewhere else
-
-- `H:\Games\DC3DD\DC3DDMesTextTool_GUI and Patch\DC3DDPatch a\build\Released\DC3DDLauncher.exe`
-
-This patch is built to work with that launcher.
-Running the game directly from `DC3DD.EXE` may not load the patch properly.
-
-## Features
-
-- GUI mode (double-click executable)
-- CLI mode (run commands from terminal)
-- Drag-and-drop support for `.mes` and folders
-- Shift-JIS handling for game script text
-
-## JSON Format
-
-Exported JSON is an array of entries like:
+Hasil default menggabungkan nama karakter dan dialog berdasarkan opcode DC3DD:
 
 ```json
 [
-  { "name": "Character Name", "message": "Dialogue line" },
-  { "message": "Narration line" }
+  { "message": "Narasi." },
+  { "name": "Kousuke", "message": "「Dialog karakter.」" }
 ]
 ```
 
-## Quick Start (GUI)
+Ekspor dari tab Single File dan Batch selalu menggunakan format gabungan nama/dialog di atas. Teks, nama Jepang/Indonesia, dan pemisah baris dipertahankan saat ekspor. Ekspor tidak menerjemahkan nama.
 
-1. Open `DC3DDMesTextTool_GUI.exe`.
-2. Use **Single File** tab for one file.
-3. Use **Batch** tab for folder-based conversion.
-4. Check the log panel at the bottom for success/error details.
+**JSON → MES (importer)**
 
-### Single File: Export (MES -> JSON)
+1. Isi **Input MES/JSON** dengan JSON terjemahan.
+2. Pilih **Original MES** dengan MES asli untuk skenario yang sama. File ini boleh berada di folder lain. Jika kolom kosong, aplikasi mencoba MES bernama sama di sebelah JSON.
+3. Tentukan file **Output** yang berbeda dari MES asli.
+4. Pilih **Word Wrap**: default `46` pada Single File, Batch, dan CLI; `0` mempertahankan teks/pemisah baris tanpa reflow.
+5. Klik **Import (JSON -> MES)**.
 
-1. In **Input MES/JSON**, select a `.mes` file.
-2. In **Output JSON/MES**, set output `.json` path (optional).
-3. Click **Export (MES -> JSON)**.
+Importer menerima JSON gabungan, JSON lama, serta campuran keduanya. Jumlah token teks harus sama dengan MES asli. Field `name` harus cocok dengan posisi nama/dialog pada MES. Template asli dibutuhkan karena JSON tidak memuat seluruh instruksi, label, aset, dan alur skenario.
 
-### Single File: Import (JSON -> MES)
+## Batch
 
-Important behavior in current GUI:
+- **Export:** isi **MES Folder** dan **Output Folder**, lalu klik **Batch Export**.
+- **Import:** isi **JSON Folder**, **MES Folder** asli, dan **Output Folder** yang berbeda, lalu klik **Batch Import**.
+- Nama file harus sama: `scene.json` memakai template `scene.mes`.
+- File gagal ditampilkan di log; batch tetap memproses file lain. Template yang hilang dihitung sebagai kegagalan.
+- Tombol dinonaktifkan selama konversi untuk mencegah dua pekerjaan menulis bersamaan.
 
-- GUI auto-detects original MES by replacing `.json` with `.mes` in the same folder.
-- If matching original `.mes` is not found, import will fail.
+## Layout dan ikon backlog
 
-Steps:
+Word wrap hanya diterapkan pada isi dialog/narasi opcode `0x65`. Nama karakter `0x64`, pilihan, kontrol, dan ruby tidak dipotong seperti dialog biasa. Nama dibatasi 31 byte CP932 dan satu baris. Nama terjemahan dipertahankan agar lookup 28 alias dalam patch DLL tetap bekerja.
 
-1. In **Input MES/JSON**, select `.json`.
-2. Make sure original `.mes` with the same base filename is in the same folder.
-3. Set output `.mes` path (optional).
-4. Set **Word Wrap Width** (default: `60`) if 60 isn't enough you can change its value to fit textbox.
-5. Click **Import (JSON -> MES)**.
+Wrap memakai satu unit untuk huruf ASCII/katakana setengah lebar dan dua unit untuk karakter lebar penuh. Pemisah baris eksplisit dipertahankan. Kata yang lebih panjang dari batas dipotong. Pesan lebih dari empat baris dicatat di log; ukuran font dan panel tetap perlu diperiksa di game.
 
-## CLI Tutorial
+**Jarak vertikal dan pemilihan gambar ikon ditangani `DC3DDPatch.dll` saat runtime.** Importer tidak menyisipkan gambar ikon atau pengaturan font ke JSON/MES. Untuk memainkan hasil impor dengan patch, buka game melalui `DC3DDLauncher.exe` dari `<GAME_DIR>`. Petunjuk teknis tersedia di [README patch](https://github.com/SakuraSymphonyReTranslation/DC3DDMesTextTool_GUI-and-Patch/blob/main/DC3DDPatch%20a/README.md).
 
-Open terminal in:
+Paket patch memakai `DialogueLineSpacing=-10`, `BacklogLineSpacing=-10`, dan `ShowBacklogIcon=1`. Perbaikan mendukung 28 alias nama Indonesia dan jarak empat baris normal `[0, 24, 48, 72]` piksel. Wrap `46` mengatur lebar teks saat impor; spacing DLL mengatur jarak vertikal saat game berjalan. Wrap tidak menjamin semua pesan muat dalam empat baris. Teks lama yang belum diimpor ulang masih dapat melewati batas kanan backlog.
 
-- `bin\Release\net8.0-windows`
+## Validasi dan encoding
 
-Use:
+- Label MES dihitung relatif terhadap awal versi, termasuk prefix 3 byte; flag label dan tabel lain dipertahankan.
+- Input rusak, jumlah entri tidak cocok, nama terlalu panjang, NUL, dan karakter yang tidak bisa dienkode ditolak sebelum output diganti.
+- Entri teks native yang kosong tetap disimpan dalam template dan tidak diekspor, sesuai format JSON lama. Pesan nonkosong tidak boleh dikosongkan saat impor.
+- CP932 tidak mendukung beberapa karakter di terjemahan proyek. Penggantian eksplisit yang dicatat di log: `— → ―`, `û → u`, `ë → e`, `é → e`, `à → a`. Karakter lain yang tidak didukung menghasilkan error, bukan penggantian diam-diam menjadi `?`.
+- File ditulis melalui file sementara setelah validasi. Input/template tidak boleh menjadi output.
 
-- `./DC3DDMesTextTool_GUI.exe <command> ...`
+## CLI
 
-### 1) Export Single File (MES -> JSON)
-
-```powershell
-./DC3DDMesTextTool_GUI.exe export "H:\path\script.mes" "H:\path\script.json"
-```
-
-If output path is omitted, output defaults to the same filename with `.json`.
-
-### 2) Import Single File (JSON -> MES)
+Dari folder executable:
 
 ```powershell
-./DC3DDMesTextTool_GUI.exe import "H:\path\script.json" "H:\path\script.mes" "H:\path\script_new.mes"
+.\DC3DDMesTextTool_GUI.exe export "scene.mes" "scene.json"
+.\DC3DDMesTextTool_GUI.exe export "scene.mes" "legacy.json" --flat
+.\DC3DDMesTextTool_GUI.exe import "scene.json" "original\scene.mes" "new\scene.mes" -w 46
+.\DC3DDMesTextTool_GUI.exe import "scene.json" "original\scene.mes" "roundtrip\scene.mes" --no-wrap
+.\DC3DDMesTextTool_GUI.exe batch-export "original" "json"
+.\DC3DDMesTextTool_GUI.exe batch-import "json" "original" "mes_output" -w 46
 ```
 
-Notes:
+`-w 0` setara `--no-wrap`. Lebar aktif: 10–1000. `--flat` tersedia untuk kedua perintah ekspor. Exit code 0 berarti seluruh konversi berhasil; 1 berarti gagal atau ada template yang hilang. Gunakan `--help` untuk daftar perintah.
 
-- The second argument (`original.mes`) is required.
-- If output path is omitted, output defaults to `output_<original>.mes`.
+## Hasil verifikasi 11 Oktober 2026
 
-### 3) Batch Export (Folder) (MES -> JSON)
+- 214 MES asli: ekspor → impor tanpa wrap menghasilkan byte yang identik.
+- 190 dari 194 JSON Indonesia berhasil diimpor dan diekspor kembali; teks, nama, opcode nonteks, label dan flag diperiksa.
+- Empat JSON sumber ditolak: dua memuat nama melebihi 31 byte; dua memiliki posisi nama/dialog yang tidak cocok.
+- Kasus wrap, kontrol, ruby, format lama, input rusak, encoding, opsi CLI, dan template hilang diuji.
+
+- DLL patch lulus 444 kasus emulasi hook: 56 jarak baris, 96 konteks, dan 292 ikon.
+
+Pembaruan GUI 12 Oktober 2026 mengubah default wrap menjadi **46**, menyederhanakan ekspor GUI ke format gabungan, dan memperbarui judul window menjadi **Da Capo 3 Dream Days - MES Text Tool**. Build Release dan kedua tab GUI telah diperiksa. Pengujian korpus 11 Oktober menggunakan wrap `60` serta mode tanpa wrap; angka hasil korpus tersebut bukan jaminan empat baris pada default `46`. Pemeriksaan visual game sebelumnya mencakup contoh dialog/backlog, belum semua rute.
+
+## Build dan uji
+
+Dari folder source proyek:
 
 ```powershell
-./DC3DDMesTextTool_GUI.exe batch-export "H:\path\mes_folder" "H:\path\json_output"
+dotnet build -c Release
+python -X utf8 tools\verify_converter.py "<GAME_DIR>" "<TRANSLATED_JSON_DIR>" "<VALIDATION_OUTPUT_DIR>"
 ```
 
-If output folder is omitted, defaults to `mes_folder\json_output`.
+Ganti placeholder dengan folder Anda sebelum menjalankan perintah. Build GUI membutuhkan .NET 8 SDK. Skrip verifikasi memakai korpus pengembangan di `<GAME_DIR>\Translated\MES` dan JSON terjemahan, serta memeriksa empat kasus JSON yang ditolak. Korpus tersebut tidak disertakan dalam repositori; sesuaikan ekspektasi kasus bila memakai sumber yang berbeda atau sudah diperbaiki. Gunakan folder output pengujian yang terpisah dari script aktif game.
 
-### 4) Batch Import (Folder) (JSON -> MES)
-
-```powershell
-./DC3DDMesTextTool_GUI.exe batch-import "H:\path\json_folder" "H:\path\mes_folder" "H:\path\mes_output" -w 60
-```
-
-Arguments:
-
-- `json_folder`: translated `.json` files
-- `mes_folder`: original `.mes` files used as base
-- `mes_output`: output folder for rebuilt `.mes`
-- `-w`: wrap width (optional, default `60`) if 60 isn't enough you can change its value to fit textbox.
-
-Matching is done by filename:
-
-- `scene01.json` -> uses `scene01.mes`
-
-If original MES file is missing, that JSON file is skipped.
-
-## Drag & Drop
-
-- Drop a `.mes` file onto the EXE: auto export to `.json` with same filename.
-- Drop a folder onto the EXE: auto batch export all `.mes` files in that folder.
-
-## Troubleshooting
-
-- **"original MES not found"**: ensure matching `.mes` exists for each `.json`.
-- **Import output looks broken**: try different wrap width for batch import (`-w`).
-- **No output file**: check write permission for output folder.
-
-## Build & Release Summary
-
-- Active build folder: `DC3DDPatch a\build`
-- Final ready release folder: `DC3DDPatch a\build\Released`
+Build patch DLL/launcher memiliki petunjuk terpisah di `DC3DDPatch a\README.md`.

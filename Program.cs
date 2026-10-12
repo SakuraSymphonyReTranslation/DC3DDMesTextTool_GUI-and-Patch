@@ -39,6 +39,7 @@ static class Program
                 "import" => HandleImport(processor, args.Skip(1).ToArray()),
                 "batch-export" => HandleBatchExport(processor, args.Skip(1).ToArray()),
                 "batch-import" => HandleBatchImport(processor, args.Skip(1).ToArray()),
+                "help" or "--help" or "-h" => PrintHelp(),
                 _ when File.Exists(args[0]) => HandleDragDrop(processor, args[0]),
                 _ when Directory.Exists(args[0]) => HandleDragDropFolder(processor, args[0]),
                 _ => ShowError($"Unknown command: {command}")
@@ -57,7 +58,7 @@ static class Program
     {
         Console.ForegroundColor = ConsoleColor.Cyan;
         Console.WriteLine("╔════════════════════════════════════════════════╗");
-        Console.WriteLine("║       DC3DD MES Text Tool v1.2 (GUI+CLI)         ║");
+        Console.WriteLine("║       DC3DD MES Text Tool v1.3 (GUI+CLI)         ║");
         Console.WriteLine("║  Based on CircusEditor and MesTextTool         ║");
         Console.WriteLine("╚════════════════════════════════════════════════╝");
         Console.ResetColor();
@@ -66,6 +67,8 @@ static class Program
     
     static int HandleExport(MesToolProcessor processor, string[] args)
     {
+        var options = ParseOptions(args, false, true);
+        args = options.Paths;
         if (args.Length < 1)
         {
             Console.WriteLine("Usage: DC3DDMesTextTool export <input.mes> [output.json]");
@@ -74,25 +77,31 @@ static class Program
         
         string inputPath = args[0];
         string outputPath = args.Length > 1 ? args[1] : Path.ChangeExtension(inputPath, ".json");
-        return processor.ExportMesToJson(inputPath, outputPath);
+        if (args.Length > 2) return ShowError("Too many export paths.");
+        return processor.ExportMesToJson(inputPath, outputPath, options.Flat);
     }
     
     static int HandleImport(MesToolProcessor processor, string[] args)
     {
+        var options = ParseOptions(args, true, false);
+        args = options.Paths;
         if (args.Length < 2)
         {
-            Console.WriteLine("Usage: DC3DDMesTextTool import <input.json> <original.mes> [output.mes]");
+            Console.WriteLine($"Usage: DC3DDMesTextTool import <input.json> <original.mes> [output.mes] [-w {TextFormatter.DefaultLineLength} | --no-wrap]");
             return 1;
         }
         
         string jsonPath = args[0];
         string originalMesPath = args[1];
         string outputPath = args.Length > 2 ? args[2] : Path.Combine(Path.GetDirectoryName(originalMesPath) ?? "", "output_" + Path.GetFileName(originalMesPath));
-        return processor.ImportJsonToMes(jsonPath, originalMesPath, outputPath);
+        if (args.Length > 3) return ShowError("Too many import paths.");
+        return processor.ImportJsonToMes(jsonPath, originalMesPath, outputPath, options.Width);
     }
     
     static int HandleBatchExport(MesToolProcessor processor, string[] args)
     {
+        var options = ParseOptions(args, false, true);
+        args = options.Paths;
         if (args.Length < 1)
         {
             Console.WriteLine("Usage: DC3DDMesTextTool batch-export <mes_folder> [json_folder]");
@@ -101,11 +110,14 @@ static class Program
         
         string inputFolder = args[0];
         string outputFolder = args.Length > 1 ? args[1] : Path.Combine(inputFolder, "json_output");
-        return processor.BatchExport(inputFolder, outputFolder);
+        if (args.Length > 2) return ShowError("Too many batch-export paths.");
+        return processor.BatchExport(inputFolder, outputFolder, options.Flat);
     }
     
     static int HandleBatchImport(MesToolProcessor processor, string[] args)
     {
+        var options = ParseOptions(args, true, false);
+        args = options.Paths;
         if (args.Length < 2)
         {
             Console.WriteLine("Usage: DC3DDMesTextTool batch-import <json_folder> <mes_folder> [output_folder] [-w <wrap_width>]");
@@ -116,17 +128,40 @@ static class Program
         string mesFolder = args[1];
         string outputFolder = args.Length > 2 && !args[2].StartsWith("-") ? args[2] : Path.Combine(mesFolder, "mes_output");
         
-        int wrapWidth = 67;
-        for (int i = 0; i < args.Length - 1; i++)
+        if (args.Length > 3) return ShowError("Too many batch-import paths.");
+        return processor.BatchImport(jsonFolder, mesFolder, outputFolder, options.Width);
+    }
+
+    static (string[] Paths, int Width, bool Flat) ParseOptions(string[] args, bool allowWrap, bool allowFlat)
+    {
+        var paths = new System.Collections.Generic.List<string>();
+        int width = TextFormatter.DefaultLineLength;
+        bool flat = false;
+        for (int i = 0; i < args.Length; i++)
         {
-            if (args[i] == "-w" && int.TryParse(args[i + 1], out int w))
+            if (args[i] == "--flat" && allowFlat) flat = true;
+            else if (args[i] == "--no-wrap" && allowWrap) width = 0;
+            else if ((args[i] == "-w" || args[i] == "--wrap") && allowWrap)
             {
-                wrapWidth = w;
-                break;
+                if (++i >= args.Length || !int.TryParse(args[i], out width) ||
+                    (width != 0 && (width < 10 || width > 1000)))
+                    throw new ArgumentException("Wrap width must be 0 or 10..1000.");
             }
+            else if (args[i].StartsWith('-')) throw new ArgumentException($"Unknown option: {args[i]}");
+            else paths.Add(args[i]);
         }
-        
-        return processor.BatchImport(jsonFolder, mesFolder, outputFolder, wrapWidth);
+        return (paths.ToArray(), width, flat);
+    }
+
+    static int PrintHelp()
+    {
+        Console.WriteLine("export <input.mes> [output.json] [--flat]");
+        Console.WriteLine($"import <input.json> <original.mes> [output.mes] [-w {TextFormatter.DefaultLineLength} | --no-wrap]");
+        Console.WriteLine("batch-export <mes_folder> [json_folder] [--flat]");
+        Console.WriteLine($"batch-import <json_folder> <mes_folder> [output_folder] [-w {TextFormatter.DefaultLineLength} | --no-wrap]");
+        Console.WriteLine("Default JSON groups name/message. --flat exports the legacy message-only array.");
+        Console.WriteLine("Wrap applies to dialogue bodies. Names and choices are preserved. Original MES is required.");
+        return 0;
     }
     
     static int HandleDragDrop(MesToolProcessor processor, string filePath)

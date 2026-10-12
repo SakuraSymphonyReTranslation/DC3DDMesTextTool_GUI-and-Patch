@@ -1,19 +1,35 @@
-DC3DD runtime offsets (default)
+DC3DD layout/icon offsets verified on 10 October 2026
 
-CheckIcon:
-  VA  : 0x00432010
-  OFF : 0x00031410
+Supported executable SHA256:
+d2a26be40e50b54b465bb8f907e0751969d057e7b2c626c710ac8c8977733384
 
-CheckIconConfig:
-  VA  : 0x004256A0
-  OFF : 0x00024AA0
+Source of truth: src/dc3dd_layout.h (GAME_DC3DD build)
+All addresses below are virtual addresses, with image base 0x00400000.
 
-BacklogIconHandler:
-  VA  : 0x004325D0
-  OFF : 0x000319D0
+Native icon lookup:
+  Function: 0x00401590
+  Backlog CALL site: 0x00405B19
 
-Related references:
-  CallSite VA : 0x00405013 (OFF 0x00004413)
-  HookSite VA : 0x00405276 (OFF 0x00004676)
+Dialogue body:
+  Function: 0x0043FA40
+  CALL sites: 0x0042BD79, 0x0043243E
 
-These values are also exposed in `DC3DDPatch.ini` under section `[Offsets]`.
+Backlog body:
+  Function: 0x00417C70
+  CALL sites: 0x00405CD8, 0x00405CFB, 0x00405D1E
+
+Line advance:
+  Hook site: 0x0043F98B (8 bytes)
+  Return: 0x0043F993
+  Original bytes: 8B 4C 24 24 01 4C 24 10
+
+The installer checks all seven patch locations and three function signatures
+before writing code. Native icon selection retains scenario-dependent variants.
+
+Legacy INI values (retained for file compatibility, NOT used by these hooks):
+  CheckIcon=0x00432010
+  CheckIconConfig=0x004256A0
+  BacklogIconHandler=0x004325D0
+
+The former references 0x00405013 and 0x00405276 are not active patch sites.
+Do not use the legacy values to locate DC3DD's native icon lookup.

@@ -1,6 +1,13 @@
 # Build artifacts
 obj/
 .vs/
+__pycache__/
+*.pyc
+
+# Machine-specific CMake output; ready-to-use packages remain tracked
+/DC3DDPatch a/build_dc3dd/
+/DC3DDPatch a/build/*
+!/DC3DDPatch a/build/Released/
 
 # Python virtual env
 DC3DDPatch a/.venv/

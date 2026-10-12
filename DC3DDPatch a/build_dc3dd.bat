@@ -24,7 +24,7 @@ if not exist build_dc3dd mkdir build_dc3dd
 cd build_dc3dd
 
 echo [1/4] Configuring CMake for DC3DD (Win32)...
-cmake -G "Visual Studio 17 2022" -A Win32 -DBUILD_DC4PH=OFF ..
+cmake -G "Visual Studio 17 2022" -A Win32 ..
 if %errorlevel% neq 0 (
     echo [ERROR] CMake configuration failed.
     cd ..

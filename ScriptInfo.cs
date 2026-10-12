@@ -1,7 +1,7 @@
 namespace DC3DDMesTextTool;
 
 /// <summary>
-/// Script configuration for different Circus engine games.
+/// Script configuration for Da Capo 3 Dream Days.
 /// Based on MesTextTool's script_info.cpp
 /// </summary>
 public class ScriptInfo
@@ -31,23 +31,6 @@ public class ScriptInfo
     }
     
     /// <summary>
-    /// D.C.III Platinum Partner configuration
-    /// </summary>
-    public static readonly ScriptInfo DC3PP = new()
-    {
-        Name = "dc3pp",
-        Version = 0x9872,
-        OffsetType = OffsetType.Offset2,
-        Uint8x2 = (0x00, 0x2A),
-        Uint8Str = (0x2B, 0x32),
-        String = (0x33, 0x4E),
-        EncStr = (0x4F, 0x51),
-        Uint16x4 = (0x52, 0xFF),
-        EncryptionKey = 0x20,
-        OutputOpcodes = new byte[] { 0x45 }
-    };
-
-    /// <summary>
     /// D.C.III DreamDays configuration.
     /// Values are aligned with upstream MesTextTool script_info.cpp.
     /// </summary>
@@ -66,43 +49,9 @@ public class ScriptInfo
     };
 
     /// <summary>
-    /// D.C.4 ~Da Capo 4~ configuration
+    /// Supported Da Capo 3 Dream Days script configuration
     /// </summary>
-    public static readonly ScriptInfo DC4 = new()
-    {
-        Name = "dc4",
-        Version = 0xAAB6,
-        OffsetType = OffsetType.Offset2,
-        Uint8x2 = (0x00, 0x3A),
-        Uint8Str = (0x3B, 0x47),
-        String = (0x48, 0x68),
-        EncStr = (0x69, 0x6D),
-        Uint16x4 = (0x6E, 0xFF),
-        EncryptionKey = 0x20,
-        OutputOpcodes = new byte[] { 0x5D }
-    };
-    
-    /// <summary>
-    /// D.C.4 Plus Harmony configuration
-    /// </summary>
-    public static readonly ScriptInfo DC4PH = new()
-    {
-        Name = "dc4ph",
-        Version = 0xABB6,
-        OffsetType = OffsetType.Offset2,
-        Uint8x2 = (0x00, 0x3A),
-        Uint8Str = (0x3B, 0x47),
-        String = (0x48, 0x68),
-        EncStr = (0x69, 0x6D),
-        Uint16x4 = (0x6E, 0xFF),
-        EncryptionKey = 0x20,
-        OutputOpcodes = new byte[] { 0x5D }
-    };
-    
-    /// <summary>
-    /// All known script configurations
-    /// </summary>
-    public static readonly ScriptInfo[] AllInfos = { DC3DD, DC3PP, DC4, DC4PH };
+    public static readonly ScriptInfo[] AllInfos = { DC3DD };
     
     /// <summary>
     /// Query script info by name
@@ -122,17 +71,19 @@ public class ScriptInfo
             return null;
 
         int labelCount = BitConverter.ToInt32(data, 0);
-        int offset1 = labelCount * 4 + 4;
-        int offset2 = labelCount * 6 + 4;
+        if (labelCount < 1 || labelCount > (data.Length - 4) / 4)
+            return null;
+        long offset1 = (long)labelCount * 4 + 4;
+        long offset2 = (long)labelCount * 6 + 4;
 
         ushort version1 = 0;
         ushort version2 = 0;
 
         if (data.Length > offset1 + 1)
-            version1 = BitConverter.ToUInt16(data, offset1);
+            version1 = BitConverter.ToUInt16(data, (int)offset1);
 
         if (data.Length > offset2 + 1)
-            version2 = BitConverter.ToUInt16(data, offset2);
+            version2 = BitConverter.ToUInt16(data, (int)offset2);
 
         foreach (var info in AllInfos)
         {
@@ -158,8 +109,7 @@ public class ScriptInfo
             }
         }
 
-        // Default to DreamDays profile for this tool.
-        return DC3DD;
+        return null;
     }
 }
 
