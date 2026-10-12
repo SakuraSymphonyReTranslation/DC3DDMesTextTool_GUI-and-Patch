@@ -1,5 +1,7 @@
 # DC3DD MES Text Tool — GUI dan CLI
 
+**Bahasa Indonesia** | [English](Readme_en.md)
+
 Importer/exporter untuk **D.C.III Dream Days**.
 
 Distribusi ini hanya mendukung **Da Capo 3 Dream Days** (`dc3dd`, versi MES `0xA5A8`). GUI, CLI, tabel referensi C++, patch, dan launcher dikhususkan untuk game ini. Source utama patch: `DC3DDPatch a/src/dc3ddpatch.cpp`.
@@ -8,7 +10,7 @@ Distribusi ini hanya mendukung **Da Capo 3 Dream Days** (`dc3dd`, versi MES `0xA
 
 Unduh kedua paket terbaru dari [GitHub Releases](https://github.com/SakuraSymphonyReTranslation/DC3DDMesTextTool_GUI-and-Patch/releases/latest):
 
-- **DC3DDMesTextTool_GUI.rar**: importer/exporter MES ↔ JSON, GUI dan CLI.
+- **DC3DDMesTextTool_GUI.rar**: importer/exporter MES ↔ JSON, GUI dan CLI. Termasuk dokumentasi bahasa Indonesia dan Inggris.
 - **Released_patch.rar**: launcher, DLL patch, INI, dan berkas pendukung runtime.
 
 `<GAME_DIR>` berarti **folder utama instalasi game pilihan pemain**, yaitu folder yang berisi `DC3DD.exe` dan `AdvData`. Ini placeholder dokumentasi: ganti dengan lokasi game Anda, tanpa tanda `<` dan `>`. Tidak ada drive atau lokasi instalasi wajib.
@@ -130,4 +132,4 @@ python -X utf8 tools\verify_converter.py "<GAME_DIR>" "<TRANSLATED_JSON_DIR>" "<
 
 Ganti placeholder dengan folder Anda sebelum menjalankan perintah. Build GUI membutuhkan .NET 8 SDK. Skrip verifikasi memakai korpus pengembangan di `<GAME_DIR>\Translated\MES` dan JSON terjemahan, serta memeriksa empat kasus JSON yang ditolak. Korpus tersebut tidak disertakan dalam repositori; sesuaikan ekspektasi kasus bila memakai sumber yang berbeda atau sudah diperbaiki. Gunakan folder output pengujian yang terpisah dari script aktif game.
 
-Build patch DLL/launcher memiliki petunjuk terpisah di `DC3DDPatch a\README.md`.
+Build patch DLL/launcher memiliki petunjuk terpisah di [README patch](https://github.com/SakuraSymphonyReTranslation/DC3DDMesTextTool_GUI-and-Patch/blob/main/DC3DDPatch%20a/README.md).

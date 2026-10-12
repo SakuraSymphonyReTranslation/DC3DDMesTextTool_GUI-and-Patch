@@ -1,5 +1,7 @@
 # DC3DD Patch — instalasi dan build
 
+**Bahasa Indonesia** | [English](Readme_en.md)
+
 Patch dan launcher ini hanya mendukung **Da Capo 3 Dream Days**. Source utama: `src/dc3ddpatch.cpp`.
 
 ## Instalasi
