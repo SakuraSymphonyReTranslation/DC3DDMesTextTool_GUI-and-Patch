@@ -44,7 +44,7 @@ Build manual menghasilkan `build_dc3dd/Release/DC3DDPatch.dll` dan `DC3DDLaunche
 
 `src/dc3dd_layout.h` berisi hook jarak baris dan lookup ikon; `src/dc3dd_backlog.h` berisi alias nama. Semua lokasi patch dan signature fungsi diperiksa sebelum pemasangan. Daftar alamat tersedia di `tools/dc3dd_offsets.txt`. Bagian `[Offsets]` dalam INI dipertahankan untuk kompatibilitas dan tidak dipakai hook layout/ikon ini.
 
-DLL paket lulus 444 kasus emulasi hook pada 11 Oktober 2026: 56 jarak baris, 96 wrapper/konteks, dan 292 ikon. Pemeriksaan visual sebelumnya mengonfirmasi contoh dialog Indonesia empat baris dan ikon backlog, belum setiap rute/alias.
+DLL paket lulus 444 kasus emulasi hook: 56 jarak baris, 96 wrapper/konteks, dan 292 ikon. Pemeriksaan visual sebelumnya mengonfirmasi contoh dialog Indonesia empat baris dan ikon backlog, belum setiap rute/alias.
 
 Untuk menjalankan verifier dari folder `DC3DDPatch a`:
 

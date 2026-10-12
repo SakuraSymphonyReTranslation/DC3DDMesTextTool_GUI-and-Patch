@@ -1,6 +1,6 @@
-# DC3DD MES Text Tool v1.3 — GUI dan CLI
+# DC3DD MES Text Tool — GUI dan CLI
 
-Importer/exporter untuk **D.C.III Dream Days**, diperbarui 12 Oktober 2026.
+Importer/exporter untuk **D.C.III Dream Days**.
 
 Distribusi ini hanya mendukung **Da Capo 3 Dream Days** (`dc3dd`, versi MES `0xA5A8`). GUI, CLI, tabel referensi C++, patch, dan launcher dikhususkan untuk game ini. Source utama patch: `DC3DDPatch a/src/dc3ddpatch.cpp`.
 
@@ -110,7 +110,7 @@ Dari folder executable:
 
 `-w 0` setara `--no-wrap`. Lebar aktif: 10–1000. `--flat` tersedia untuk kedua perintah ekspor. Exit code 0 berarti seluruh konversi berhasil; 1 berarti gagal atau ada template yang hilang. Gunakan `--help` untuk daftar perintah.
 
-## Hasil verifikasi 11 Oktober 2026
+## Hasil verifikasi
 
 - 214 MES asli: ekspor → impor tanpa wrap menghasilkan byte yang identik.
 - 190 dari 194 JSON Indonesia berhasil diimpor dan diekspor kembali; teks, nama, opcode nonteks, label dan flag diperiksa.
@@ -118,8 +118,6 @@ Dari folder executable:
 - Kasus wrap, kontrol, ruby, format lama, input rusak, encoding, opsi CLI, dan template hilang diuji.
 
 - DLL patch lulus 444 kasus emulasi hook: 56 jarak baris, 96 konteks, dan 292 ikon.
-
-Pembaruan GUI 12 Oktober 2026 mengubah default wrap menjadi **46**, menyederhanakan ekspor GUI ke format gabungan, dan memperbarui judul window menjadi **Da Capo 3 Dream Days - MES Text Tool**. Build Release dan kedua tab GUI telah diperiksa. Pengujian korpus 11 Oktober menggunakan wrap `60` serta mode tanpa wrap; angka hasil korpus tersebut bukan jaminan empat baris pada default `46`. Pemeriksaan visual game sebelumnya mencakup contoh dialog/backlog, belum semua rute.
 
 ## Build dan uji
 
